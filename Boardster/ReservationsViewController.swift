@@ -1,5 +1,5 @@
 //
-//  AccountViewController.swift
+//  ReservationsTableViewController.swift
 //  Boardster
 //
 //  Created by Casey McCourt on 1/22/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AccountViewController: UIViewController {
+class ReservationsTableViewController: UITableViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     override func viewDidLoad() {
@@ -20,12 +20,6 @@ class AccountViewController: UIViewController {
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
-        // Do any additional setup after loading the view.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 }

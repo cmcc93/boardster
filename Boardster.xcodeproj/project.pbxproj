@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0051706E1C5850E700B0DEEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0051706D1C5850E700B0DEEC /* AppDelegate.swift */; };
+		005170701C5850E700B0DEEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0051706F1C5850E700B0DEEC /* ViewController.swift */; };
+		005170731C5850E700B0DEEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005170711C5850E700B0DEEC /* Main.storyboard */; };
+		005170761C5850E700B0DEEC /* Boardster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 005170741C5850E700B0DEEC /* Boardster.xcdatamodeld */; };
+		005170781C5850E700B0DEEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 005170771C5850E700B0DEEC /* Assets.xcassets */; };
+		0051707B1C5850E700B0DEEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005170791C5850E700B0DEEC /* LaunchScreen.storyboard */; };
+		005170861C5850E700B0DEEC /* BoardsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005170851C5850E700B0DEEC /* BoardsterTests.swift */; };
+		005170911C5850E700B0DEEC /* BoardsterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005170901C5850E700B0DEEC /* BoardsterUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		005170821C5850E700B0DEEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 005170621C5850E700B0DEEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 005170691C5850E700B0DEEC;
+			remoteInfo = Boardster;
+		};
+		0051708D1C5850E700B0DEEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 005170621C5850E700B0DEEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 005170691C5850E700B0DEEC;
+			remoteInfo = Boardster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0051706A1C5850E700B0DEEC /* Boardster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boardster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0051706D1C5850E700B0DEEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0051706F1C5850E700B0DEEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		005170721C5850E700B0DEEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		005170751C5850E700B0DEEC /* Boardster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Boardster.xcdatamodel; sourceTree = "<group>"; };
+		005170771C5850E700B0DEEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0051707A1C5850E700B0DEEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0051707C1C5850E700B0DEEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		005170811C5850E700B0DEEC /* BoardsterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoardsterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		005170851C5850E700B0DEEC /* BoardsterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardsterTests.swift; sourceTree = "<group>"; };
+		005170871C5850E700B0DEEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0051708C1C5850E700B0DEEC /* BoardsterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoardsterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		005170901C5850E700B0DEEC /* BoardsterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardsterUITests.swift; sourceTree = "<group>"; };
+		005170921C5850E700B0DEEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		005170671C5850E700B0DEEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0051707E1C5850E700B0DEEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		005170891C5850E700B0DEEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		005170611C5850E700B0DEEC = {
+			isa = PBXGroup;
+			children = (
+				0051706C1C5850E700B0DEEC /* Boardster */,
+				005170841C5850E700B0DEEC /* BoardsterTests */,
+				0051708F1C5850E700B0DEEC /* BoardsterUITests */,
+				0051706B1C5850E700B0DEEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0051706B1C5850E700B0DEEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0051706A1C5850E700B0DEEC /* Boardster.app */,
+				005170811C5850E700B0DEEC /* BoardsterTests.xctest */,
+				0051708C1C5850E700B0DEEC /* BoardsterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0051706C1C5850E700B0DEEC /* Boardster */ = {
+			isa = PBXGroup;
+			children = (
+				0051706D1C5850E700B0DEEC /* AppDelegate.swift */,
+				0051706F1C5850E700B0DEEC /* ViewController.swift */,
+				005170711C5850E700B0DEEC /* Main.storyboard */,
+				005170771C5850E700B0DEEC /* Assets.xcassets */,
+				005170791C5850E700B0DEEC /* LaunchScreen.storyboard */,
+				0051707C1C5850E700B0DEEC /* Info.plist */,
+				005170741C5850E700B0DEEC /* Boardster.xcdatamodeld */,
+			);
+			path = Boardster;
+			sourceTree = "<group>";
+		};
+		005170841C5850E700B0DEEC /* BoardsterTests */ = {
+			isa = PBXGroup;
+			children = (
+				005170851C5850E700B0DEEC /* BoardsterTests.swift */,
+				005170871C5850E700B0DEEC /* Info.plist */,
+			);
+			path = BoardsterTests;
+			sourceTree = "<group>";
+		};
+		0051708F1C5850E700B0DEEC /* BoardsterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				005170901C5850E700B0DEEC /* BoardsterUITests.swift */,
+				005170921C5850E700B0DEEC /* Info.plist */,
+			);
+			path = BoardsterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		005170691C5850E700B0DEEC /* Boardster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 005170951C5850E700B0DEEC /* Build configuration list for PBXNativeTarget "Boardster" */;
+			buildPhases = (
+				005170661C5850E700B0DEEC /* Sources */,
+				005170671C5850E700B0DEEC /* Frameworks */,
+				005170681C5850E700B0DEEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Boardster;
+			productName = Boardster;
+			productReference = 0051706A1C5850E700B0DEEC /* Boardster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		005170801C5850E700B0DEEC /* BoardsterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 005170981C5850E700B0DEEC /* Build configuration list for PBXNativeTarget "BoardsterTests" */;
+			buildPhases = (
+				0051707D1C5850E700B0DEEC /* Sources */,
+				0051707E1C5850E700B0DEEC /* Frameworks */,
+				0051707F1C5850E700B0DEEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				005170831C5850E700B0DEEC /* PBXTargetDependency */,
+			);
+			name = BoardsterTests;
+			productName = BoardsterTests;
+			productReference = 005170811C5850E700B0DEEC /* BoardsterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0051708B1C5850E700B0DEEC /* BoardsterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0051709B1C5850E700B0DEEC /* Build configuration list for PBXNativeTarget "BoardsterUITests" */;
+			buildPhases = (
+				005170881C5850E700B0DEEC /* Sources */,
+				005170891C5850E700B0DEEC /* Frameworks */,
+				0051708A1C5850E700B0DEEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0051708E1C5850E700B0DEEC /* PBXTargetDependency */,
+			);
+			name = BoardsterUITests;
+			productName = BoardsterUITests;
+			productReference = 0051708C1C5850E700B0DEEC /* BoardsterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		005170621C5850E700B0DEEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "McCourt Industries";
+				TargetAttributes = {
+					005170691C5850E700B0DEEC = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					005170801C5850E700B0DEEC = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 005170691C5850E700B0DEEC;
+					};
+					0051708B1C5850E700B0DEEC = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 005170691C5850E700B0DEEC;
+					};
+				};
+			};
+			buildConfigurationList = 005170651C5850E700B0DEEC /* Build configuration list for PBXProject "Boardster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 005170611C5850E700B0DEEC;
+			productRefGroup = 0051706B1C5850E700B0DEEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				005170691C5850E700B0DEEC /* Boardster */,
+				005170801C5850E700B0DEEC /* BoardsterTests */,
+				0051708B1C5850E700B0DEEC /* BoardsterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		005170681C5850E700B0DEEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0051707B1C5850E700B0DEEC /* LaunchScreen.storyboard in Resources */,
+				005170781C5850E700B0DEEC /* Assets.xcassets in Resources */,
+				005170731C5850E700B0DEEC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0051707F1C5850E700B0DEEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0051708A1C5850E700B0DEEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		005170661C5850E700B0DEEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				005170761C5850E700B0DEEC /* Boardster.xcdatamodeld in Sources */,
+				005170701C5850E700B0DEEC /* ViewController.swift in Sources */,
+				0051706E1C5850E700B0DEEC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0051707D1C5850E700B0DEEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				005170861C5850E700B0DEEC /* BoardsterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		005170881C5850E700B0DEEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				005170911C5850E700B0DEEC /* BoardsterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		005170831C5850E700B0DEEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 005170691C5850E700B0DEEC /* Boardster */;
+			targetProxy = 005170821C5850E700B0DEEC /* PBXContainerItemProxy */;
+		};
+		0051708E1C5850E700B0DEEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 005170691C5850E700B0DEEC /* Boardster */;
+			targetProxy = 0051708D1C5850E700B0DEEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		005170711C5850E700B0DEEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				005170721C5850E700B0DEEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		005170791C5850E700B0DEEC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0051707A1C5850E700B0DEEC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		005170931C5850E700B0DEEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		005170941C5850E700B0DEEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		005170961C5850E700B0DEEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Boardster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mccourtindustries.Boardster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		005170971C5850E700B0DEEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Boardster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mccourtindustries.Boardster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		005170991C5850E700B0DEEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BoardsterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mccourtindustries.BoardsterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Boardster.app/Boardster";
+			};
+			name = Debug;
+		};
+		0051709A1C5850E700B0DEEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BoardsterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mccourtindustries.BoardsterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Boardster.app/Boardster";
+			};
+			name = Release;
+		};
+		0051709C1C5850E700B0DEEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BoardsterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mccourtindustries.BoardsterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Boardster;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		0051709D1C5850E700B0DEEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BoardsterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mccourtindustries.BoardsterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Boardster;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		005170651C5850E700B0DEEC /* Build configuration list for PBXProject "Boardster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				005170931C5850E700B0DEEC /* Debug */,
+				005170941C5850E700B0DEEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		005170951C5850E700B0DEEC /* Build configuration list for PBXNativeTarget "Boardster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				005170961C5850E700B0DEEC /* Debug */,
+				005170971C5850E700B0DEEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		005170981C5850E700B0DEEC /* Build configuration list for PBXNativeTarget "BoardsterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				005170991C5850E700B0DEEC /* Debug */,
+				0051709A1C5850E700B0DEEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0051709B1C5850E700B0DEEC /* Build configuration list for PBXNativeTarget "BoardsterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0051709C1C5850E700B0DEEC /* Debug */,
+				0051709D1C5850E700B0DEEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		005170741C5850E700B0DEEC /* Boardster.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				005170751C5850E700B0DEEC /* Boardster.xcdatamodel */,
+			);
+			currentVersion = 005170751C5850E700B0DEEC /* Boardster.xcdatamodel */;
+			path = Boardster.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 005170621C5850E700B0DEEC /* Project object */;
+}

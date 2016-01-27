@@ -329,7 +329,7 @@
             </objects>
             <point key="canvasLocation" x="1125" y="1268"/>
         </scene>
-        <!--Locations Tab View Controller-->
+        <!--Boardster-->
         <scene sceneID="Pd2-LQ-tDE">
             <objects>
                 <viewController id="sU4-79-OZI" customClass="LocationsTabViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
@@ -354,7 +354,7 @@
                             <constraint firstItem="BSw-5F-DFl" firstAttribute="centerX" secondItem="Ucs-ek-iLa" secondAttribute="centerX" id="gVu-oY-Sva"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="JG1-C7-jyf">
+                    <navigationItem key="navigationItem" title="Boardster" id="JG1-C7-jyf">
                         <barButtonItem key="leftBarButtonItem" image="BurgerIcon" id="b1n-ag-DQ2">
                             <inset key="imageInsets" minX="-10" minY="10" maxX="0.0" maxY="3"/>
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -368,7 +368,7 @@
             </objects>
             <point key="canvasLocation" x="2189" y="3662"/>
         </scene>
-        <!--Locations Tab View Controller-->
+        <!--Boardster-->
         <scene sceneID="X5o-0L-aSQ">
             <objects>
                 <viewController id="kmr-RL-pWB" customClass="LocationsTabViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
@@ -393,7 +393,7 @@
                             <constraint firstItem="gvm-xF-cde" firstAttribute="centerX" secondItem="tPA-kk-yU1" secondAttribute="centerX" id="h1L-fJ-Lox"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="mro-go-19q">
+                    <navigationItem key="navigationItem" title="Boardster" id="mro-go-19q">
                         <barButtonItem key="leftBarButtonItem" image="BurgerIcon" id="2B1-8x-WgK">
                             <inset key="imageInsets" minX="-10" minY="10" maxX="0.0" maxY="3"/>
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -488,6 +488,6 @@
         <image name="snow-icon-40" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cPz-w5-JWc"/>
+        <segue reference="NC9-nE-6Vf"/>
     </inferredMetricsTieBreakers>
 </document>

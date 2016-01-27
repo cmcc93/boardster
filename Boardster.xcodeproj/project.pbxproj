@@ -15,6 +15,7 @@
 		0051707B1C5850E700B0DEEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005170791C5850E700B0DEEC /* LaunchScreen.storyboard */; };
 		005170861C5850E700B0DEEC /* BoardsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005170851C5850E700B0DEEC /* BoardsterTests.swift */; };
 		005170911C5850E700B0DEEC /* BoardsterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005170901C5850E700B0DEEC /* BoardsterUITests.swift */; };
+		00FF50371C59769200EA8766 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FF50361C59769200EA8766 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,9 @@
 		0051708C1C5850E700B0DEEC /* BoardsterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoardsterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		005170901C5850E700B0DEEC /* BoardsterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardsterUITests.swift; sourceTree = "<group>"; };
 		005170921C5850E700B0DEEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00FF50351C59769200EA8766 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		00FF50361C59769200EA8766 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		00FF50381C5976F800EA8766 /* Boardster-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Boardster-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,9 @@
 				005170791C5850E700B0DEEC /* LaunchScreen.storyboard */,
 				0051707C1C5850E700B0DEEC /* Info.plist */,
 				005170741C5850E700B0DEEC /* Boardster.xcdatamodeld */,
+				00FF50351C59769200EA8766 /* SWRevealViewController.h */,
+				00FF50361C59769200EA8766 /* SWRevealViewController.m */,
+				00FF50381C5976F800EA8766 /* Boardster-Bridging-Header.h */,
 			);
 			path = Boardster;
 			sourceTree = "<group>";
@@ -262,6 +269,7 @@
 				005170761C5850E700B0DEEC /* Boardster.xcdatamodeld in Sources */,
 				005170701C5850E700B0DEEC /* ViewController.swift in Sources */,
 				0051706E1C5850E700B0DEEC /* AppDelegate.swift in Sources */,
+				00FF50371C59769200EA8766 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,10 +411,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Boardster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mccourtindustries.Boardster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Boardster/Boardster-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -414,10 +425,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Boardster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mccourtindustries.Boardster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Boardster/Boardster-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -488,6 +501,7 @@
 				005170971C5850E700B0DEEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		005170981C5850E700B0DEEC /* Build configuration list for PBXNativeTarget "BoardsterTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +510,7 @@
 				0051709A1C5850E700B0DEEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0051709B1C5850E700B0DEEC /* Build configuration list for PBXNativeTarget "BoardsterUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +519,7 @@
 				0051709D1C5850E700B0DEEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

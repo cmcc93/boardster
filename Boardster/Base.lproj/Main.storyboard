@@ -284,7 +284,7 @@
             </objects>
             <point key="canvasLocation" x="1926" y="1268"/>
         </scene>
-        <!--Account View Controller-->
+        <!--Account Information-->
         <scene sceneID="TCv-T4-s5P">
             <objects>
                 <viewController id="7a3-GW-qnd" customClass="AccountViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
@@ -295,21 +295,9 @@
                     <view key="view" contentMode="scaleToFill" id="WFa-Fj-qlm">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOi-d8-bTB">
-                                <rect key="frame" x="268" y="64" width="64" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="cOi-d8-bTB" firstAttribute="centerX" secondItem="WFa-Fj-qlm" secondAttribute="centerX" id="fj5-tz-lx7"/>
-                            <constraint firstItem="cOi-d8-bTB" firstAttribute="top" secondItem="F2B-K3-tuD" secondAttribute="bottom" id="qcf-4g-ZRm"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="JBD-aE-YWi">
+                    <navigationItem key="navigationItem" title="Account Information" id="JBD-aE-YWi">
                         <barButtonItem key="leftBarButtonItem" image="BurgerIcon" id="vVn-TW-Bgh">
                             <inset key="imageInsets" minX="-10" minY="10" maxX="0.0" maxY="3"/>
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>

@@ -1,16 +1,17 @@
 //
-//  AccountViewController.swift
+//  LocationsTabViewController.swift
 //  Boardster
 //
-//  Created by Casey McCourt on 1/22/16.
+//  Created by Casey McCourt on 1/24/16.
 //  Copyright © 2016 McCourt Industries. All rights reserved.
 //
 
 import UIKit
 
-class AccountViewController: UIViewController {
+class LocationsTabViewController: UIViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

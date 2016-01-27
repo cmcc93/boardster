@@ -1,15 +1,15 @@
 //
-//  LocationsTabViewController.swift
+//  ModesTabViewController.swift
 //  Boardster
 //
-//  Created by Casey McCourt on 1/24/16.
+//  Created by Casey McCourt on 1/27/16.
 //  Copyright © 2016 McCourt Industries. All rights reserved.
 //
 
 import UIKit
 
-class LocationsTabViewController: UIViewController {
-    
+class ModesTabViewController: UIViewController {
+
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
     override func viewDidLoad() {
@@ -28,5 +28,5 @@ class LocationsTabViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
 }

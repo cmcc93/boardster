@@ -332,7 +332,7 @@
         <!--Boardster-->
         <scene sceneID="Pd2-LQ-tDE">
             <objects>
-                <viewController id="sU4-79-OZI" customClass="LocationsTabViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sU4-79-OZI" customClass="ModesTabViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="W9o-LU-S6u"/>
                         <viewControllerLayoutGuide type="bottom" id="5eX-1g-Qfv"/>
@@ -361,7 +361,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="menuButton" destination="b1n-ag-DQ2" id="NE7-l3-Tme"/>
+                        <outlet property="menuButton" destination="b1n-ag-DQ2" id="bZV-ox-Xxh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mtM-i1-fMj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -371,7 +371,7 @@
         <!--Boardster-->
         <scene sceneID="X5o-0L-aSQ">
             <objects>
-                <viewController id="kmr-RL-pWB" customClass="LocationsTabViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kmr-RL-pWB" customClass="ModesTabViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KSa-5L-gIM"/>
                         <viewControllerLayoutGuide type="bottom" id="43f-Op-hpj"/>
@@ -400,7 +400,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="menuButton" destination="2B1-8x-WgK" id="kur-F9-gFb"/>
+                        <outlet property="menuButton" destination="2B1-8x-WgK" id="YZe-ic-k9J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yuj-WB-UvY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -488,6 +488,6 @@
         <image name="snow-icon-40" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="NC9-nE-6Vf"/>
+        <segue reference="cPz-w5-JWc"/>
     </inferredMetricsTieBreakers>
 </document>

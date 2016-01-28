@@ -1,15 +1,15 @@
 //
-//  AccountViewController.swift
+//  HelpTableViewController.swift
 //  Boardster
 //
-//  Created by Casey McCourt on 1/22/16.
+//  Created by Casey McCourt on 1/27/16.
 //  Copyright © 2016 McCourt Industries. All rights reserved.
 //
 
 import UIKit
 
-class AccountViewController: UIViewController {
-    
+class HelpTableViewController: UITableViewController {
+
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
     override func viewDidLoad() {
@@ -21,12 +21,6 @@ class AccountViewController: UIViewController {
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
-        // Do any additional setup after loading the view.
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+
 }

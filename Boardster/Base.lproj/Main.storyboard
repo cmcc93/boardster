@@ -282,17 +282,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surfboards-iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="EZ2-rs-4FU">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wave Mode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSw-5F-DFl">
-                                <rect key="frame" x="255" y="289" width="90" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="241" y="289" width="118" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="G9X-sV-zHW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="BSw-5F-DFl" firstAttribute="centerY" secondItem="Ucs-ek-iLa" secondAttribute="centerY" id="bQP-zD-bKu"/>
-                            <constraint firstItem="BSw-5F-DFl" firstAttribute="centerX" secondItem="Ucs-ek-iLa" secondAttribute="centerX" id="gVu-oY-Sva"/>
+                            <constraint firstAttribute="trailing" secondItem="EZ2-rs-4FU" secondAttribute="trailing" id="4ra-gc-8D0"/>
+                            <constraint firstItem="EZ2-rs-4FU" firstAttribute="centerX" secondItem="BSw-5F-DFl" secondAttribute="centerX" id="9kj-jk-Ixw"/>
+                            <constraint firstItem="EZ2-rs-4FU" firstAttribute="top" secondItem="W9o-LU-S6u" secondAttribute="bottom" id="BZ5-Pu-vU3"/>
+                            <constraint firstItem="EZ2-rs-4FU" firstAttribute="leading" secondItem="Ucs-ek-iLa" secondAttribute="leading" id="IoE-2c-W1Q"/>
+                            <constraint firstItem="EZ2-rs-4FU" firstAttribute="bottom" secondItem="5eX-1g-Qfv" secondAttribute="top" id="gnr-Vh-dk4"/>
+                            <constraint firstItem="BSw-5F-DFl" firstAttribute="top" secondItem="W9o-LU-S6u" secondAttribute="bottom" constant="225" id="hpO-mI-EEF"/>
+                            <constraint firstItem="BSw-5F-DFl" firstAttribute="centerY" secondItem="Ucs-ek-iLa" secondAttribute="centerY" id="rfg-PI-ovm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Boardster" id="JG1-C7-jyf">
@@ -312,7 +323,7 @@
         <!--Boardster-->
         <scene sceneID="X5o-0L-aSQ">
             <objects>
-                <viewController id="kmr-RL-pWB" customClass="LocationsTabViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kmr-RL-pWB" customClass="ModesTabViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KSa-5L-gIM"/>
                         <viewControllerLayoutGuide type="bottom" id="43f-Op-hpj"/>
@@ -321,27 +332,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snowboard-wall-iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="nRA-m1-wYP">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snow Mode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvm-xF-cde">
-                                <rect key="frame" x="255" y="289" width="90" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="242" y="289" width="117" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="w5X-pg-9Lj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="gvm-xF-cde" firstAttribute="centerY" secondItem="tPA-kk-yU1" secondAttribute="centerY" id="DId-Sf-Uam"/>
-                            <constraint firstItem="gvm-xF-cde" firstAttribute="centerX" secondItem="tPA-kk-yU1" secondAttribute="centerX" id="h1L-fJ-Lox"/>
+                            <constraint firstAttribute="trailing" secondItem="nRA-m1-wYP" secondAttribute="trailing" id="5Xj-1h-EBo"/>
+                            <constraint firstItem="nRA-m1-wYP" firstAttribute="leading" secondItem="tPA-kk-yU1" secondAttribute="leading" id="PBt-mJ-oSI"/>
+                            <constraint firstItem="gvm-xF-cde" firstAttribute="centerY" secondItem="tPA-kk-yU1" secondAttribute="centerY" id="VBC-ds-Zya"/>
+                            <constraint firstItem="nRA-m1-wYP" firstAttribute="centerX" secondItem="gvm-xF-cde" secondAttribute="centerX" id="ZmQ-Dk-Omm"/>
+                            <constraint firstItem="nRA-m1-wYP" firstAttribute="top" secondItem="KSa-5L-gIM" secondAttribute="bottom" id="d27-Gh-Ziv"/>
+                            <constraint firstItem="nRA-m1-wYP" firstAttribute="bottom" secondItem="43f-Op-hpj" secondAttribute="top" id="rue-g5-XYW"/>
+                            <constraint firstItem="gvm-xF-cde" firstAttribute="top" secondItem="KSa-5L-gIM" secondAttribute="bottom" constant="225" id="sNB-rB-9tV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Boardster" id="mro-go-19q">
                         <barButtonItem key="leftBarButtonItem" image="BurgerIcon" id="2B1-8x-WgK">
                             <inset key="imageInsets" minX="-10" minY="10" maxX="0.0" maxY="3"/>
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="menuButton" destination="2B1-8x-WgK" id="kur-F9-gFb"/>
+                        <outlet property="menuButton" destination="2B1-8x-WgK" id="lZK-ys-0Bp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yuj-WB-UvY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -387,8 +409,8 @@
         <!--Snow Mode-->
         <scene sceneID="XqG-uK-lQ3">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9nx-VY-4Lw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Snow Mode" image="snow-icon-40" id="fzI-Hj-Qd0"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9nx-VY-4Lw" customClass="ModesNavigationController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Snow Mode" image="snow-icon-40" selectedImage="snow-icon-40" id="fzI-Hj-Qd0"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EfF-SX-qHU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -406,8 +428,8 @@
         <!--Wave Mode-->
         <scene sceneID="VKY-WF-szX">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lcg-s1-BIg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Wave Mode" image="WaveIcon-40" id="TW6-rf-7ti"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lcg-s1-BIg" customClass="ModesNavigationController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Wave Mode" image="wave-icon-40" selectedImage="wave-icon-40" id="TW6-rf-7ti"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="f7f-MZ-nEg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -542,8 +564,10 @@
     </scenes>
     <resources>
         <image name="BurgerIcon" width="57" height="57"/>
-        <image name="WaveIcon-40" width="40" height="40"/>
         <image name="snow-icon-40" width="40" height="40"/>
+        <image name="snowboard-wall-iTunesArtwork" width="512" height="512"/>
+        <image name="surfboards-iTunesArtwork" width="512" height="512"/>
+        <image name="wave-icon-40" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="8Sf-YR-VKI"/>

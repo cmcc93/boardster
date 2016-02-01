@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "snowboard-wall-Icon-Small-50.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "WaveIcon-40@2x.png",
+      "filename" : "snowboard-wall-Icon-Small-50@2x.png",
       "scale" : "2x"
     },
     {

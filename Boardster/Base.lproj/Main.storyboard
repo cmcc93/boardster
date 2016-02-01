@@ -332,13 +332,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snowboards-iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="cmL-qr-c75">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snowboard-wall-iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="nRA-m1-wYP">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snow Mode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvm-xF-cde">
                                 <rect key="frame" x="242" y="289" width="117" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="117" id="SCJ-Ht-pop"/>
+                                    <constraint firstAttribute="width" constant="117" id="w5X-pg-9Lj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -347,19 +347,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="gvm-xF-cde" firstAttribute="top" secondItem="KSa-5L-gIM" secondAttribute="bottom" constant="225" id="0Nc-1a-iE3"/>
-                            <constraint firstItem="cmL-qr-c75" firstAttribute="centerX" secondItem="gvm-xF-cde" secondAttribute="centerX" id="8NZ-28-1es"/>
-                            <constraint firstAttribute="bottom" secondItem="cmL-qr-c75" secondAttribute="bottom" id="Iqj-j3-eP5"/>
-                            <constraint firstItem="gvm-xF-cde" firstAttribute="centerY" secondItem="cmL-qr-c75" secondAttribute="centerY" id="U6p-m3-IRS"/>
-                            <constraint firstItem="cmL-qr-c75" firstAttribute="top" secondItem="tPA-kk-yU1" secondAttribute="top" id="gVi-Pi-IEz"/>
-                            <constraint firstAttribute="trailing" secondItem="cmL-qr-c75" secondAttribute="trailing" id="pvO-Dg-iGA"/>
-                            <constraint firstItem="cmL-qr-c75" firstAttribute="leading" secondItem="tPA-kk-yU1" secondAttribute="leading" id="ySF-jL-KkY"/>
+                            <constraint firstAttribute="trailing" secondItem="nRA-m1-wYP" secondAttribute="trailing" id="5Xj-1h-EBo"/>
+                            <constraint firstItem="nRA-m1-wYP" firstAttribute="leading" secondItem="tPA-kk-yU1" secondAttribute="leading" id="PBt-mJ-oSI"/>
+                            <constraint firstItem="gvm-xF-cde" firstAttribute="centerY" secondItem="tPA-kk-yU1" secondAttribute="centerY" id="VBC-ds-Zya"/>
+                            <constraint firstItem="nRA-m1-wYP" firstAttribute="centerX" secondItem="gvm-xF-cde" secondAttribute="centerX" id="ZmQ-Dk-Omm"/>
+                            <constraint firstItem="nRA-m1-wYP" firstAttribute="top" secondItem="KSa-5L-gIM" secondAttribute="bottom" id="d27-Gh-Ziv"/>
+                            <constraint firstItem="nRA-m1-wYP" firstAttribute="bottom" secondItem="43f-Op-hpj" secondAttribute="top" id="rue-g5-XYW"/>
+                            <constraint firstItem="gvm-xF-cde" firstAttribute="top" secondItem="KSa-5L-gIM" secondAttribute="bottom" constant="225" id="sNB-rB-9tV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Boardster" id="mro-go-19q">
                         <barButtonItem key="leftBarButtonItem" image="BurgerIcon" id="2B1-8x-WgK">
                             <inset key="imageInsets" minX="-10" minY="10" maxX="0.0" maxY="3"/>
-                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -410,7 +410,7 @@
         <scene sceneID="XqG-uK-lQ3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9nx-VY-4Lw" customClass="ModesNavigationController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Snow Mode" image="snow-icon-40" id="fzI-Hj-Qd0"/>
+                    <tabBarItem key="tabBarItem" title="Snow Mode" image="snow-icon-40" selectedImage="snow-icon-40" id="fzI-Hj-Qd0"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EfF-SX-qHU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -429,7 +429,7 @@
         <scene sceneID="VKY-WF-szX">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lcg-s1-BIg" customClass="ModesNavigationController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Wave Mode" image="WaveIcon-40" id="TW6-rf-7ti"/>
+                    <tabBarItem key="tabBarItem" title="Wave Mode" image="wave-icon-40" selectedImage="wave-icon-40" id="TW6-rf-7ti"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="f7f-MZ-nEg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -564,10 +564,10 @@
     </scenes>
     <resources>
         <image name="BurgerIcon" width="57" height="57"/>
-        <image name="WaveIcon-40" width="40" height="40"/>
         <image name="snow-icon-40" width="40" height="40"/>
-        <image name="snowboards-iTunesArtwork" width="512" height="512"/>
+        <image name="snowboard-wall-iTunesArtwork" width="512" height="512"/>
         <image name="surfboards-iTunesArtwork" width="512" height="512"/>
+        <image name="wave-icon-40" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="8Sf-YR-VKI"/>

@@ -174,35 +174,33 @@
             </objects>
             <point key="canvasLocation" x="359" y="1268"/>
         </scene>
-        <!--Reservations Table View Controller-->
+        <!--Rentals-->
         <scene sceneID="rMS-p8-lxL">
             <objects>
                 <tableViewController id="zl4-Og-NbL" customClass="ReservationsTableViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="wvZ-Pn-jmt">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="35" sectionHeaderHeight="15" sectionFooterHeight="28" id="wvZ-Pn-jmt">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <tabBar key="tableHeaderView" contentMode="scaleToFill" id="IBQ-A1-vBk">
+                            <rect key="frame" x="0.0" y="64" width="600" height="49"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <items>
+                                <tabBarItem title="Active" id="6dI-90-DUw"/>
+                                <tabBarItem title="Upcoming" id="Ml6-wR-rHx"/>
+                                <tabBarItem title="Previous" id="Hch-pz-bhb"/>
+                            </items>
+                        </tabBar>
                         <sections>
                             <tableViewSection id="Ukf-xU-Lya">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Ofv-YA-99t">
-                                        <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="207" id="Ofv-YA-99t">
+                                        <rect key="frame" x="0.0" y="113" width="600" height="207"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ofv-YA-99t" id="UFO-lE-Y2e">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="206"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reservations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kjt-ll-bYk">
-                                                    <rect key="frame" x="251" y="11" width="99" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Kjt-ll-bYk" firstAttribute="centerY" secondItem="UFO-lE-Y2e" secondAttribute="centerY" id="Twm-1d-8NE"/>
-                                                <constraint firstItem="Kjt-ll-bYk" firstAttribute="centerX" secondItem="UFO-lE-Y2e" secondAttribute="centerX" id="bAw-yv-wb7"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -213,7 +211,7 @@
                             <outlet property="delegate" destination="zl4-Og-NbL" id="INc-sI-WVn"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Tn0-z6-oh3">
+                    <navigationItem key="navigationItem" title="Rentals" id="Tn0-z6-oh3">
                         <barButtonItem key="leftBarButtonItem" image="BurgerIcon" id="hSF-Ye-CgH">
                             <inset key="imageInsets" minX="-10" minY="10" maxX="0.0" maxY="3"/>
                             <color key="tintColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -225,7 +223,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ieS-F7-KCk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1926" y="1268"/>
+            <point key="canvasLocation" x="2106" y="1268"/>
         </scene>
         <!--Account Information-->
         <scene sceneID="TCv-T4-s5P">
@@ -252,7 +250,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ri-il-gXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1926" y="2083"/>
+            <point key="canvasLocation" x="2106" y="2247"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yqQ-30-f00">
@@ -270,7 +268,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nwl-P0-xfK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1125" y="1268"/>
+            <point key="canvasLocation" x="1305" y="1268"/>
         </scene>
         <!--Boardster-->
         <scene sceneID="Pd2-LQ-tDE">
@@ -309,7 +307,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mtM-i1-fMj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2789" y="334"/>
+            <point key="canvasLocation" x="2886" y="362"/>
         </scene>
         <!--Boardster-->
         <scene sceneID="X5o-0L-aSQ">
@@ -366,7 +364,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dW8-8u-5Vq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1283" y="-463"/>
+            <point key="canvasLocation" x="1247" y="-75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QuY-43-0BS">
@@ -384,7 +382,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCd-Jh-r2s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1125" y="2083"/>
+            <point key="canvasLocation" x="1233" y="2247"/>
         </scene>
         <!--Snow Mode-->
         <scene sceneID="XqG-uK-lQ3">
@@ -422,7 +420,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QwA-eF-M04" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1977" y="334"/>
+            <point key="canvasLocation" x="2074" y="362"/>
         </scene>
         <!--Contact Usss-->
         <scene sceneID="Vad-tm-wgp">
@@ -521,7 +519,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LAh-Xp-gmj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1937" y="2917"/>
+            <point key="canvasLocation" x="1690" y="3093"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="M0t-gp-QS8">
@@ -539,7 +537,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8cZ-fX-WmA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="553" y="2823"/>
+            <point key="canvasLocation" x="781" y="3093"/>
         </scene>
     </scenes>
     <resources>

@@ -14,11 +14,12 @@ class ReservationsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let navbarFont = UIFont(name: "Ubuntu", size: 17) ?? UIFont.systemFontOfSize(17)
-        let barbuttonFont = UIFont(name: "Ubuntu-Light", size: 15) ?? UIFont.systemFontOfSize(15)
+        let barbuttonFont = UIFont(name: "Ubuntu-Light", size: 17) ?? UIFont.systemFontOfSize(17)
         
-        UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName: barbuttonFont, NSForegroundColorAttributeName:UIColor.whiteColor()], forState: UIControlState.Normal)
-//        stackoverflow.com/a/26871348
+        UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName: barbuttonFont], forState: UIControlState.Normal)
+        //        stackoverflow.com/a/26871348
+//        to change font color, add:
+//            NSForegroundColorAttributeName:UIColor.whiteColor()
         
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()

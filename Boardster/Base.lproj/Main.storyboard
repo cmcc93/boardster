@@ -480,9 +480,9 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="WmV-Lh-i6h"/>
-                                <exclude reference="uEH-vF-4CD"/>
                                 <exclude reference="XMR-7P-ABr"/>
                                 <exclude reference="Mhc-JA-Lqa"/>
+                                <exclude reference="uEH-vF-4CD"/>
                             </mask>
                         </variation>
                     </view>

@@ -285,11 +285,32 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surfboards-iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="EZ2-rs-4FU">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icy-dd-pBf">
+                                <rect key="frame" x="569" y="520" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESERVE A SURFBOARD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTp-2e-XNu">
+                                <rect key="frame" x="20" y="487" width="242" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="242" id="u5u-Xj-Yue"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wave Mode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSw-5F-DFl">
                                 <rect key="frame" x="241" y="289" width="118" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="118" id="G9X-sV-zHW"/>
+                                    <constraint firstAttribute="width" constant="118" id="QjS-Hx-lvv"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check availability" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTc-hV-4l0">
+                                <rect key="frame" x="20" y="517" width="157" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -297,13 +318,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="EZ2-rs-4FU" secondAttribute="trailing" id="4ra-gc-8D0"/>
-                            <constraint firstItem="EZ2-rs-4FU" firstAttribute="centerX" secondItem="BSw-5F-DFl" secondAttribute="centerX" id="9kj-jk-Ixw"/>
-                            <constraint firstItem="EZ2-rs-4FU" firstAttribute="top" secondItem="W9o-LU-S6u" secondAttribute="bottom" id="BZ5-Pu-vU3"/>
-                            <constraint firstItem="EZ2-rs-4FU" firstAttribute="leading" secondItem="Ucs-ek-iLa" secondAttribute="leading" id="IoE-2c-W1Q"/>
-                            <constraint firstItem="EZ2-rs-4FU" firstAttribute="bottom" secondItem="5eX-1g-Qfv" secondAttribute="top" id="gnr-Vh-dk4"/>
-                            <constraint firstItem="BSw-5F-DFl" firstAttribute="top" secondItem="W9o-LU-S6u" secondAttribute="bottom" constant="225" id="hpO-mI-EEF"/>
-                            <constraint firstItem="BSw-5F-DFl" firstAttribute="centerY" secondItem="Ucs-ek-iLa" secondAttribute="centerY" id="rfg-PI-ovm"/>
+                            <constraint firstItem="icy-dd-pBf" firstAttribute="trailing" secondItem="Ucs-ek-iLa" secondAttribute="trailingMargin" id="FlQ-5s-dky"/>
+                            <constraint firstItem="5eX-1g-Qfv" firstAttribute="top" secondItem="HTc-hV-4l0" secondAttribute="bottom" constant="10" id="Gdd-x5-7Fj"/>
+                            <constraint firstItem="EZ2-rs-4FU" firstAttribute="leading" secondItem="Ucs-ek-iLa" secondAttribute="leading" id="MHy-0k-QAD"/>
+                            <constraint firstItem="BSw-5F-DFl" firstAttribute="centerY" secondItem="Ucs-ek-iLa" secondAttribute="centerY" id="O7Q-0A-wg7"/>
+                            <constraint firstItem="HTc-hV-4l0" firstAttribute="top" secondItem="DTp-2e-XNu" secondAttribute="bottom" constant="6" id="Tak-Gq-Adr"/>
+                            <constraint firstItem="EZ2-rs-4FU" firstAttribute="centerX" secondItem="BSw-5F-DFl" secondAttribute="centerX" id="VQc-fL-e46"/>
+                            <constraint firstAttribute="trailing" secondItem="EZ2-rs-4FU" secondAttribute="trailing" id="Yeq-m2-CNW"/>
+                            <constraint firstItem="EZ2-rs-4FU" firstAttribute="top" secondItem="W9o-LU-S6u" secondAttribute="bottom" id="k7x-NU-9YQ"/>
+                            <constraint firstItem="DTp-2e-XNu" firstAttribute="leading" secondItem="Ucs-ek-iLa" secondAttribute="leadingMargin" id="k9j-YL-AeJ"/>
+                            <constraint firstItem="DTp-2e-XNu" firstAttribute="leading" secondItem="HTc-hV-4l0" secondAttribute="leading" id="kec-e7-PyH"/>
+                            <constraint firstItem="BSw-5F-DFl" firstAttribute="top" secondItem="W9o-LU-S6u" secondAttribute="bottom" constant="225" id="mx1-gG-vXZ"/>
+                            <constraint firstItem="icy-dd-pBf" firstAttribute="baseline" secondItem="HTc-hV-4l0" secondAttribute="baseline" id="rfu-yZ-h5x"/>
+                            <constraint firstItem="EZ2-rs-4FU" firstAttribute="bottom" secondItem="5eX-1g-Qfv" secondAttribute="top" id="sWz-RS-PDX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Boardster" id="JG1-C7-jyf">
@@ -335,25 +362,43 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snowboard-wall-iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="nRA-m1-wYP">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snow Mode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvm-xF-cde">
-                                <rect key="frame" x="242" y="289" width="117" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="117" id="w5X-pg-9Lj"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check availability" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u37-jT-FqV">
+                                <rect key="frame" x="20" y="519" width="157" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMk-6U-nVn">
+                                <rect key="frame" x="569" y="520" width="11" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="11" id="iRf-wo-1FP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="RESERVE A SNOWBOARD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvm-xF-cde">
+                                <rect key="frame" x="20" y="487" width="281" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="6mm-Za-9Fv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="nRA-m1-wYP" secondAttribute="trailing" id="5Xj-1h-EBo"/>
-                            <constraint firstItem="nRA-m1-wYP" firstAttribute="leading" secondItem="tPA-kk-yU1" secondAttribute="leading" id="PBt-mJ-oSI"/>
-                            <constraint firstItem="gvm-xF-cde" firstAttribute="centerY" secondItem="tPA-kk-yU1" secondAttribute="centerY" id="VBC-ds-Zya"/>
-                            <constraint firstItem="nRA-m1-wYP" firstAttribute="centerX" secondItem="gvm-xF-cde" secondAttribute="centerX" id="ZmQ-Dk-Omm"/>
-                            <constraint firstItem="nRA-m1-wYP" firstAttribute="top" secondItem="KSa-5L-gIM" secondAttribute="bottom" id="d27-Gh-Ziv"/>
-                            <constraint firstItem="nRA-m1-wYP" firstAttribute="bottom" secondItem="43f-Op-hpj" secondAttribute="top" id="rue-g5-XYW"/>
-                            <constraint firstItem="gvm-xF-cde" firstAttribute="top" secondItem="KSa-5L-gIM" secondAttribute="bottom" constant="225" id="sNB-rB-9tV"/>
+                            <constraint firstItem="zMk-6U-nVn" firstAttribute="centerY" secondItem="u37-jT-FqV" secondAttribute="centerY" id="IGf-x7-zQv"/>
+                            <constraint firstItem="nRA-m1-wYP" firstAttribute="bottom" secondItem="43f-Op-hpj" secondAttribute="top" id="PUS-F3-lFw"/>
+                            <constraint firstItem="u37-jT-FqV" firstAttribute="top" secondItem="gvm-xF-cde" secondAttribute="bottom" constant="8" symbolic="YES" id="RlF-qJ-fTf"/>
+                            <constraint firstItem="43f-Op-hpj" firstAttribute="top" secondItem="u37-jT-FqV" secondAttribute="bottom" constant="8" symbolic="YES" id="UZF-vU-sB8"/>
+                            <constraint firstAttribute="trailing" secondItem="nRA-m1-wYP" secondAttribute="trailing" id="WLc-ia-2BI"/>
+                            <constraint firstItem="zMk-6U-nVn" firstAttribute="trailing" secondItem="tPA-kk-yU1" secondAttribute="trailingMargin" id="XwJ-yu-VhF"/>
+                            <constraint firstItem="nRA-m1-wYP" firstAttribute="leading" secondItem="tPA-kk-yU1" secondAttribute="leading" id="lPF-4y-UaX"/>
+                            <constraint firstItem="u37-jT-FqV" firstAttribute="leading" secondItem="gvm-xF-cde" secondAttribute="leading" id="nag-lf-x3c"/>
+                            <constraint firstItem="nRA-m1-wYP" firstAttribute="top" secondItem="KSa-5L-gIM" secondAttribute="bottom" id="tzx-6R-J30"/>
+                            <constraint firstItem="gvm-xF-cde" firstAttribute="leading" secondItem="tPA-kk-yU1" secondAttribute="leadingMargin" id="vpD-oa-M8J"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Boardster" id="mro-go-19q">
@@ -572,4 +617,5 @@
     <inferredMetricsTieBreakers>
         <segue reference="8Sf-YR-VKI"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

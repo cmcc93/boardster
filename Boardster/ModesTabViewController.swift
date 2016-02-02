@@ -12,6 +12,11 @@ class ModesTabViewController: UIViewController {
 
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
+    
+    @IBAction func snowboardHometoLocationsSegue(sender: UIButton) {
+        performSegueWithIdentifier("snowboardHometoSnowboardLocations", sender: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

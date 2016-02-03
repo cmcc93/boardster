@@ -533,6 +533,9 @@
                                 <state key="normal" title="San Francisco" backgroundImage="san-francisco">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="sanFranciscoToSnowboardsTable:" destination="zpH-wd-rAp" eventType="touchUpInside" id="SZw-G8-ufk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zo7-LO-KOg">
                                 <rect key="frame" x="151" y="333" width="298" height="177"/>
@@ -540,6 +543,9 @@
                                 <state key="normal" title="Los Angeles" backgroundImage="los-angeles">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="losAngelesToSnowboardsTable:" destination="zpH-wd-rAp" eventType="touchUpInside" id="Br9-vo-bWM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -564,10 +570,60 @@
                         </variation>
                     </view>
                     <toolbarItems/>
+                    <connections>
+                        <segue destination="cFx-GA-3pn" kind="show" identifier="sanFranciscoToSnowboardsTableSegue" id="egw-j8-gpT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HG5-B6-jsa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3728" y="-16"/>
+        </scene>
+        <!--Snowboard Table View Controller-->
+        <scene sceneID="AT9-4d-zdo">
+            <objects>
+                <tableViewController id="cFx-GA-3pn" customClass="SnowboardTableViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" id="QcV-zW-YPv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xhU-fb-o5k">
+                            <rect key="frame" x="0.0" y="167" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="2AV-du-kFT">
+                                <rect key="frame" x="0.0" y="92" width="600" height="75"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2AV-du-kFT" id="WpV-dA-gwQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLa-DE-pQQ">
+                                            <rect key="frame" x="8" y="26" width="132" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="mLa-DE-pQQ" firstAttribute="leading" secondItem="WpV-dA-gwQ" secondAttribute="leadingMargin" id="8QK-8Q-E2I"/>
+                                        <constraint firstItem="mLa-DE-pQQ" firstAttribute="centerY" secondItem="WpV-dA-gwQ" secondAttribute="centerY" id="pzQ-yi-H6s"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cFx-GA-3pn" id="frY-iD-SNP"/>
+                            <outlet property="delegate" destination="cFx-GA-3pn" id="1eG-kW-A0y"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="brC-vc-HUJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4454" y="-16"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="HVM-RJ-4Oh">

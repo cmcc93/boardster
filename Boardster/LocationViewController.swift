@@ -1,16 +1,24 @@
 //
-//  LocationsTabViewController.swift
+//  LocationViewController.swift
 //  Boardster
 //
-//  Created by Casey McCourt on 1/24/16.
+//  Created by Casey McCourt on 2/5/16.
 //  Copyright © 2016 McCourt Industries. All rights reserved.
 //
 
 import UIKit
 
-class LocationsTabViewController: UIViewController {
+class LocationViewController: UIViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    
+    @IBAction func sanFranciscoToSnoboardsTable(sender: UIButton) {
+        performSegueWithIdentifier("sanFranciscoToSnowboardsTableSegue", sender: nil)
+    }
+    
+    @IBAction func losAngelesToSnowboardsTable(sender: UIButton) {
+        performSegueWithIdentifier("sanFranciscoToSnowboardsTableSegue", sender: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,24 +28,13 @@ class LocationsTabViewController: UIViewController {
             menuButton.action = Selector("revealToggle:")
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

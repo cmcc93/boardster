@@ -606,33 +606,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xhU-fb-o5k">
-                            <rect key="frame" x="0.0" y="167" width="600" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="2AV-du-kFT">
-                                <rect key="frame" x="0.0" y="92" width="600" height="75"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="2AV-du-kFT" customClass="SnowboardTableViewCell" customModule="Boardster" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2AV-du-kFT" id="WpV-dA-gwQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="89"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLa-DE-pQQ">
-                                            <rect key="frame" x="8" y="26" width="132" height="21"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="glyphicons-46-calendar" translatesAutoresizingMaskIntoConstraints="NO" id="cbY-5h-fe0">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="90" id="41T-oW-vHn"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snowboard Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZU-Bj-mkD">
+                                            <rect key="frame" x="98" y="8" width="494" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3K-Dv-aVB" customClass="RatingControl" customModule="Boardster" customModuleProvider="target">
+                                            <rect key="frame" x="98" y="37" width="494" height="44"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="mLa-DE-pQQ" firstAttribute="leading" secondItem="WpV-dA-gwQ" secondAttribute="leadingMargin" id="8QK-8Q-E2I"/>
-                                        <constraint firstItem="mLa-DE-pQQ" firstAttribute="centerY" secondItem="WpV-dA-gwQ" secondAttribute="centerY" id="pzQ-yi-H6s"/>
+                                        <constraint firstItem="cbY-5h-fe0" firstAttribute="leading" secondItem="WpV-dA-gwQ" secondAttribute="leading" id="4Qd-74-sxm"/>
+                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="top" secondItem="vZU-Bj-mkD" secondAttribute="bottom" constant="8" symbolic="YES" id="6TC-c2-QPy"/>
+                                        <constraint firstItem="cbY-5h-fe0" firstAttribute="top" secondItem="WpV-dA-gwQ" secondAttribute="topMargin" constant="-8" id="DAB-wW-a9v"/>
+                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="trailing" secondItem="vZU-Bj-mkD" secondAttribute="trailing" id="GZW-mh-2fK"/>
+                                        <constraint firstItem="cbY-5h-fe0" firstAttribute="top" secondItem="WpV-dA-gwQ" secondAttribute="top" id="Kyb-v1-7wd"/>
+                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="leading" secondItem="vZU-Bj-mkD" secondAttribute="leading" id="NLw-ll-LBy"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="cbY-5h-fe0" secondAttribute="bottom" constant="-9" id="UoU-Vh-yR5"/>
+                                        <constraint firstItem="vZU-Bj-mkD" firstAttribute="leading" secondItem="cbY-5h-fe0" secondAttribute="trailing" constant="8" symbolic="YES" id="dZi-Iw-e0Z"/>
+                                        <constraint firstItem="cbY-5h-fe0" firstAttribute="centerY" secondItem="WpV-dA-gwQ" secondAttribute="centerY" id="lzc-xk-DCE"/>
+                                        <constraint firstItem="vZU-Bj-mkD" firstAttribute="top" secondItem="WpV-dA-gwQ" secondAttribute="topMargin" id="nDj-Z6-coU"/>
+                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="trailing" secondItem="WpV-dA-gwQ" secondAttribute="trailingMargin" id="nF1-eM-OWq"/>
+                                        <constraint firstItem="cbY-5h-fe0" firstAttribute="leading" secondItem="WpV-dA-gwQ" secondAttribute="leadingMargin" constant="-8" id="pD4-5h-EZN"/>
+                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="bottom" secondItem="WpV-dA-gwQ" secondAttribute="bottomMargin" id="zrP-jp-jkR"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <constraints>
+                                    <constraint firstItem="cbY-5h-fe0" firstAttribute="leading" secondItem="2AV-du-kFT" secondAttribute="leading" id="0Gg-3j-KhO"/>
+                                    <constraint firstAttribute="bottom" secondItem="cbY-5h-fe0" secondAttribute="bottom" id="aFI-CH-ldN"/>
+                                    <constraint firstItem="cbY-5h-fe0" firstAttribute="top" secondItem="2AV-du-kFT" secondAttribute="top" id="uUb-aG-gDq"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="nameLabel" destination="vZU-Bj-mkD" id="KZa-WJ-bcI"/>
+                                    <outlet property="photoImageView" destination="cbY-5h-fe0" id="7qV-OG-y3m"/>
+                                    <outlet property="ratingControl" destination="Z3K-Dv-aVB" id="Ig8-2J-h3I"/>
+                                    <outlet property="snowboardNameLabel" destination="vZU-Bj-mkD" id="uLV-QT-BbB"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -974,8 +999,8 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNW-gB-Kev">
-                                <rect key="frame" x="151" y="333" width="298" height="177"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNW-gB-Kev">
+                                <rect key="frame" x="151" y="318" width="298" height="177"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <state key="normal" title="Los Angeles" backgroundImage="los-angeles">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -984,8 +1009,8 @@
                                     <action selector="losAngelesToSnowboardsTable:" destination="XqD-gk-31t" eventType="touchUpInside" id="Zsr-KY-EYl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rmm-IL-HVg">
-                                <rect key="frame" x="151" y="108" width="298" height="177"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rmm-IL-HVg">
+                                <rect key="frame" x="151" y="44" width="298" height="177"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="177" id="8Qp-HN-beQ"/>
@@ -1054,9 +1079,9 @@
         <image name="wave-icon-40" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Knf-FF-twR"/>
-        <segue reference="Lej-Oq-uCy"/>
         <segue reference="egw-j8-gpT"/>
+        <segue reference="Lej-Oq-uCy"/>
+        <segue reference="Knf-FF-twR"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

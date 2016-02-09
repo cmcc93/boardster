@@ -17,11 +17,11 @@
 		005170861C5850E700B0DEEC /* BoardsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005170851C5850E700B0DEEC /* BoardsterTests.swift */; };
 		005170911C5850E700B0DEEC /* BoardsterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005170901C5850E700B0DEEC /* BoardsterUITests.swift */; };
 		00596CD01C5994490054F9F0 /* HelpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00596CCF1C5994490054F9F0 /* HelpTableViewController.swift */; };
+		00988D371C65451700740EB5 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00988D361C65451700740EB5 /* LocationViewController.swift */; };
 		009CB17C1C61660B00D282D1 /* SnowboardLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009CB17B1C61660B00D282D1 /* SnowboardLocationViewController.swift */; };
 		00FF50371C59769200EA8766 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FF50361C59769200EA8766 /* SWRevealViewController.m */; };
 		00FF503A1C59794A00EA8766 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FF50391C59794A00EA8766 /* AccountViewController.swift */; };
 		00FF503C1C5979A400EA8766 /* BoardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FF503B1C5979A400EA8766 /* BoardsViewController.swift */; };
-		00FF503E1C5979D900EA8766 /* LocationsTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FF503D1C5979D900EA8766 /* LocationsTabViewController.swift */; };
 		00FF50401C5979FD00EA8766 /* ReservationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FF503F1C5979FD00EA8766 /* ReservationsTableViewController.swift */; };
 		00FF50421C5983A900EA8766 /* ModesTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FF50411C5983A900EA8766 /* ModesTabViewController.swift */; };
 /* End PBXBuildFile section */
@@ -60,13 +60,13 @@
 		005170901C5850E700B0DEEC /* BoardsterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardsterUITests.swift; sourceTree = "<group>"; };
 		005170921C5850E700B0DEEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00596CCF1C5994490054F9F0 /* HelpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpTableViewController.swift; sourceTree = "<group>"; };
+		00988D361C65451700740EB5 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		009CB17B1C61660B00D282D1 /* SnowboardLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowboardLocationViewController.swift; sourceTree = "<group>"; };
 		00FF50351C59769200EA8766 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		00FF50361C59769200EA8766 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		00FF50381C5976F800EA8766 /* Boardster-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Boardster-Bridging-Header.h"; sourceTree = "<group>"; };
 		00FF50391C59794A00EA8766 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		00FF503B1C5979A400EA8766 /* BoardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardsViewController.swift; sourceTree = "<group>"; };
-		00FF503D1C5979D900EA8766 /* LocationsTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsTabViewController.swift; sourceTree = "<group>"; };
 		00FF503F1C5979FD00EA8766 /* ReservationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationsTableViewController.swift; sourceTree = "<group>"; };
 		00FF50411C5983A900EA8766 /* ModesTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModesTabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,10 +133,10 @@
 				00FF503B1C5979A400EA8766 /* BoardsViewController.swift */,
 				00FF50411C5983A900EA8766 /* ModesTabViewController.swift */,
 				001DA3E21C5F00EA002FB6F2 /* ModesNavigationController.swift */,
-				00FF503D1C5979D900EA8766 /* LocationsTabViewController.swift */,
 				00FF503F1C5979FD00EA8766 /* ReservationsTableViewController.swift */,
 				00596CCF1C5994490054F9F0 /* HelpTableViewController.swift */,
 				00043D7A1C61B12E00181641 /* SnowboardTableViewController.swift */,
+				00988D361C65451700740EB5 /* LocationViewController.swift */,
 			);
 			path = Boardster;
 			sourceTree = "<group>";
@@ -291,12 +291,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				001DA3E31C5F00EA002FB6F2 /* ModesNavigationController.swift in Sources */,
-				00FF503E1C5979D900EA8766 /* LocationsTabViewController.swift in Sources */,
 				005170761C5850E700B0DEEC /* Boardster.xcdatamodeld in Sources */,
 				00FF503A1C59794A00EA8766 /* AccountViewController.swift in Sources */,
 				009CB17C1C61660B00D282D1 /* SnowboardLocationViewController.swift in Sources */,
 				0051706E1C5850E700B0DEEC /* AppDelegate.swift in Sources */,
 				00FF50371C59769200EA8766 /* SWRevealViewController.m in Sources */,
+				00988D371C65451700740EB5 /* LocationViewController.swift in Sources */,
 				00043D7B1C61B12E00181641 /* SnowboardTableViewController.swift in Sources */,
 				00FF50421C5983A900EA8766 /* ModesTabViewController.swift in Sources */,
 				00FF50401C5979FD00EA8766 /* ReservationsTableViewController.swift in Sources */,

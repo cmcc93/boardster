@@ -17,7 +17,7 @@
 
 import UIKit
 
-class SnowboardTableViewCell: UITableViewCell {
+class BoardTableViewCell: UITableViewCell {
     // MARK: Properties
     
     @IBOutlet weak var nameLabel: UILabel!

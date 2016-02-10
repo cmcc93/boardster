@@ -19,7 +19,7 @@
 		00596CD01C5994490054F9F0 /* HelpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00596CCF1C5994490054F9F0 /* HelpTableViewController.swift */; };
 		00988D371C65451700740EB5 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00988D361C65451700740EB5 /* LocationViewController.swift */; };
 		00988D391C6AAC9B00740EB5 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00988D381C6AAC9B00740EB5 /* RatingControl.swift */; };
-		00988D3B1C6AB08200740EB5 /* SnowboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00988D3A1C6AB08200740EB5 /* SnowboardTableViewCell.swift */; };
+		00988D3B1C6AB08200740EB5 /* BoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00988D3A1C6AB08200740EB5 /* BoardTableViewCell.swift */; };
 		00988D3D1C6AB2DB00740EB5 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00988D3C1C6AB2DB00740EB5 /* Board.swift */; };
 		009CB17C1C61660B00D282D1 /* SnowboardLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009CB17B1C61660B00D282D1 /* SnowboardLocationViewController.swift */; };
 		00FF50371C59769200EA8766 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FF50361C59769200EA8766 /* SWRevealViewController.m */; };
@@ -65,7 +65,7 @@
 		00596CCF1C5994490054F9F0 /* HelpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpTableViewController.swift; sourceTree = "<group>"; };
 		00988D361C65451700740EB5 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		00988D381C6AAC9B00740EB5 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
-		00988D3A1C6AB08200740EB5 /* SnowboardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowboardTableViewCell.swift; sourceTree = "<group>"; };
+		00988D3A1C6AB08200740EB5 /* BoardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardTableViewCell.swift; sourceTree = "<group>"; };
 		00988D3C1C6AB2DB00740EB5 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		009CB17B1C61660B00D282D1 /* SnowboardLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowboardLocationViewController.swift; sourceTree = "<group>"; };
 		00FF50351C59769200EA8766 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 				0051706D1C5850E700B0DEEC /* AppDelegate.swift */,
 				00988D3C1C6AB2DB00740EB5 /* Board.swift */,
 				005170711C5850E700B0DEEC /* Main.storyboard */,
-				00988D3A1C6AB08200740EB5 /* SnowboardTableViewCell.swift */,
+				00988D3A1C6AB08200740EB5 /* BoardTableViewCell.swift */,
 				009CB17B1C61660B00D282D1 /* SnowboardLocationViewController.swift */,
 				005170771C5850E700B0DEEC /* Assets.xcassets */,
 				005170791C5850E700B0DEEC /* LaunchScreen.storyboard */,
@@ -311,7 +311,7 @@
 				00FF50421C5983A900EA8766 /* ModesTabViewController.swift in Sources */,
 				00FF50401C5979FD00EA8766 /* ReservationsTableViewController.swift in Sources */,
 				00988D391C6AAC9B00740EB5 /* RatingControl.swift in Sources */,
-				00988D3B1C6AB08200740EB5 /* SnowboardTableViewCell.swift in Sources */,
+				00988D3B1C6AB08200740EB5 /* BoardTableViewCell.swift in Sources */,
 				00FF503C1C5979A400EA8766 /* BoardsViewController.swift in Sources */,
 				00596CD01C5994490054F9F0 /* HelpTableViewController.swift in Sources */,
 			);

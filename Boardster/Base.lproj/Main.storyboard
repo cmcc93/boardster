@@ -607,7 +607,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="2AV-du-kFT" customClass="SnowboardTableViewCell" customModule="Boardster" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="2AV-du-kFT" customClass="BoardTableViewCell" customModule="Boardster" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="600" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2AV-du-kFT" id="WpV-dA-gwQ">
@@ -1068,9 +1068,9 @@
     </scenes>
     <resources>
         <image name="BurgerIcon" width="57" height="57"/>
-        <image name="glyphicons-196-info-sign" width="13" height="13"/>
-        <image name="glyphicons-46-calendar" width="11" height="12"/>
-        <image name="glyphicons-505-alert" width="14" height="11"/>
+        <image name="glyphicons-196-info-sign" width="26" height="26"/>
+        <image name="glyphicons-46-calendar" width="23" height="24"/>
+        <image name="glyphicons-505-alert" width="28" height="23"/>
         <image name="los-angeles" width="960" height="600"/>
         <image name="san-francisco" width="950" height="750"/>
         <image name="snow-icon-40" width="40" height="40"/>

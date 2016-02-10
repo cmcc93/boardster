@@ -665,10 +665,31 @@
                             <outlet property="delegate" destination="cFx-GA-3pn" id="1eG-kW-A0y"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="A0a-VW-w1o" kind="showDetail" identifier="ShowDetail" id="Xa2-ph-7Pb"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="brC-vc-HUJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4454" y="-16"/>
+        </scene>
+        <!--Board View Controller-->
+        <scene sceneID="w1B-CC-nqy">
+            <objects>
+                <viewController id="A0a-VW-w1o" customClass="BoardViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RIF-ao-hiX"/>
+                        <viewControllerLayoutGuide type="bottom" id="jZp-IE-e4w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MJX-SH-F4a">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z9l-la-ak5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5221" y="-16"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="HVM-RJ-4Oh">
@@ -1080,7 +1101,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="egw-j8-gpT"/>
-        <segue reference="CuS-2u-Kos"/>
+        <segue reference="Lej-Oq-uCy"/>
         <segue reference="8Sf-YR-VKI"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

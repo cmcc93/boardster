@@ -590,7 +590,7 @@
             </objects>
             <point key="canvasLocation" x="2931" y="1026"/>
         </scene>
-        <!--Board Table View Controller-->
+        <!--Your Boards-->
         <scene sceneID="AT9-4d-zdo">
             <objects>
                 <tableViewController id="cFx-GA-3pn" customClass="BoardTableViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
@@ -606,7 +606,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="89"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="glyphicons-46-calendar" translatesAutoresizingMaskIntoConstraints="NO" id="cbY-5h-fe0">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="cbY-5h-fe0">
                                             <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="90" id="41T-oW-vHn"/>
@@ -657,15 +657,22 @@
                             <outlet property="delegate" destination="cFx-GA-3pn" id="1eG-kW-A0y"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Your Boards" id="y4f-lR-kxX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="1hD-RX-oL6"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="A0a-VW-w1o" kind="showDetail" identifier="ShowDetail" id="Xa2-ph-7Pb"/>
+                        <segue destination="sxQ-3L-Zo7" kind="presentation" identifier="AddItem" id="Xa2-ph-7Pb"/>
+                        <segue destination="A0a-VW-w1o" kind="showDetail" identifier="ShowDetail" id="jaK-42-yzq"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="brC-vc-HUJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4454" y="-16"/>
         </scene>
-        <!--Board View Controller-->
+        <!--New Board-->
         <scene sceneID="w1B-CC-nqy">
             <objects>
                 <viewController id="A0a-VW-w1o" customClass="BoardViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
@@ -674,7 +681,7 @@
                         <viewControllerLayoutGuide type="bottom" id="jZp-IE-e4w"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="12I-0C-Dgb">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="UGT-BN-wtA">
@@ -709,10 +716,20 @@
                             <constraint firstItem="UGT-BN-wtA" firstAttribute="leading" secondItem="12I-0C-Dgb" secondAttribute="leadingMargin" id="zSp-yZ-8WL"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="New Board" id="ujp-Jg-Coo">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="BZQ-Ld-aY2"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="3qm-g4-YnB"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="P70-B7-VSr" id="2Ij-5N-gSZ"/>
+                        <outlet property="photoImageView" destination="5DO-QR-XcR" id="y4O-eE-Jte"/>
+                        <outlet property="ratingControl" destination="4De-iW-lwn" id="SuX-cc-h8r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z9l-la-ak5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5221" y="-16"/>
+            <point key="canvasLocation" x="6033" y="-16"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="HVM-RJ-4Oh">
@@ -1109,10 +1126,28 @@
             </objects>
             <point key="canvasLocation" x="3740" y="695"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="odg-EO-gwK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sxQ-3L-Zo7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Soc-o2-naQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="A0a-VW-w1o" kind="relationship" relationship="rootViewController" id="HMf-a3-gd0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="78q-vD-gUe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5269" y="666"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BurgerIcon" width="57" height="57"/>
-        <image name="defaultPhoto" width="57" height="57"/>
+        <image name="defaultPhoto" width="1080" height="1080"/>
         <image name="glyphicons-196-info-sign" width="26" height="26"/>
         <image name="glyphicons-46-calendar" width="23" height="24"/>
         <image name="glyphicons-505-alert" width="28" height="23"/>
@@ -1127,6 +1162,7 @@
         <segue reference="egw-j8-gpT"/>
         <segue reference="Lej-Oq-uCy"/>
         <segue reference="8Sf-YR-VKI"/>
+        <segue reference="jaK-42-yzq"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

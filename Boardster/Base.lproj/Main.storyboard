@@ -526,7 +526,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvP-Gq-kba">
-                                <rect key="frame" x="20" y="72" width="560" height="245"/>
+                                <rect key="frame" x="20" y="72" width="560" height="249"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -538,7 +538,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zo7-LO-KOg">
-                                <rect key="frame" x="20" y="327" width="560" height="245"/>
+                                <rect key="frame" x="20" y="331" width="560" height="249"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="245" id="35f-Jn-VGI"/>
                                 </constraints>
@@ -561,7 +561,7 @@
                             <constraint firstItem="zo7-LO-KOg" firstAttribute="trailing" secondItem="1h6-4j-UFL" secondAttribute="trailingMargin" id="cbW-UO-8G8"/>
                             <constraint firstItem="gvP-Gq-kba" firstAttribute="trailing" secondItem="zo7-LO-KOg" secondAttribute="trailing" id="gtI-tf-5fx"/>
                             <constraint firstItem="zo7-LO-KOg" firstAttribute="top" secondItem="gvP-Gq-kba" secondAttribute="bottom" constant="10" id="twS-Xm-YuX"/>
-                            <constraint firstAttribute="bottom" secondItem="zo7-LO-KOg" secondAttribute="bottom" constant="28" id="ufS-CG-ITg"/>
+                            <constraint firstAttribute="bottom" secondItem="zo7-LO-KOg" secondAttribute="bottom" constant="20" symbolic="YES" id="ufS-CG-ITg"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -590,10 +590,10 @@
             </objects>
             <point key="canvasLocation" x="2931" y="1026"/>
         </scene>
-        <!--Snowboard Table View Controller-->
+        <!--Board Table View Controller-->
         <scene sceneID="AT9-4d-zdo">
             <objects>
-                <tableViewController id="cFx-GA-3pn" customClass="SnowboardTableViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="cFx-GA-3pn" customClass="BoardTableViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" id="QcV-zW-YPv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

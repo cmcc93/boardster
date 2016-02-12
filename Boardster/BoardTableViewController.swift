@@ -1,5 +1,5 @@
 //
-//  SnowboardTableViewController.swift
+//  BoardTableViewController.swift
 //  Boardster
 //
 //  Created by Casey McCourt on 2/2/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SnowboardTableViewController: UITableViewController {
+class BoardTableViewController: UITableViewController {
 
     // MARK: Properties
         

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00043D7B1C61B12E00181641 /* SnowboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00043D7A1C61B12E00181641 /* SnowboardTableViewController.swift */; };
+		00043D7B1C61B12E00181641 /* BoardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00043D7A1C61B12E00181641 /* BoardTableViewController.swift */; };
 		001DA3E31C5F00EA002FB6F2 /* ModesNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001DA3E21C5F00EA002FB6F2 /* ModesNavigationController.swift */; };
 		0051706E1C5850E700B0DEEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0051706D1C5850E700B0DEEC /* AppDelegate.swift */; };
 		005170731C5850E700B0DEEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005170711C5850E700B0DEEC /* Main.storyboard */; };
@@ -47,7 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00043D7A1C61B12E00181641 /* SnowboardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowboardTableViewController.swift; sourceTree = "<group>"; };
+		00043D7A1C61B12E00181641 /* BoardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardTableViewController.swift; sourceTree = "<group>"; };
 		001DA3E21C5F00EA002FB6F2 /* ModesNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModesNavigationController.swift; sourceTree = "<group>"; };
 		0051706A1C5850E700B0DEEC /* Boardster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boardster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0051706D1C5850E700B0DEEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 				001DA3E21C5F00EA002FB6F2 /* ModesNavigationController.swift */,
 				00FF503F1C5979FD00EA8766 /* ReservationsTableViewController.swift */,
 				00596CCF1C5994490054F9F0 /* HelpTableViewController.swift */,
-				00043D7A1C61B12E00181641 /* SnowboardTableViewController.swift */,
+				00043D7A1C61B12E00181641 /* BoardTableViewController.swift */,
 				00988D361C65451700740EB5 /* LocationViewController.swift */,
 			);
 			path = Boardster;
@@ -307,7 +307,7 @@
 				0051706E1C5850E700B0DEEC /* AppDelegate.swift in Sources */,
 				00FF50371C59769200EA8766 /* SWRevealViewController.m in Sources */,
 				00988D371C65451700740EB5 /* LocationViewController.swift in Sources */,
-				00043D7B1C61B12E00181641 /* SnowboardTableViewController.swift in Sources */,
+				00043D7B1C61B12E00181641 /* BoardTableViewController.swift in Sources */,
 				00FF50421C5983A900EA8766 /* ModesTabViewController.swift in Sources */,
 				00988D411C6BD85900740EB5 /* BoardViewController.swift in Sources */,
 				00FF50401C5979FD00EA8766 /* ReservationsTableViewController.swift in Sources */,

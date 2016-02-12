@@ -12,7 +12,7 @@ class LocationViewController: UIViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
-    @IBAction func sanFranciscoToSnoboardsTable(sender: UIButton) {
+    @IBAction func sanFranciscoToSnowboardsTable(sender: UIButton) {
         performSegueWithIdentifier("sanFranciscoToSnowboardsTableSegue", sender: nil)
     }
     

@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -528,6 +527,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvP-Gq-kba">
                                 <rect key="frame" x="20" y="72" width="560" height="249"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="249" id="LoC-IB-L0i"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="San Francisco" backgroundImage="san-francisco">
@@ -539,9 +541,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zo7-LO-KOg">
                                 <rect key="frame" x="20" y="331" width="560" height="249"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="245" id="35f-Jn-VGI"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <state key="normal" title="Los Angeles" backgroundImage="los-angeles">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -554,14 +553,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="gvP-Gq-kba" firstAttribute="top" secondItem="twj-ya-bDC" secondAttribute="bottom" constant="8" symbolic="YES" id="2aY-sn-O0N"/>
-                            <constraint firstItem="zo7-LO-KOg" firstAttribute="height" secondItem="gvP-Gq-kba" secondAttribute="height" id="E4f-fY-3Da"/>
-                            <constraint firstItem="gvP-Gq-kba" firstAttribute="leading" secondItem="1h6-4j-UFL" secondAttribute="leadingMargin" id="FNf-Un-Lm7"/>
-                            <constraint firstItem="zo7-LO-KOg" firstAttribute="leading" secondItem="gvP-Gq-kba" secondAttribute="leading" id="IHa-iz-gD9"/>
-                            <constraint firstItem="zo7-LO-KOg" firstAttribute="trailing" secondItem="1h6-4j-UFL" secondAttribute="trailingMargin" id="cbW-UO-8G8"/>
-                            <constraint firstItem="gvP-Gq-kba" firstAttribute="trailing" secondItem="zo7-LO-KOg" secondAttribute="trailing" id="gtI-tf-5fx"/>
-                            <constraint firstItem="zo7-LO-KOg" firstAttribute="top" secondItem="gvP-Gq-kba" secondAttribute="bottom" constant="10" id="twS-Xm-YuX"/>
-                            <constraint firstAttribute="bottom" secondItem="zo7-LO-KOg" secondAttribute="bottom" constant="20" symbolic="YES" id="ufS-CG-ITg"/>
+                            <constraint firstItem="zo7-LO-KOg" firstAttribute="top" secondItem="gvP-Gq-kba" secondAttribute="bottom" constant="10" id="6TT-a4-rAp"/>
+                            <constraint firstItem="gvP-Gq-kba" firstAttribute="leading" secondItem="1h6-4j-UFL" secondAttribute="leadingMargin" id="6ab-YG-mNt"/>
+                            <constraint firstItem="gvP-Gq-kba" firstAttribute="top" secondItem="twj-ya-bDC" secondAttribute="bottom" constant="8" symbolic="YES" id="9O6-Dw-5zg"/>
+                            <constraint firstItem="gvP-Gq-kba" firstAttribute="trailing" secondItem="1h6-4j-UFL" secondAttribute="trailingMargin" id="J2m-pB-q1E"/>
+                            <constraint firstAttribute="bottom" secondItem="zo7-LO-KOg" secondAttribute="bottom" constant="20" symbolic="YES" id="fof-IT-GWd"/>
+                            <constraint firstItem="zo7-LO-KOg" firstAttribute="leading" secondItem="gvP-Gq-kba" secondAttribute="leading" id="vlc-F8-kU4"/>
+                            <constraint firstItem="zo7-LO-KOg" firstAttribute="trailing" secondItem="gvP-Gq-kba" secondAttribute="trailing" id="ywk-N4-bcr"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -599,7 +597,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="2AV-du-kFT" customClass="BoardTableViewCell" customModule="Boardster" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BoardTableViewCell" rowHeight="90" id="2AV-du-kFT" customClass="BoardTableViewCell" customModule="Boardster" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2AV-du-kFT" id="WpV-dA-gwQ">
@@ -684,40 +682,37 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="UGT-BN-wtA">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="UGT-BN-wtA">
                                 <rect key="frame" x="20" y="80" width="560" height="418"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P70-B7-VSr">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P70-B7-VSr">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="5DO-QR-XcR">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="5DO-QR-XcR">
                                         <rect key="frame" x="120" y="42" width="320" height="320"/>
                                         <gestureRecognizers/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="5DO-QR-XcR" secondAttribute="height" multiplier="1:1" id="2WC-oD-Osa"/>
-                                        </constraints>
                                     </imageView>
-                                    <view contentMode="scaleToFill" ambiguous="YES" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="4De-iW-lwn" customClass="RatingControl" customModule="Boardster" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="4De-iW-lwn" customClass="RatingControl" customModule="Boardster" customModuleProvider="target">
                                         <rect key="frame" x="160" y="374" width="240" height="44"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="P70-B7-VSr" secondAttribute="trailing" id="R1e-7R-JPP"/>
-                                    <constraint firstItem="P70-B7-VSr" firstAttribute="leading" secondItem="UGT-BN-wtA" secondAttribute="leading" id="qPw-bc-X3S"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="UGT-BN-wtA" secondAttribute="trailing" id="hBB-oe-JX7"/>
-                            <constraint firstItem="UGT-BN-wtA" firstAttribute="leading" secondItem="12I-0C-Dgb" secondAttribute="leadingMargin" id="zSp-yZ-8WL"/>
+                            <constraint firstItem="UGT-BN-wtA" firstAttribute="leading" secondItem="12I-0C-Dgb" secondAttribute="leadingMargin" id="VYQ-uO-Boa"/>
+                            <constraint firstItem="jZp-IE-e4w" firstAttribute="top" secondItem="UGT-BN-wtA" secondAttribute="bottom" constant="38" id="fOm-kr-lYd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="New Board" id="ujp-Jg-Coo">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="BZQ-Ld-aY2"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="BZQ-Ld-aY2">
+                            <connections>
+                                <action selector="cancel:" destination="A0a-VW-w1o" id="S75-ae-MxJ"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="3qm-g4-YnB"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
@@ -725,11 +720,12 @@
                         <outlet property="nameTextField" destination="P70-B7-VSr" id="2Ij-5N-gSZ"/>
                         <outlet property="photoImageView" destination="5DO-QR-XcR" id="y4O-eE-Jte"/>
                         <outlet property="ratingControl" destination="4De-iW-lwn" id="SuX-cc-h8r"/>
+                        <outlet property="saveButton" destination="3qm-g4-YnB" id="zhd-MM-5Cf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z9l-la-ak5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6033" y="-16"/>
+            <point key="canvasLocation" x="5373" y="-16"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="HVM-RJ-4Oh">
@@ -1142,7 +1138,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="78q-vD-gUe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5269" y="666"/>
+            <point key="canvasLocation" x="4769" y="716"/>
         </scene>
     </scenes>
     <resources>

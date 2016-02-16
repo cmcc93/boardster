@@ -593,172 +593,65 @@
         <scene sceneID="AT9-4d-zdo">
             <objects>
                 <tableViewController id="cFx-GA-3pn" customClass="BoardTableViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" id="QcV-zW-YPv">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" id="QcV-zW-YPv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <sections>
-                            <tableViewSection id="u3B-Br-kBr">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BoardTableViewCell" rowHeight="90" id="2AV-du-kFT" customClass="BoardTableViewCell" customModule="Boardster" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="64" width="600" height="90"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2AV-du-kFT" id="WpV-dA-gwQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="89"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="cbY-5h-fe0">
-                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="90" id="41T-oW-vHn"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snowboard Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZU-Bj-mkD">
-                                                    <rect key="frame" x="98" y="8" width="494" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3K-Dv-aVB" customClass="RatingControl" customModule="Boardster" customModuleProvider="target">
-                                                    <rect key="frame" x="98" y="37" width="494" height="44"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </view>
-                                            </subviews>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BoardTableViewCell" rowHeight="90" id="2AV-du-kFT" customClass="BoardTableViewCell" customModule="Boardster" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2AV-du-kFT" id="WpV-dA-gwQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="89"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="cbY-5h-fe0">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                             <constraints>
-                                                <constraint firstItem="cbY-5h-fe0" firstAttribute="leading" secondItem="WpV-dA-gwQ" secondAttribute="leading" id="4Qd-74-sxm"/>
-                                                <constraint firstItem="Z3K-Dv-aVB" firstAttribute="top" secondItem="vZU-Bj-mkD" secondAttribute="bottom" constant="8" symbolic="YES" id="6TC-c2-QPy"/>
-                                                <constraint firstItem="cbY-5h-fe0" firstAttribute="top" secondItem="WpV-dA-gwQ" secondAttribute="topMargin" constant="-8" id="DAB-wW-a9v"/>
-                                                <constraint firstItem="Z3K-Dv-aVB" firstAttribute="trailing" secondItem="vZU-Bj-mkD" secondAttribute="trailing" id="GZW-mh-2fK"/>
-                                                <constraint firstItem="cbY-5h-fe0" firstAttribute="top" secondItem="WpV-dA-gwQ" secondAttribute="top" id="Kyb-v1-7wd"/>
-                                                <constraint firstItem="Z3K-Dv-aVB" firstAttribute="leading" secondItem="vZU-Bj-mkD" secondAttribute="leading" id="NLw-ll-LBy"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="cbY-5h-fe0" secondAttribute="bottom" constant="-9" id="UoU-Vh-yR5"/>
-                                                <constraint firstItem="vZU-Bj-mkD" firstAttribute="leading" secondItem="cbY-5h-fe0" secondAttribute="trailing" constant="8" symbolic="YES" id="dZi-Iw-e0Z"/>
-                                                <constraint firstItem="cbY-5h-fe0" firstAttribute="centerY" secondItem="WpV-dA-gwQ" secondAttribute="centerY" id="lzc-xk-DCE"/>
-                                                <constraint firstItem="vZU-Bj-mkD" firstAttribute="top" secondItem="WpV-dA-gwQ" secondAttribute="topMargin" id="nDj-Z6-coU"/>
-                                                <constraint firstItem="Z3K-Dv-aVB" firstAttribute="trailing" secondItem="WpV-dA-gwQ" secondAttribute="trailingMargin" id="nF1-eM-OWq"/>
-                                                <constraint firstItem="cbY-5h-fe0" firstAttribute="leading" secondItem="WpV-dA-gwQ" secondAttribute="leadingMargin" constant="-8" id="pD4-5h-EZN"/>
-                                                <constraint firstItem="Z3K-Dv-aVB" firstAttribute="bottom" secondItem="WpV-dA-gwQ" secondAttribute="bottomMargin" id="zrP-jp-jkR"/>
+                                                <constraint firstAttribute="width" constant="90" id="41T-oW-vHn"/>
                                             </constraints>
-                                        </tableViewCellContentView>
-                                        <constraints>
-                                            <constraint firstItem="cbY-5h-fe0" firstAttribute="leading" secondItem="2AV-du-kFT" secondAttribute="leading" id="0Gg-3j-KhO"/>
-                                            <constraint firstAttribute="bottom" secondItem="cbY-5h-fe0" secondAttribute="bottom" id="aFI-CH-ldN"/>
-                                            <constraint firstItem="cbY-5h-fe0" firstAttribute="top" secondItem="2AV-du-kFT" secondAttribute="top" id="uUb-aG-gDq"/>
-                                        </constraints>
-                                        <connections>
-                                            <outlet property="nameLabel" destination="vZU-Bj-mkD" id="KZa-WJ-bcI"/>
-                                            <outlet property="photoImageView" destination="cbY-5h-fe0" id="7qV-OG-y3m"/>
-                                            <outlet property="ratingControl" destination="Z3K-Dv-aVB" id="Ig8-2J-h3I"/>
-                                            <outlet property="snowboardNameLabel" destination="vZU-Bj-mkD" id="uLV-QT-BbB"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BoardTableViewCell" rowHeight="90" id="0lc-9F-Scg" customClass="BoardTableViewCell" customModule="Boardster" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="154" width="600" height="90"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0lc-9F-Scg" id="aHN-2u-dDt">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="89"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="N4w-nq-dIC">
-                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="90" id="fZC-aC-cx0"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snowboard Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usP-BY-loF">
-                                                    <rect key="frame" x="98" y="8" width="494" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wEk-Xm-NVA" customClass="RatingControl" customModule="Boardster" customModuleProvider="target">
-                                                    <rect key="frame" x="98" y="37" width="494" height="44"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </view>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="N4w-nq-dIC" firstAttribute="leading" secondItem="aHN-2u-dDt" secondAttribute="leadingMargin" constant="-8" id="Lcs-4H-nIZ"/>
-                                                <constraint firstItem="wEk-Xm-NVA" firstAttribute="leading" secondItem="usP-BY-loF" secondAttribute="leading" id="Nh2-55-do6"/>
-                                                <constraint firstItem="wEk-Xm-NVA" firstAttribute="top" secondItem="usP-BY-loF" secondAttribute="bottom" constant="8" symbolic="YES" id="Smp-Zw-5jt"/>
-                                                <constraint firstItem="N4w-nq-dIC" firstAttribute="top" secondItem="aHN-2u-dDt" secondAttribute="top" id="TTp-2J-dIk"/>
-                                                <constraint firstItem="wEk-Xm-NVA" firstAttribute="bottom" secondItem="aHN-2u-dDt" secondAttribute="bottomMargin" id="U8w-lp-DiL"/>
-                                                <constraint firstItem="usP-BY-loF" firstAttribute="top" secondItem="aHN-2u-dDt" secondAttribute="topMargin" id="Uet-D3-e4r"/>
-                                                <constraint firstItem="N4w-nq-dIC" firstAttribute="leading" secondItem="aHN-2u-dDt" secondAttribute="leading" id="bi8-de-Vrr"/>
-                                                <constraint firstItem="wEk-Xm-NVA" firstAttribute="trailing" secondItem="aHN-2u-dDt" secondAttribute="trailingMargin" id="cpE-0J-PrO"/>
-                                                <constraint firstItem="N4w-nq-dIC" firstAttribute="top" secondItem="aHN-2u-dDt" secondAttribute="topMargin" constant="-8" id="dVe-zg-mMx"/>
-                                                <constraint firstItem="N4w-nq-dIC" firstAttribute="centerY" secondItem="aHN-2u-dDt" secondAttribute="centerY" id="fSA-yY-3vU"/>
-                                                <constraint firstItem="wEk-Xm-NVA" firstAttribute="trailing" secondItem="usP-BY-loF" secondAttribute="trailing" id="gSE-CT-1do"/>
-                                                <constraint firstItem="usP-BY-loF" firstAttribute="leading" secondItem="N4w-nq-dIC" secondAttribute="trailing" constant="8" symbolic="YES" id="qI5-zM-4eb"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="N4w-nq-dIC" secondAttribute="bottom" constant="-9" id="s1i-5N-biZ"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="N4w-nq-dIC" secondAttribute="bottom" id="Rqa-XT-1aa"/>
-                                            <constraint firstItem="N4w-nq-dIC" firstAttribute="top" secondItem="0lc-9F-Scg" secondAttribute="top" id="fVF-57-4wy"/>
-                                            <constraint firstItem="N4w-nq-dIC" firstAttribute="leading" secondItem="0lc-9F-Scg" secondAttribute="leading" id="jjX-Tb-TQR"/>
-                                        </constraints>
-                                        <connections>
-                                            <outlet property="nameLabel" destination="usP-BY-loF" id="lIW-DL-PZA"/>
-                                            <outlet property="photoImageView" destination="N4w-nq-dIC" id="pjG-vR-ZKl"/>
-                                            <outlet property="ratingControl" destination="wEk-Xm-NVA" id="O32-yQ-M5C"/>
-                                            <outlet property="snowboardNameLabel" destination="usP-BY-loF" id="aXa-fW-OKD"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BoardTableViewCell" rowHeight="90" id="4f2-Mb-BHb" customClass="BoardTableViewCell" customModule="Boardster" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="244" width="600" height="90"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4f2-Mb-BHb" id="0Mu-LE-VY5">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="89"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="6T8-zb-foc">
-                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="90" id="8N7-Uz-EgW"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snowboard Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2y-4v-ljv">
-                                                    <rect key="frame" x="98" y="8" width="494" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="syr-gN-y8I" customClass="RatingControl" customModule="Boardster" customModuleProvider="target">
-                                                    <rect key="frame" x="98" y="37" width="494" height="44"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </view>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="6T8-zb-foc" firstAttribute="leading" secondItem="0Mu-LE-VY5" secondAttribute="leading" id="0vN-ap-IBn"/>
-                                                <constraint firstItem="syr-gN-y8I" firstAttribute="trailing" secondItem="c2y-4v-ljv" secondAttribute="trailing" id="9YQ-HS-jbE"/>
-                                                <constraint firstItem="6T8-zb-foc" firstAttribute="top" secondItem="0Mu-LE-VY5" secondAttribute="topMargin" constant="-8" id="CAB-po-bF2"/>
-                                                <constraint firstItem="syr-gN-y8I" firstAttribute="top" secondItem="c2y-4v-ljv" secondAttribute="bottom" constant="8" symbolic="YES" id="FcM-Sg-Gsb"/>
-                                                <constraint firstItem="c2y-4v-ljv" firstAttribute="leading" secondItem="6T8-zb-foc" secondAttribute="trailing" constant="8" symbolic="YES" id="H1P-jr-Dmz"/>
-                                                <constraint firstItem="c2y-4v-ljv" firstAttribute="top" secondItem="0Mu-LE-VY5" secondAttribute="topMargin" id="N7Y-sF-uxM"/>
-                                                <constraint firstItem="6T8-zb-foc" firstAttribute="centerY" secondItem="0Mu-LE-VY5" secondAttribute="centerY" id="OiJ-FU-Fe4"/>
-                                                <constraint firstItem="syr-gN-y8I" firstAttribute="leading" secondItem="c2y-4v-ljv" secondAttribute="leading" id="SrL-T6-i2L"/>
-                                                <constraint firstItem="6T8-zb-foc" firstAttribute="leading" secondItem="0Mu-LE-VY5" secondAttribute="leadingMargin" constant="-8" id="bk4-EU-n9W"/>
-                                                <constraint firstItem="6T8-zb-foc" firstAttribute="top" secondItem="0Mu-LE-VY5" secondAttribute="top" id="dzF-aa-tiY"/>
-                                                <constraint firstItem="syr-gN-y8I" firstAttribute="trailing" secondItem="0Mu-LE-VY5" secondAttribute="trailingMargin" id="sZb-Oe-xIt"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="6T8-zb-foc" secondAttribute="bottom" constant="-9" id="wfT-Eg-7tF"/>
-                                                <constraint firstItem="syr-gN-y8I" firstAttribute="bottom" secondItem="0Mu-LE-VY5" secondAttribute="bottomMargin" id="xAb-0C-O97"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="6T8-zb-foc" secondAttribute="bottom" id="Kkw-AE-ehE"/>
-                                            <constraint firstItem="6T8-zb-foc" firstAttribute="leading" secondItem="4f2-Mb-BHb" secondAttribute="leading" id="KvB-PI-5D5"/>
-                                            <constraint firstItem="6T8-zb-foc" firstAttribute="top" secondItem="4f2-Mb-BHb" secondAttribute="top" id="Sfz-zq-LtD"/>
-                                        </constraints>
-                                        <connections>
-                                            <outlet property="nameLabel" destination="c2y-4v-ljv" id="i2n-dB-kf4"/>
-                                            <outlet property="photoImageView" destination="6T8-zb-foc" id="gwt-By-590"/>
-                                            <outlet property="ratingControl" destination="syr-gN-y8I" id="Yx5-t3-VV0"/>
-                                            <outlet property="snowboardNameLabel" destination="c2y-4v-ljv" id="eWW-g5-Mv9"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZU-Bj-mkD">
+                                            <rect key="frame" x="98" y="8" width="494" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3K-Dv-aVB" customClass="RatingControl" customModule="Boardster" customModuleProvider="target">
+                                            <rect key="frame" x="98" y="37" width="494" height="44"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="cbY-5h-fe0" firstAttribute="leading" secondItem="WpV-dA-gwQ" secondAttribute="leading" id="4Qd-74-sxm"/>
+                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="top" secondItem="vZU-Bj-mkD" secondAttribute="bottom" constant="8" symbolic="YES" id="6TC-c2-QPy"/>
+                                        <constraint firstItem="cbY-5h-fe0" firstAttribute="top" secondItem="WpV-dA-gwQ" secondAttribute="topMargin" constant="-8" id="DAB-wW-a9v"/>
+                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="trailing" secondItem="vZU-Bj-mkD" secondAttribute="trailing" id="GZW-mh-2fK"/>
+                                        <constraint firstItem="cbY-5h-fe0" firstAttribute="top" secondItem="WpV-dA-gwQ" secondAttribute="top" id="Kyb-v1-7wd"/>
+                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="leading" secondItem="vZU-Bj-mkD" secondAttribute="leading" id="NLw-ll-LBy"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="cbY-5h-fe0" secondAttribute="bottom" constant="-9" id="UoU-Vh-yR5"/>
+                                        <constraint firstItem="vZU-Bj-mkD" firstAttribute="leading" secondItem="cbY-5h-fe0" secondAttribute="trailing" constant="8" symbolic="YES" id="dZi-Iw-e0Z"/>
+                                        <constraint firstItem="cbY-5h-fe0" firstAttribute="centerY" secondItem="WpV-dA-gwQ" secondAttribute="centerY" id="lzc-xk-DCE"/>
+                                        <constraint firstItem="vZU-Bj-mkD" firstAttribute="top" secondItem="WpV-dA-gwQ" secondAttribute="topMargin" id="nDj-Z6-coU"/>
+                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="trailing" secondItem="WpV-dA-gwQ" secondAttribute="trailingMargin" id="nF1-eM-OWq"/>
+                                        <constraint firstItem="cbY-5h-fe0" firstAttribute="leading" secondItem="WpV-dA-gwQ" secondAttribute="leadingMargin" constant="-8" id="pD4-5h-EZN"/>
+                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="bottom" secondItem="WpV-dA-gwQ" secondAttribute="bottomMargin" id="zrP-jp-jkR"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <constraints>
+                                    <constraint firstItem="cbY-5h-fe0" firstAttribute="leading" secondItem="2AV-du-kFT" secondAttribute="leading" id="0Gg-3j-KhO"/>
+                                    <constraint firstAttribute="bottom" secondItem="cbY-5h-fe0" secondAttribute="bottom" id="aFI-CH-ldN"/>
+                                    <constraint firstItem="cbY-5h-fe0" firstAttribute="top" secondItem="2AV-du-kFT" secondAttribute="top" id="uUb-aG-gDq"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="nameLabel" destination="vZU-Bj-mkD" id="KZa-WJ-bcI"/>
+                                    <outlet property="photoImageView" destination="cbY-5h-fe0" id="7qV-OG-y3m"/>
+                                    <outlet property="ratingControl" destination="Z3K-Dv-aVB" id="Ig8-2J-h3I"/>
+                                    <outlet property="snowboardNameLabel" destination="vZU-Bj-mkD" id="uLV-QT-BbB"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="cFx-GA-3pn" id="frY-iD-SNP"/>
                             <outlet property="delegate" destination="cFx-GA-3pn" id="1eG-kW-A0y"/>

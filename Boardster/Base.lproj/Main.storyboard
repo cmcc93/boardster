@@ -440,6 +440,7 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10571120689999999" colorSpace="calibratedRGB"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 <connections>
+                                    <action selector="homeToTable:" destination="kmr-RL-pWB" eventType="touchUpInside" id="P9K-UQ-4TA"/>
                                     <action selector="snowboardHomeToBoardsHome:" destination="kmr-RL-pWB" eventType="touchUpInside" id="heu-ok-bF3"/>
                                     <action selector="snowboardHometoLocationsSegue:" destination="kmr-RL-pWB" eventType="touchUpInside" id="hex-Mh-2Sm"/>
                                 </connections>
@@ -648,6 +649,7 @@
                                     <outlet property="photoImageView" destination="cbY-5h-fe0" id="7qV-OG-y3m"/>
                                     <outlet property="ratingControl" destination="Z3K-Dv-aVB" id="Ig8-2J-h3I"/>
                                     <outlet property="snowboardNameLabel" destination="vZU-Bj-mkD" id="uLV-QT-BbB"/>
+                                    <segue destination="A0a-VW-w1o" kind="showDetail" identifier="ShowDetail" id="YDV-67-bhZ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -659,14 +661,14 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Your Boards" id="y4f-lR-kxX">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="1hD-RX-oL6"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="1hD-RX-oL6">
+                            <connections>
+                                <segue destination="sxQ-3L-Zo7" kind="presentation" identifier="AddItem" id="0sB-Hg-Wsd"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <segue destination="sxQ-3L-Zo7" kind="presentation" identifier="AddItem" id="Xa2-ph-7Pb"/>
-                        <segue destination="A0a-VW-w1o" kind="showDetail" identifier="ShowDetail" id="jaK-42-yzq"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="brC-vc-HUJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -681,13 +683,13 @@
                         <viewControllerLayoutGuide type="bottom" id="jZp-IE-e4w"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="12I-0C-Dgb">
-                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="UGT-BN-wtA">
-                                <rect key="frame" x="20" y="80" width="560" height="418"/>
+                                <rect key="frame" x="20" y="144" width="560" height="418"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P70-B7-VSr">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter board name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P70-B7-VSr">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
@@ -695,6 +697,9 @@
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="5DO-QR-XcR">
                                         <rect key="frame" x="120" y="42" width="320" height="320"/>
                                         <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="OCe-cK-wFA" appends="YES" id="hFc-7a-owd"/>
+                                        </connections>
                                     </imageView>
                                     <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="4De-iW-lwn" customClass="RatingControl" customModule="Boardster" customModuleProvider="target">
                                         <rect key="frame" x="160" y="374" width="240" height="44"/>
@@ -717,11 +722,10 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="3qm-g4-YnB">
                             <connections>
-                                <segue destination="5A3-pj-9pX" kind="unwind" unwindAction="unwindToBoardList:" id="LI9-pd-4UA"/>
+                                <segue destination="5A3-pj-9pX" kind="unwind" unwindAction="unwindToBoardList:" id="TJw-1y-48x"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="nameTextField" destination="P70-B7-VSr" id="2Ij-5N-gSZ"/>
                         <outlet property="photoImageView" destination="5DO-QR-XcR" id="y4O-eE-Jte"/>
@@ -731,8 +735,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z9l-la-ak5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="5A3-pj-9pX" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="OCe-cK-wFA">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="A0a-VW-w1o" id="ySq-tA-3bx"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="5373" y="-16"/>
+            <point key="canvasLocation" x="5525" y="-432"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="HVM-RJ-4Oh">
@@ -1145,7 +1154,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="78q-vD-gUe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4769" y="716"/>
+            <point key="canvasLocation" x="5161" y="320"/>
         </scene>
     </scenes>
     <resources>
@@ -1163,8 +1172,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="nOL-bF-76b"/>
-        <segue reference="8Sf-YR-VKI"/>
-        <segue reference="jaK-42-yzq"/>
+        <segue reference="Knf-FF-twR"/>
+        <segue reference="YDV-67-bhZ"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

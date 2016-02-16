@@ -7,7 +7,7 @@
 //
 
 //
-//  MealTableViewCell.swift
+//  BoardTableViewCell.swift
 //  FoodTracker
 //
 //  Created by Jane Appleseed on 5/27/15.
@@ -26,7 +26,7 @@ class BoardTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+
     }
     
     override func setSelected(selected: Bool, animated: Bool) {

@@ -12,14 +12,18 @@ class ModesTabViewController: UIViewController {
 
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
+    @IBAction func homeToTable(sender: UIButton) {
+        performSegueWithIdentifier("snowboardHometoSnowboardLocations", sender: nil)
+    }
 //    @IBAction func snowboardHometoLocationsSegue(sender: UIButton) {
 //        performSegueWithIdentifier("snowboardHometoSnowboardLocations", sender: nil)
 //    }
-    
-    @IBAction func snowboardHomeToBoardsHome(sender: UIButton) {
-        performSegueWithIdentifier("snowboardHomeToBoardsHome", sender: nil)
-    }
+//    
+//    @IBAction func snowboardHomeToBoardsHome(sender: UIButton) {
+//        performSegueWithIdentifier("snowboardHomeToBoardsHome", sender: nil)
+//    }
 
+    
     
     @IBAction func surfboardHometoLocationsSegue(sender: UIButton) {
         performSegueWithIdentifier("surfboardHometoSurfboardLocations", sender: nil)

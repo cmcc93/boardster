@@ -12,21 +12,19 @@ class ModesTabViewController: UIViewController {
 
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
-    @IBAction func homeToTable(sender: UIButton) {
-        performSegueWithIdentifier("snowboardHometoSnowboardLocations", sender: nil)
+    @IBAction func homeToBoardsSegue(sender: UIButton) {
+        dispatch_async(dispatch_get_main_queue()) {
+            [unowned self] in
+            self.performSegueWithIdentifier("snowboardsToLabel", sender: self)
+        }
     }
-//    @IBAction func snowboardHometoLocationsSegue(sender: UIButton) {
-//        performSegueWithIdentifier("snowboardHometoSnowboardLocations", sender: nil)
-//    }
-//    
-//    @IBAction func snowboardHomeToBoardsHome(sender: UIButton) {
-//        performSegueWithIdentifier("snowboardHomeToBoardsHome", sender: nil)
-//    }
 
+//    @IBAction func surfHometoSurfTableSegue(sender: UIButton) {
+//        self.performSegueWithIdentifier("surfboardsToLabel", sender: nil)
+//    }
     
-    
-    @IBAction func surfboardHometoLocationsSegue(sender: UIButton) {
-        performSegueWithIdentifier("surfboardHometoSurfboardLocations", sender: nil)
+    @IBAction func segue(sender: AnyObject) {
+        self.performSegueWithIdentifier("surfboardsToLabel", sender: nil)
     }
     
     override func viewDidLoad() {

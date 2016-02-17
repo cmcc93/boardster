@@ -13,10 +13,7 @@ class ModesTabViewController: UIViewController {
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
     @IBAction func homeToBoardsSegue(sender: UIButton) {
-        dispatch_async(dispatch_get_main_queue()) {
-            [unowned self] in
-            self.performSegueWithIdentifier("snowboardsToLabel", sender: self)
-        }
+        performSegueWithIdentifier("snowboardsToLabel", sender: self)
     }
 
 //    @IBAction func surfHometoSurfTableSegue(sender: UIButton) {

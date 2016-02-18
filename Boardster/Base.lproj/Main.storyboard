@@ -520,36 +520,6 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2AV-du-kFT" id="WpV-dA-gwQ">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="89"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="cbY-5h-fe0">
-                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="90" id="jRh-z0-6EN"/>
-                                            </constraints>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZU-Bj-mkD">
-                                            <rect key="frame" x="98" y="8" width="494" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3K-Dv-aVB" customClass="RatingControl" customModule="Boardster" customModuleProvider="target">
-                                            <rect key="frame" x="98" y="37" width="494" height="44"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </view>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="cbY-5h-fe0" firstAttribute="leading" secondItem="WpV-dA-gwQ" secondAttribute="leading" id="6pj-1V-zNn"/>
-                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="trailing" secondItem="vZU-Bj-mkD" secondAttribute="trailing" id="9Io-5c-tGs"/>
-                                        <constraint firstItem="vZU-Bj-mkD" firstAttribute="top" secondItem="WpV-dA-gwQ" secondAttribute="topMargin" id="JZu-Dh-q0S"/>
-                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="trailing" secondItem="WpV-dA-gwQ" secondAttribute="trailingMargin" id="Jc8-yU-IHF"/>
-                                        <constraint firstItem="cbY-5h-fe0" firstAttribute="top" secondItem="WpV-dA-gwQ" secondAttribute="top" id="Log-KZ-kL2"/>
-                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="leading" secondItem="cbY-5h-fe0" secondAttribute="trailing" constant="8" symbolic="YES" id="OUk-su-dBp"/>
-                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="bottom" secondItem="WpV-dA-gwQ" secondAttribute="bottomMargin" id="YS9-7r-yWC"/>
-                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="top" secondItem="vZU-Bj-mkD" secondAttribute="bottom" constant="8" symbolic="YES" id="f8z-5w-btx"/>
-                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="leading" secondItem="vZU-Bj-mkD" secondAttribute="leading" id="fvQ-lg-a3a"/>
-                                        <constraint firstItem="cbY-5h-fe0" firstAttribute="centerY" secondItem="WpV-dA-gwQ" secondAttribute="centerY" id="pF1-UW-pIq"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="vZU-Bj-mkD" id="KZa-WJ-bcI"/>

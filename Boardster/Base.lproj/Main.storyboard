@@ -510,12 +510,12 @@
             <objects>
                 <tableViewController id="cFx-GA-3pn" customClass="BoardTableViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" id="QcV-zW-YPv">
-                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BoardTableViewCell" rowHeight="90" id="2AV-du-kFT" customClass="BoardTableViewCell" customModule="Boardster" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="90"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2AV-du-kFT" id="WpV-dA-gwQ">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="89"/>
@@ -564,7 +564,7 @@
                                     <outlet property="nameLabel" destination="vZU-Bj-mkD" id="KZa-WJ-bcI"/>
                                     <outlet property="photoImageView" destination="cbY-5h-fe0" id="7qV-OG-y3m"/>
                                     <outlet property="ratingControl" destination="Z3K-Dv-aVB" id="Ig8-2J-h3I"/>
-                                    <segue destination="A0a-VW-w1o" kind="showDetail" identifier="ShowDetail" id="Lgw-Nl-Fpa"/>
+                                    <segue destination="A0a-VW-w1o" kind="show" identifier="ShowDetail" id="Lgw-Nl-Fpa"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -583,7 +583,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="brC-vc-HUJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -602,7 +601,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="UGT-BN-wtA">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="UGT-BN-wtA">
                                 <rect key="frame" x="20" y="80" width="560" height="418"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter board name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P70-B7-VSr">

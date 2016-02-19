@@ -524,37 +524,47 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="cbY-5h-fe0">
                                             <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="90" id="jRh-z0-6EN"/>
+                                                <constraint firstAttribute="width" constant="90" id="hD5-d7-xrE"/>
+                                                <constraint firstAttribute="width" secondItem="cbY-5h-fe0" secondAttribute="height" multiplier="1:1" id="jTY-Up-0iL"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="hD5-d7-xrE"/>
+                                                </mask>
+                                            </variation>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZU-Bj-mkD">
-                                            <rect key="frame" x="98" y="8" width="494" height="21"/>
+                                            <rect key="frame" x="98" y="8" width="494" height="28"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="28" id="eww-2V-IPL"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3K-Dv-aVB" customClass="RatingControl" customModule="Boardster" customModuleProvider="target">
-                                            <rect key="frame" x="98" y="37" width="494" height="44"/>
+                                            <rect key="frame" x="98" y="44" width="494" height="37"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="cbY-5h-fe0" firstAttribute="leading" secondItem="WpV-dA-gwQ" secondAttribute="leading" id="6pj-1V-zNn"/>
-                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="trailing" secondItem="vZU-Bj-mkD" secondAttribute="trailing" id="9Io-5c-tGs"/>
-                                        <constraint firstItem="vZU-Bj-mkD" firstAttribute="top" secondItem="WpV-dA-gwQ" secondAttribute="topMargin" id="JZu-Dh-q0S"/>
-                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="trailing" secondItem="WpV-dA-gwQ" secondAttribute="trailingMargin" id="Jc8-yU-IHF"/>
-                                        <constraint firstItem="cbY-5h-fe0" firstAttribute="top" secondItem="WpV-dA-gwQ" secondAttribute="top" id="Log-KZ-kL2"/>
-                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="leading" secondItem="cbY-5h-fe0" secondAttribute="trailing" constant="8" symbolic="YES" id="OUk-su-dBp"/>
-                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="bottom" secondItem="WpV-dA-gwQ" secondAttribute="bottomMargin" id="YS9-7r-yWC"/>
-                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="top" secondItem="vZU-Bj-mkD" secondAttribute="bottom" constant="8" symbolic="YES" id="f8z-5w-btx"/>
-                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="leading" secondItem="vZU-Bj-mkD" secondAttribute="leading" id="fvQ-lg-a3a"/>
-                                        <constraint firstItem="cbY-5h-fe0" firstAttribute="centerY" secondItem="WpV-dA-gwQ" secondAttribute="centerY" id="pF1-UW-pIq"/>
+                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="trailing" secondItem="vZU-Bj-mkD" secondAttribute="trailing" id="IfT-cD-hT5"/>
+                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="trailing" secondItem="WpV-dA-gwQ" secondAttribute="trailingMargin" id="NOa-nf-ZFU"/>
+                                        <constraint firstItem="cbY-5h-fe0" firstAttribute="leading" secondItem="WpV-dA-gwQ" secondAttribute="leading" id="QMi-Kk-shd"/>
+                                        <constraint firstItem="vZU-Bj-mkD" firstAttribute="top" secondItem="WpV-dA-gwQ" secondAttribute="topMargin" id="UaW-YJ-gDE"/>
+                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="top" secondItem="vZU-Bj-mkD" secondAttribute="bottom" constant="8" symbolic="YES" id="YBW-9W-ACA"/>
+                                        <constraint firstItem="vZU-Bj-mkD" firstAttribute="leading" secondItem="cbY-5h-fe0" secondAttribute="trailing" constant="8" symbolic="YES" id="aCU-M9-GPj"/>
+                                        <constraint firstItem="cbY-5h-fe0" firstAttribute="centerY" secondItem="WpV-dA-gwQ" secondAttribute="centerY" id="hN0-AL-Q2X"/>
+                                        <constraint firstItem="cbY-5h-fe0" firstAttribute="top" secondItem="WpV-dA-gwQ" secondAttribute="top" id="icI-el-e8a"/>
+                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="bottom" secondItem="WpV-dA-gwQ" secondAttribute="bottomMargin" id="mfb-LH-iyf"/>
+                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="leading" secondItem="vZU-Bj-mkD" secondAttribute="leading" id="pbu-AY-rrw"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="vZU-Bj-mkD" id="KZa-WJ-bcI"/>
                                     <outlet property="photoImageView" destination="cbY-5h-fe0" id="7qV-OG-y3m"/>
                                     <outlet property="ratingControl" destination="Z3K-Dv-aVB" id="Ig8-2J-h3I"/>
+                                    <segue destination="A0a-VW-w1o" kind="show" identifier="ShowDetail" id="Lgw-Nl-Fpa"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -567,16 +577,13 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Your Boards" id="y4f-lR-kxX">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="1hD-RX-oL6">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="sxQ-3L-Zo7" kind="presentation" identifier="AddItem" id="0sB-Hg-Wsd"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <segue destination="A0a-VW-w1o" kind="showDetail" identifier="ShowDetail" id="KG3-YE-aku"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="brC-vc-HUJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -627,7 +634,8 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="P70-B7-VSr" secondAttribute="trailing" id="60L-EH-NpG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="P70-B7-VSr" secondAttribute="trailing" id="6XZ-oz-cSu"/>
@@ -654,11 +662,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="New Board" id="ujp-Jg-Coo">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="BZQ-Ld-aY2">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="cancel:" destination="A0a-VW-w1o" id="S75-ae-MxJ"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="3qm-g4-YnB">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="5A3-pj-9pX" kind="unwind" unwindAction="unwindToBoardList:" id="TJw-1y-48x"/>
                             </connections>
@@ -1047,8 +1057,8 @@
         <image name="wave-icon-40" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Lgw-Nl-Fpa"/>
         <segue reference="8Sf-YR-VKI"/>
-        <segue reference="KG3-YE-aku"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

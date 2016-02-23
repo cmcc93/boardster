@@ -284,7 +284,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surfboards-iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="EZ2-rs-4FU">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESERVE A SURFBOARD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTp-2e-XNu">
                                 <rect key="frame" x="20" y="495" width="235" height="24"/>
@@ -321,7 +321,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="DTp-2e-XNu" secondAttribute="trailing" constant="2" id="2ag-i6-QRm"/>
                             <constraint firstItem="5eX-1g-Qfv" firstAttribute="top" secondItem="6x5-qT-zOZ" secondAttribute="bottom" id="2az-qY-0XY"/>
                             <constraint firstItem="HTc-hV-4l0" firstAttribute="top" secondItem="DTp-2e-XNu" secondAttribute="bottom" constant="8" id="4cd-Dp-olV"/>
-                            <constraint firstItem="EZ2-rs-4FU" firstAttribute="top" secondItem="W9o-LU-S6u" secondAttribute="bottom" id="523-GU-baM"/>
+                            <constraint firstItem="EZ2-rs-4FU" firstAttribute="top" secondItem="W9o-LU-S6u" secondAttribute="bottom" constant="-64" id="523-GU-baM"/>
                             <constraint firstItem="EZ2-rs-4FU" firstAttribute="bottom" secondItem="5eX-1g-Qfv" secondAttribute="top" id="7yw-Rq-jH0"/>
                             <constraint firstItem="DTp-2e-XNu" firstAttribute="baseline" secondItem="HTc-hV-4l0" secondAttribute="baseline" id="9da-Jh-VQA"/>
                             <constraint firstItem="HTc-hV-4l0" firstAttribute="top" secondItem="DTp-2e-XNu" secondAttribute="top" constant="4" id="DNW-JO-HgC"/>
@@ -407,7 +407,7 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="fLF-BQ-FN0"/>
                         <barButtonItem key="leftBarButtonItem" image="BurgerIcon" id="b1n-ag-DQ2">
                             <inset key="imageInsets" minX="-10" minY="10" maxX="0.0" maxY="3"/>
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -496,7 +496,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snowboard-wall-iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="nRA-m1-wYP">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZB-Qv-6tr">
                                 <rect key="frame" x="0.0" y="487" width="600" height="64"/>
@@ -546,7 +546,7 @@
                             <constraint firstItem="t81-c2-fiF" firstAttribute="leading" secondItem="VZB-Qv-6tr" secondAttribute="leading" constant="20" id="sW3-88-pkL"/>
                             <constraint firstItem="QLp-4U-MID" firstAttribute="top" secondItem="t81-c2-fiF" secondAttribute="bottom" id="sZf-Yr-x5R"/>
                             <constraint firstItem="QLp-4U-MID" firstAttribute="leading" secondItem="VZB-Qv-6tr" secondAttribute="leading" constant="20" id="swz-cw-7tA"/>
-                            <constraint firstItem="nRA-m1-wYP" firstAttribute="top" secondItem="KSa-5L-gIM" secondAttribute="bottom" id="tzx-6R-J30"/>
+                            <constraint firstItem="nRA-m1-wYP" firstAttribute="top" secondItem="KSa-5L-gIM" secondAttribute="bottom" constant="-64" id="tzx-6R-J30"/>
                             <constraint firstItem="jY2-1N-LTo" firstAttribute="top" secondItem="KSa-5L-gIM" secondAttribute="bottom" constant="423" id="uEH-vF-4CD"/>
                             <constraint firstItem="QLp-4U-MID" firstAttribute="bottom" secondItem="VZB-Qv-6tr" secondAttribute="bottom" constant="-8" id="yha-9G-WeH"/>
                         </constraints>
@@ -563,7 +563,7 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="UkQ-3s-5nW"/>
                         <barButtonItem key="leftBarButtonItem" image="BurgerIcon" id="2B1-8x-WgK">
                             <inset key="imageInsets" minX="-10" minY="10" maxX="0.0" maxY="3"/>
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -1129,7 +1129,7 @@
         <image name="wave-icon-40" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eg5-uM-mdp"/>
+        <segue reference="TcN-lv-nyP"/>
         <segue reference="Knf-FF-twR"/>
         <segue reference="iQ6-KM-wZZ"/>
     </inferredMetricsTieBreakers>

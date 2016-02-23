@@ -414,6 +414,42 @@
             </objects>
             <point key="canvasLocation" x="2999" y="202"/>
         </scene>
+        <!--Snowboard Location View Controller-->
+        <scene sceneID="tcO-4p-XU5">
+            <objects>
+                <viewController id="LJz-sX-iU7" customClass="SnowboardLocationViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PHz-3m-ZF4"/>
+                        <viewControllerLayoutGuide type="bottom" id="MN5-mf-32F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mKY-fl-1Hb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pek-4T-fXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4057" y="-429"/>
+        </scene>
+        <!--Location View Controller-->
+        <scene sceneID="UGo-bK-pvC">
+            <objects>
+                <viewController id="UkH-Ah-PTu" customClass="LocationViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fOU-w2-O4K"/>
+                        <viewControllerLayoutGuide type="bottom" id="Aud-an-CWo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Vh-Oc-f6V">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="whA-HL-jsE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4227" y="299"/>
+        </scene>
         <!--Boardster-->
         <scene sceneID="X5o-0L-aSQ">
             <objects>
@@ -587,7 +623,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="brC-vc-HUJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5510" y="-477"/>
+            <point key="canvasLocation" x="5962" y="-405"/>
         </scene>
         <!--New Board-->
         <scene sceneID="w1B-CC-nqy">
@@ -689,7 +725,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="6515" y="-730"/>
+            <point key="canvasLocation" x="6967" y="-658"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="HVM-RJ-4Oh">
@@ -1024,7 +1060,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="78q-vD-gUe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6201" y="30"/>
+            <point key="canvasLocation" x="6653" y="102"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Op9-sp-paQ">
@@ -1042,7 +1078,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lG8-Ng-f2P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4698" y="-477"/>
+            <point key="canvasLocation" x="5150" y="-405"/>
         </scene>
     </scenes>
     <resources>
@@ -1057,7 +1093,7 @@
         <image name="wave-icon-40" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Lgw-Nl-Fpa"/>
+        <segue reference="iQ6-KM-wZZ"/>
         <segue reference="8Sf-YR-VKI"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

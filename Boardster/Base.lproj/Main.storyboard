@@ -1138,8 +1138,8 @@
         <image name="wave-icon-40" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eg5-uM-mdp"/>
         <segue reference="Knf-FF-twR"/>
+        <segue reference="eg5-uM-mdp"/>
         <segue reference="iQ6-KM-wZZ"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

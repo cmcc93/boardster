@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O1S-ge-tBn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -284,7 +284,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surfboards-iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="EZ2-rs-4FU">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESERVE A SURFBOARD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTp-2e-XNu">
                                 <rect key="frame" x="20" y="495" width="235" height="24"/>
@@ -308,6 +308,9 @@
                                 <rect key="frame" x="0.0" y="487" width="600" height="64"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10571120689655172" colorSpace="calibratedRGB"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <connections>
+                                    <action selector="surfHomeToTable:" destination="sU4-79-OZI" eventType="touchUpInside" id="53S-cT-ms4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -318,7 +321,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="DTp-2e-XNu" secondAttribute="trailing" constant="2" id="2ag-i6-QRm"/>
                             <constraint firstItem="5eX-1g-Qfv" firstAttribute="top" secondItem="6x5-qT-zOZ" secondAttribute="bottom" id="2az-qY-0XY"/>
                             <constraint firstItem="HTc-hV-4l0" firstAttribute="top" secondItem="DTp-2e-XNu" secondAttribute="bottom" constant="8" id="4cd-Dp-olV"/>
-                            <constraint firstItem="EZ2-rs-4FU" firstAttribute="top" secondItem="W9o-LU-S6u" secondAttribute="bottom" id="523-GU-baM"/>
+                            <constraint firstItem="EZ2-rs-4FU" firstAttribute="top" secondItem="W9o-LU-S6u" secondAttribute="bottom" constant="-64" id="523-GU-baM"/>
                             <constraint firstItem="EZ2-rs-4FU" firstAttribute="bottom" secondItem="5eX-1g-Qfv" secondAttribute="top" id="7yw-Rq-jH0"/>
                             <constraint firstItem="DTp-2e-XNu" firstAttribute="baseline" secondItem="HTc-hV-4l0" secondAttribute="baseline" id="9da-Jh-VQA"/>
                             <constraint firstItem="HTc-hV-4l0" firstAttribute="top" secondItem="DTp-2e-XNu" secondAttribute="top" constant="4" id="DNW-JO-HgC"/>
@@ -401,54 +404,93 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Boardster" id="JG1-C7-jyf">
+                        <barButtonItem key="backBarButtonItem" title=" " id="fLF-BQ-FN0"/>
                         <barButtonItem key="leftBarButtonItem" image="BurgerIcon" id="b1n-ag-DQ2">
                             <inset key="imageInsets" minX="-10" minY="10" maxX="0.0" maxY="3"/>
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="b1n-ag-DQ2" id="bZV-ox-Xxh"/>
+                        <segue destination="zpH-wd-rAp" kind="show" identifier="surfboardsHomeToBoardsTable" id="TcN-lv-nyP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mtM-i1-fMj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2999" y="202"/>
         </scene>
-        <!--Snowboard Location View Controller-->
-        <scene sceneID="tcO-4p-XU5">
+        <!--Snowboard Locations-->
+        <scene sceneID="tDL-rz-xtW">
             <objects>
-                <viewController id="LJz-sX-iU7" customClass="SnowboardLocationViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Snowboard Locations" hidesBottomBarWhenPushed="YES" id="zpH-wd-rAp" customClass="SnowboardLocationViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="PHz-3m-ZF4"/>
-                        <viewControllerLayoutGuide type="bottom" id="MN5-mf-32F"/>
+                        <viewControllerLayoutGuide type="top" id="twj-ya-bDC"/>
+                        <viewControllerLayoutGuide type="bottom" id="NGr-YD-3Sp"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="mKY-fl-1Hb">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="1h6-4j-UFL">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zo7-LO-KOg">
+                                <rect key="frame" x="0.0" y="332" width="600" height="268"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Los Angeles" backgroundImage="los-angeles">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="losangToTable:" destination="zpH-wd-rAp" eventType="touchUpInside" id="9Ui-nV-h3A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvP-Gq-kba">
+                                <rect key="frame" x="0.0" y="64" width="600" height="268"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="268" id="aJK-40-SYb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="San Francisco" backgroundImage="san-francisco">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sanfranToTable:" destination="zpH-wd-rAp" eventType="touchUpInside" id="jFB-WE-Adl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="gvP-Gq-kba" firstAttribute="leading" secondItem="1h6-4j-UFL" secondAttribute="leading" id="9jx-kl-oV3"/>
+                            <constraint firstItem="zo7-LO-KOg" firstAttribute="leading" secondItem="gvP-Gq-kba" secondAttribute="leading" id="EhC-VX-ydQ"/>
+                            <constraint firstItem="zo7-LO-KOg" firstAttribute="bottom" secondItem="NGr-YD-3Sp" secondAttribute="top" id="ORj-kN-8cO"/>
+                            <constraint firstItem="zo7-LO-KOg" firstAttribute="centerX" secondItem="gvP-Gq-kba" secondAttribute="centerX" id="Rol-Hx-p5E"/>
+                            <constraint firstItem="zo7-LO-KOg" firstAttribute="top" secondItem="gvP-Gq-kba" secondAttribute="bottom" id="VcU-89-vMB"/>
+                            <constraint firstItem="gvP-Gq-kba" firstAttribute="trailing" secondItem="zo7-LO-KOg" secondAttribute="trailing" id="W9c-Be-N0h"/>
+                            <constraint firstItem="NGr-YD-3Sp" firstAttribute="top" secondItem="gvP-Gq-kba" secondAttribute="bottom" constant="242" id="YTd-UI-dd7"/>
+                            <constraint firstItem="gvP-Gq-kba" firstAttribute="height" secondItem="zo7-LO-KOg" secondAttribute="height" constant="3" id="a0t-m2-J2n"/>
+                            <constraint firstAttribute="trailing" secondItem="zo7-LO-KOg" secondAttribute="trailing" id="fby-71-QI8"/>
+                            <constraint firstItem="gvP-Gq-kba" firstAttribute="height" secondItem="zo7-LO-KOg" secondAttribute="height" id="swu-x1-P2E"/>
+                            <constraint firstItem="gvP-Gq-kba" firstAttribute="top" secondItem="twj-ya-bDC" secondAttribute="bottom" id="utS-ai-HCO"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="a0t-m2-J2n"/>
+                                <exclude reference="Rol-Hx-p5E"/>
+                                <exclude reference="YTd-UI-dd7"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Locations" id="3ms-dI-PaA"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="O1S-ge-tBn" kind="show" identifier="locationsToTable" id="Und-vA-jl7"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pek-4T-fXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HG5-B6-jsa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4057" y="-429"/>
-        </scene>
-        <!--Location View Controller-->
-        <scene sceneID="UGo-bK-pvC">
-            <objects>
-                <viewController id="UkH-Ah-PTu" customClass="LocationViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fOU-w2-O4K"/>
-                        <viewControllerLayoutGuide type="bottom" id="Aud-an-CWo"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="5Vh-Oc-f6V">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="whA-HL-jsE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4227" y="299"/>
+            <point key="canvasLocation" x="3780" y="-460"/>
         </scene>
         <!--Boardster-->
         <scene sceneID="X5o-0L-aSQ">
@@ -463,14 +505,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snowboard-wall-iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="nRA-m1-wYP">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZB-Qv-6tr">
                                 <rect key="frame" x="0.0" y="487" width="600" height="64"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10571120689999999" colorSpace="calibratedRGB"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 <connections>
-                                    <action selector="homeToTable:" destination="kmr-RL-pWB" eventType="touchUpInside" id="Mr1-C8-0Wh"/>
+                                    <action selector="snowHomeToTable:" destination="kmr-RL-pWB" eventType="touchUpInside" id="hc8-O6-NA8"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESERVE A SNOWBOARD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t81-c2-fiF">
@@ -513,7 +555,7 @@
                             <constraint firstItem="t81-c2-fiF" firstAttribute="leading" secondItem="VZB-Qv-6tr" secondAttribute="leading" constant="20" id="sW3-88-pkL"/>
                             <constraint firstItem="QLp-4U-MID" firstAttribute="top" secondItem="t81-c2-fiF" secondAttribute="bottom" id="sZf-Yr-x5R"/>
                             <constraint firstItem="QLp-4U-MID" firstAttribute="leading" secondItem="VZB-Qv-6tr" secondAttribute="leading" constant="20" id="swz-cw-7tA"/>
-                            <constraint firstItem="nRA-m1-wYP" firstAttribute="top" secondItem="KSa-5L-gIM" secondAttribute="bottom" id="tzx-6R-J30"/>
+                            <constraint firstItem="nRA-m1-wYP" firstAttribute="top" secondItem="KSa-5L-gIM" secondAttribute="bottom" constant="-64" id="tzx-6R-J30"/>
                             <constraint firstItem="jY2-1N-LTo" firstAttribute="top" secondItem="KSa-5L-gIM" secondAttribute="bottom" constant="423" id="uEH-vF-4CD"/>
                             <constraint firstItem="QLp-4U-MID" firstAttribute="bottom" secondItem="VZB-Qv-6tr" secondAttribute="bottom" constant="-8" id="yha-9G-WeH"/>
                         </constraints>
@@ -530,11 +572,12 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="UkQ-3s-5nW"/>
                         <barButtonItem key="leftBarButtonItem" image="BurgerIcon" id="2B1-8x-WgK">
                             <inset key="imageInsets" minX="-10" minY="10" maxX="0.0" maxY="3"/>
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="2B1-8x-WgK" id="lZK-ys-0Bp"/>
+                        <segue destination="zpH-wd-rAp" kind="show" identifier="snowboardsHomeToBoardsTable" id="eg5-uM-mdp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yuj-WB-UvY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -623,7 +666,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="brC-vc-HUJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5962" y="-405"/>
+            <point key="canvasLocation" x="5422" y="-469"/>
         </scene>
         <!--New Board-->
         <scene sceneID="w1B-CC-nqy">
@@ -725,7 +768,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="6967" y="-658"/>
+            <point key="canvasLocation" x="6427" y="-722"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="HVM-RJ-4Oh">
@@ -1060,7 +1103,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="78q-vD-gUe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6653" y="102"/>
+            <point key="canvasLocation" x="6113" y="38"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Op9-sp-paQ">
@@ -1078,7 +1121,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lG8-Ng-f2P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5150" y="-405"/>
+            <point key="canvasLocation" x="4610" y="-460"/>
         </scene>
     </scenes>
     <resources>
@@ -1087,14 +1130,17 @@
         <image name="glyphicons-196-info-sign" width="26" height="26"/>
         <image name="glyphicons-46-calendar" width="23" height="24"/>
         <image name="glyphicons-505-alert" width="28" height="23"/>
+        <image name="los-angeles" width="960" height="600"/>
+        <image name="san-francisco" width="950" height="750"/>
         <image name="snow-icon-40" width="40" height="40"/>
         <image name="snowboard-wall-iTunesArtwork" width="512" height="512"/>
         <image name="surfboards-iTunesArtwork" width="512" height="512"/>
         <image name="wave-icon-40" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="eg5-uM-mdp"/>
+        <segue reference="Knf-FF-twR"/>
         <segue reference="iQ6-KM-wZZ"/>
-        <segue reference="8Sf-YR-VKI"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

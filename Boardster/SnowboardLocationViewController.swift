@@ -9,15 +9,19 @@
 import UIKit
 
 class SnowboardLocationViewController: UIViewController {
-
-    @IBAction func sanFranciscoToSnowboardsTable(sender: UIButton) {
-        performSegueWithIdentifier("sanFranciscoToSnowboardsTableSegue", sender: nil)
+    
+    @IBAction func sanfranToTable(sender: UIButton) {
+        performSegueWithIdentifier("locationsToTable", sender: nil)
+    }
+    
+    @IBAction func losangToTable(sender: UIButton) {
+        performSegueWithIdentifier("locationsToTable", sender: nil)
     }
     
     
-    @IBAction func losAngelesToSnowboardsTable(sender: UIButton) {
-        performSegueWithIdentifier("sanFranciscoToSnowboardsTableSegue", sender: nil)
-    }
+//    @IBAction func surfHomeToTable(sender: UIButton) {
+//        performSegueWithIdentifier("surfboardsHomeToBoardsTable", sender: nil)
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

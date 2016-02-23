@@ -13,7 +13,9 @@ class ModesNavigationController: UINavigationController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-
+        self.navigationBar.tintColor = UIColor.whiteColor()
+        self.navigationBar.barStyle = UIBarStyle.Black
+        self.navigationBar.translucent = true
     }
 
     override func didReceiveMemoryWarning() {

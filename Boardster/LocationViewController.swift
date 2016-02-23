@@ -12,14 +12,6 @@ class LocationViewController: UIViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
-    @IBAction func sanFranciscoToSnowboardsTable(sender: UIButton) {
-        performSegueWithIdentifier("sanFranciscoToSnowboardsTableSegue", sender: nil)
-    }
-    
-    @IBAction func losAngelesToSnowboardsTable(sender: UIButton) {
-        performSegueWithIdentifier("sanFranciscoToSnowboardsTableSegue", sender: nil)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

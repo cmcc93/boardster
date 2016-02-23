@@ -404,6 +404,7 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Boardster" id="JG1-C7-jyf">
+                        <barButtonItem key="backBarButtonItem" title=" " id="fLF-BQ-FN0"/>
                         <barButtonItem key="leftBarButtonItem" image="BurgerIcon" id="b1n-ag-DQ2">
                             <inset key="imageInsets" minX="-10" minY="10" maxX="0.0" maxY="3"/>
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1128,7 +1129,7 @@
         <image name="wave-icon-40" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TcN-lv-nyP"/>
+        <segue reference="eg5-uM-mdp"/>
         <segue reference="Knf-FF-twR"/>
         <segue reference="iQ6-KM-wZZ"/>
     </inferredMetricsTieBreakers>

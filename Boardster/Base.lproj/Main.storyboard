@@ -308,6 +308,9 @@
                                 <rect key="frame" x="0.0" y="487" width="600" height="64"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10571120689655172" colorSpace="calibratedRGB"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <connections>
+                                    <action selector="surfHomeToTable:" destination="sU4-79-OZI" eventType="touchUpInside" id="53S-cT-ms4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -408,6 +411,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="b1n-ag-DQ2" id="bZV-ox-Xxh"/>
+                        <segue destination="zpH-wd-rAp" kind="show" identifier="surfboardsHomeToBoardsTable" id="TcN-lv-nyP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mtM-i1-fMj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -498,7 +502,7 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10571120689999999" colorSpace="calibratedRGB"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 <connections>
-                                    <action selector="homeToTable:" destination="kmr-RL-pWB" eventType="touchUpInside" id="hLi-oY-JbZ"/>
+                                    <action selector="snowHomeToTable:" destination="kmr-RL-pWB" eventType="touchUpInside" id="hc8-O6-NA8"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESERVE A SNOWBOARD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t81-c2-fiF">
@@ -563,7 +567,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="2B1-8x-WgK" id="lZK-ys-0Bp"/>
-                        <segue destination="zpH-wd-rAp" kind="show" identifier="boardsHomeToBoardsTable" id="eg5-uM-mdp"/>
+                        <segue destination="zpH-wd-rAp" kind="show" identifier="snowboardsHomeToBoardsTable" id="eg5-uM-mdp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yuj-WB-UvY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1124,6 +1128,7 @@
         <image name="wave-icon-40" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="TcN-lv-nyP"/>
         <segue reference="Knf-FF-twR"/>
         <segue reference="iQ6-KM-wZZ"/>
     </inferredMetricsTieBreakers>

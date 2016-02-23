@@ -414,7 +414,6 @@
             </objects>
             <point key="canvasLocation" x="2999" y="202"/>
         </scene>
-        
         <!--Snowboard Locations-->
         <scene sceneID="tDL-rz-xtW">
             <objects>
@@ -427,7 +426,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvP-Gq-kba">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvP-Gq-kba">
                                 <rect key="frame" x="151" y="108" width="298" height="177"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -443,7 +442,7 @@
                                     <action selector="sanFranciscoToSnowboardsTable:" destination="zpH-wd-rAp" eventType="touchUpInside" id="SZw-G8-ufk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zo7-LO-KOg">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zo7-LO-KOg">
                                 <rect key="frame" x="151" y="333" width="298" height="177"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <state key="normal" title="Los Angeles" backgroundImage="los-angeles">
@@ -477,13 +476,10 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Locations" id="3ms-dI-PaA"/>
-                    <connections>
-                        <segue destination="cFx-GA-3pn" kind="show" identifier="sanFranciscoToSnowboardsTableSegue" id="egw-j8-gpT"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HG5-B6-jsa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3716" y="-256"/>
+            <point key="canvasLocation" x="3780" y="-460"/>
         </scene>
         <!--Snowboard Locations-->
         <scene sceneID="ZcF-5P-oca">
@@ -557,12 +553,11 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="menuButton" destination="isn-yO-5lO" id="pY7-KJ-ORQ"/>
-                        <segue destination="cFx-GA-3pn" kind="show" identifier="sanFranciscoToSnowboardsTableSegue" id="3jh-xK-cIR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U8k-f3-EGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3740" y="695"/>
+            <point key="canvasLocation" x="3758" y="255"/>
         </scene>
         <!--Boardster-->
         <scene sceneID="X5o-0L-aSQ">
@@ -1201,14 +1196,16 @@
         <image name="glyphicons-196-info-sign" width="26" height="26"/>
         <image name="glyphicons-46-calendar" width="23" height="24"/>
         <image name="glyphicons-505-alert" width="28" height="23"/>
+        <image name="los-angeles" width="960" height="600"/>
+        <image name="san-francisco" width="950" height="750"/>
         <image name="snow-icon-40" width="40" height="40"/>
         <image name="snowboard-wall-iTunesArtwork" width="512" height="512"/>
         <image name="surfboards-iTunesArtwork" width="512" height="512"/>
         <image name="wave-icon-40" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iQ6-KM-wZZ"/>
         <segue reference="8Sf-YR-VKI"/>
+        <segue reference="iQ6-KM-wZZ"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

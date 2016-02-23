@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NZj-Od-jxB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -433,9 +433,6 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zo7-LO-KOg">
                                 <rect key="frame" x="0.0" y="332" width="600" height="268"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="243" id="FOa-eV-w5f"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <state key="normal" title="Los Angeles" backgroundImage="los-angeles">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -444,6 +441,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvP-Gq-kba">
                                 <rect key="frame" x="0.0" y="64" width="600" height="268"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="268" id="aJK-40-SYb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="San Francisco" backgroundImage="san-francisco">
@@ -454,17 +454,17 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="zo7-LO-KOg" secondAttribute="trailing" id="7G7-ZT-tkd"/>
-                            <constraint firstItem="zo7-LO-KOg" firstAttribute="bottom" secondItem="NGr-YD-3Sp" secondAttribute="top" id="FCi-NJ-Mzk"/>
-                            <constraint firstItem="gvP-Gq-kba" firstAttribute="top" secondItem="twj-ya-bDC" secondAttribute="bottom" id="MJr-WG-GSn"/>
-                            <constraint firstItem="zo7-LO-KOg" firstAttribute="top" secondItem="gvP-Gq-kba" secondAttribute="bottom" id="NI0-IE-cN1"/>
-                            <constraint firstItem="gvP-Gq-kba" firstAttribute="leading" secondItem="1h6-4j-UFL" secondAttribute="leading" id="RQM-UN-apH"/>
+                            <constraint firstItem="gvP-Gq-kba" firstAttribute="leading" secondItem="1h6-4j-UFL" secondAttribute="leading" id="9jx-kl-oV3"/>
+                            <constraint firstItem="zo7-LO-KOg" firstAttribute="leading" secondItem="gvP-Gq-kba" secondAttribute="leading" id="EhC-VX-ydQ"/>
+                            <constraint firstItem="zo7-LO-KOg" firstAttribute="bottom" secondItem="NGr-YD-3Sp" secondAttribute="top" id="ORj-kN-8cO"/>
                             <constraint firstItem="zo7-LO-KOg" firstAttribute="centerX" secondItem="gvP-Gq-kba" secondAttribute="centerX" id="Rol-Hx-p5E"/>
-                            <constraint firstItem="zo7-LO-KOg" firstAttribute="leading" secondItem="gvP-Gq-kba" secondAttribute="leading" id="U3W-fy-u4R"/>
+                            <constraint firstItem="zo7-LO-KOg" firstAttribute="top" secondItem="gvP-Gq-kba" secondAttribute="bottom" id="VcU-89-vMB"/>
+                            <constraint firstItem="gvP-Gq-kba" firstAttribute="trailing" secondItem="zo7-LO-KOg" secondAttribute="trailing" id="W9c-Be-N0h"/>
                             <constraint firstItem="NGr-YD-3Sp" firstAttribute="top" secondItem="gvP-Gq-kba" secondAttribute="bottom" constant="242" id="YTd-UI-dd7"/>
                             <constraint firstItem="gvP-Gq-kba" firstAttribute="height" secondItem="zo7-LO-KOg" secondAttribute="height" constant="3" id="a0t-m2-J2n"/>
-                            <constraint firstItem="zo7-LO-KOg" firstAttribute="height" secondItem="gvP-Gq-kba" secondAttribute="height" id="kyl-Hi-whS"/>
-                            <constraint firstItem="gvP-Gq-kba" firstAttribute="trailing" secondItem="zo7-LO-KOg" secondAttribute="trailing" id="wb8-QQ-dB6"/>
+                            <constraint firstAttribute="trailing" secondItem="zo7-LO-KOg" secondAttribute="trailing" id="fby-71-QI8"/>
+                            <constraint firstItem="gvP-Gq-kba" firstAttribute="height" secondItem="zo7-LO-KOg" secondAttribute="height" id="swu-x1-P2E"/>
+                            <constraint firstItem="gvP-Gq-kba" firstAttribute="top" secondItem="twj-ya-bDC" secondAttribute="bottom" id="utS-ai-HCO"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">

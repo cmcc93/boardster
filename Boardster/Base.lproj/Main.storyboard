@@ -426,7 +426,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvP-Gq-kba">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvP-Gq-kba">
                                 <rect key="frame" x="151" y="108" width="298" height="177"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -438,19 +438,13 @@
                                 <state key="normal" title="San Francisco" backgroundImage="san-francisco">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="sanFranciscoToSnowboardsTable:" destination="zpH-wd-rAp" eventType="touchUpInside" id="SZw-G8-ufk"/>
-                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zo7-LO-KOg">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zo7-LO-KOg">
                                 <rect key="frame" x="151" y="333" width="298" height="177"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <state key="normal" title="Los Angeles" backgroundImage="los-angeles">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="losAngelesToSnowboardsTable:" destination="zpH-wd-rAp" eventType="touchUpInside" id="Br9-vo-bWM"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -481,84 +475,6 @@
             </objects>
             <point key="canvasLocation" x="3780" y="-460"/>
         </scene>
-        <!--Snowboard Locations-->
-        <scene sceneID="ZcF-5P-oca">
-            <objects>
-                <viewController title="Snowboard Locations" hidesBottomBarWhenPushed="YES" id="XqD-gk-31t" customClass="LocationViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="u4t-5T-wHM"/>
-                        <viewControllerLayoutGuide type="bottom" id="QTX-RD-cOo"/>
-                    </layoutGuides>
-                    <view key="view" opaque="NO" contentMode="scaleToFill" id="FLn-TE-1Zu">
-                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNW-gB-Kev">
-                                <rect key="frame" x="151" y="333" width="298" height="177"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <state key="normal" title="Los Angeles" backgroundImage="los-angeles">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="losAngelesToSnowboardsTable:" destination="XqD-gk-31t" eventType="touchUpInside" id="Zsr-KY-EYl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rmm-IL-HVg">
-                                <rect key="frame" x="151" y="108" width="298" height="177"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="177" id="8Qp-HN-beQ"/>
-                                    <constraint firstAttribute="width" constant="298" id="oOX-Im-5Qg"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="San Francisco" backgroundImage="san-francisco">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="sanFranciscoToSnoboardsTable:" destination="XqD-gk-31t" eventType="touchUpInside" id="Dcu-rT-5QQ"/>
-                                    <action selector="sanFranciscoToSnowboardsTable:" destination="XqD-gk-31t" eventType="touchUpInside" id="l6Q-jT-tdm"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="hNW-gB-Kev" firstAttribute="centerX" secondItem="Rmm-IL-HVg" secondAttribute="centerX" id="74p-hE-pOn"/>
-                            <constraint firstItem="Rmm-IL-HVg" firstAttribute="trailing" secondItem="hNW-gB-Kev" secondAttribute="trailing" id="7yQ-e3-1Xo"/>
-                            <constraint firstItem="QTX-RD-cOo" firstAttribute="top" secondItem="hNW-gB-Kev" secondAttribute="bottom" constant="41" id="Df0-bL-6ye"/>
-                            <constraint firstItem="Rmm-IL-HVg" firstAttribute="centerX" secondItem="FLn-TE-1Zu" secondAttribute="centerX" id="JDF-1M-pDR"/>
-                            <constraint firstItem="Rmm-IL-HVg" firstAttribute="top" secondItem="u4t-5T-wHM" secondAttribute="bottom" constant="44" id="ZSR-Km-pIO"/>
-                            <constraint firstItem="Rmm-IL-HVg" firstAttribute="height" secondItem="hNW-gB-Kev" secondAttribute="height" id="bqe-ZC-3eG"/>
-                            <constraint firstItem="Rmm-IL-HVg" firstAttribute="leading" secondItem="hNW-gB-Kev" secondAttribute="leading" id="erk-KL-G1Y"/>
-                            <constraint firstItem="QTX-RD-cOo" firstAttribute="top" secondItem="Rmm-IL-HVg" secondAttribute="bottom" constant="242" id="kmb-BA-aEK"/>
-                            <constraint firstItem="hNW-gB-Kev" firstAttribute="top" secondItem="Rmm-IL-HVg" secondAttribute="bottom" constant="48" id="sUX-W6-w2d"/>
-                            <constraint firstItem="Rmm-IL-HVg" firstAttribute="width" secondItem="hNW-gB-Kev" secondAttribute="width" id="ywZ-ZZ-wYl"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="74p-hE-pOn"/>
-                                <exclude reference="kmb-BA-aEK"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Locations" id="bOm-eO-RnB">
-                        <barButtonItem key="leftBarButtonItem" image="BurgerIcon" id="isn-yO-5lO">
-                            <inset key="imageInsets" minX="-10" minY="10" maxX="0.0" maxY="3"/>
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="menuButton" destination="isn-yO-5lO" id="pY7-KJ-ORQ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="U8k-f3-EGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3758" y="255"/>
-        </scene>
         <!--Boardster-->
         <scene sceneID="X5o-0L-aSQ">
             <objects>
@@ -580,7 +496,6 @@
                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 <connections>
                                     <action selector="homeToTable:" destination="kmr-RL-pWB" eventType="touchUpInside" id="hLi-oY-JbZ"/>
-                                    <segue destination="zpH-wd-rAp" kind="show" identifier="boardsHomeToBoardsTable" id="Tmi-8v-fGw"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESERVE A SNOWBOARD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t81-c2-fiF">
@@ -645,6 +560,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="2B1-8x-WgK" id="lZK-ys-0Bp"/>
+                        <segue destination="zpH-wd-rAp" kind="show" identifier="boardsHomeToBoardsTable" id="eg5-uM-mdp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yuj-WB-UvY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1205,7 +1121,7 @@
         <image name="wave-icon-40" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8Sf-YR-VKI"/>
+        <segue reference="Knf-FF-twR"/>
         <segue reference="iQ6-KM-wZZ"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

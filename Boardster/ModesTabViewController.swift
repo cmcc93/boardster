@@ -12,7 +12,6 @@ class ModesTabViewController: UIViewController {
 
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
-    
     @IBAction func homeToTable(sender: UIButton) {
         performSegueWithIdentifier("boardsHomeToBoardsTable", sender: nil)
     }

@@ -426,43 +426,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvP-Gq-kba">
-                                <rect key="frame" x="151" y="108" width="298" height="177"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zo7-LO-KOg">
+                                <rect key="frame" x="0.0" y="332" width="600" height="268"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="177" id="BM1-ji-U4Y"/>
-                                    <constraint firstAttribute="width" constant="298" id="ZmY-jS-wNV"/>
+                                    <constraint firstAttribute="height" constant="243" id="FOa-eV-w5f"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Los Angeles" backgroundImage="los-angeles">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvP-Gq-kba">
+                                <rect key="frame" x="0.0" y="64" width="600" height="268"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="San Francisco" backgroundImage="san-francisco">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zo7-LO-KOg">
-                                <rect key="frame" x="151" y="333" width="298" height="177"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <state key="normal" title="Los Angeles" backgroundImage="los-angeles">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="gvP-Gq-kba" firstAttribute="width" secondItem="zo7-LO-KOg" secondAttribute="width" id="3uc-j2-vNM"/>
-                            <constraint firstItem="gvP-Gq-kba" firstAttribute="top" secondItem="twj-ya-bDC" secondAttribute="bottom" constant="44" id="5h5-Rb-WZN"/>
-                            <constraint firstItem="NGr-YD-3Sp" firstAttribute="top" secondItem="zo7-LO-KOg" secondAttribute="bottom" constant="41" id="704-OU-kfn"/>
-                            <constraint firstItem="zo7-LO-KOg" firstAttribute="top" secondItem="gvP-Gq-kba" secondAttribute="bottom" constant="48" id="C4h-bk-Yqt"/>
-                            <constraint firstItem="gvP-Gq-kba" firstAttribute="centerX" secondItem="1h6-4j-UFL" secondAttribute="centerX" id="IEw-pJ-bxH"/>
+                            <constraint firstAttribute="trailing" secondItem="zo7-LO-KOg" secondAttribute="trailing" id="7G7-ZT-tkd"/>
+                            <constraint firstItem="zo7-LO-KOg" firstAttribute="bottom" secondItem="NGr-YD-3Sp" secondAttribute="top" id="FCi-NJ-Mzk"/>
+                            <constraint firstItem="gvP-Gq-kba" firstAttribute="top" secondItem="twj-ya-bDC" secondAttribute="bottom" id="MJr-WG-GSn"/>
+                            <constraint firstItem="zo7-LO-KOg" firstAttribute="top" secondItem="gvP-Gq-kba" secondAttribute="bottom" id="NI0-IE-cN1"/>
+                            <constraint firstItem="gvP-Gq-kba" firstAttribute="leading" secondItem="1h6-4j-UFL" secondAttribute="leading" id="RQM-UN-apH"/>
                             <constraint firstItem="zo7-LO-KOg" firstAttribute="centerX" secondItem="gvP-Gq-kba" secondAttribute="centerX" id="Rol-Hx-p5E"/>
-                            <constraint firstItem="gvP-Gq-kba" firstAttribute="leading" secondItem="zo7-LO-KOg" secondAttribute="leading" id="SFz-gH-IAE"/>
-                            <constraint firstItem="gvP-Gq-kba" firstAttribute="trailing" secondItem="zo7-LO-KOg" secondAttribute="trailing" id="Xfk-kH-dM6"/>
+                            <constraint firstItem="zo7-LO-KOg" firstAttribute="leading" secondItem="gvP-Gq-kba" secondAttribute="leading" id="U3W-fy-u4R"/>
                             <constraint firstItem="NGr-YD-3Sp" firstAttribute="top" secondItem="gvP-Gq-kba" secondAttribute="bottom" constant="242" id="YTd-UI-dd7"/>
-                            <constraint firstItem="gvP-Gq-kba" firstAttribute="height" secondItem="zo7-LO-KOg" secondAttribute="height" id="a0t-m2-J2n"/>
+                            <constraint firstItem="gvP-Gq-kba" firstAttribute="height" secondItem="zo7-LO-KOg" secondAttribute="height" constant="3" id="a0t-m2-J2n"/>
+                            <constraint firstItem="zo7-LO-KOg" firstAttribute="height" secondItem="gvP-Gq-kba" secondAttribute="height" id="kyl-Hi-whS"/>
+                            <constraint firstItem="gvP-Gq-kba" firstAttribute="trailing" secondItem="zo7-LO-KOg" secondAttribute="trailing" id="wb8-QQ-dB6"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="a0t-m2-J2n"/>
                                 <exclude reference="Rol-Hx-p5E"/>
                                 <exclude reference="YTd-UI-dd7"/>
                             </mask>
@@ -470,6 +471,8 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Locations" id="3ms-dI-PaA"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HG5-B6-jsa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

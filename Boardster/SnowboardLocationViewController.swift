@@ -9,7 +9,6 @@
 import UIKit
 
 class SnowboardLocationViewController: UIViewController {
-
     
     override func viewDidLoad() {
         super.viewDidLoad()

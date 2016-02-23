@@ -19,7 +19,8 @@ class BoardTableViewController: UITableViewController {
             
         // Use the edit button item provided by the table view controller.
         navigationItem.leftBarButtonItem = editButtonItem()
-            
+        editButtonItem().tintColor = UIColor.blackColor()
+        
         // Load any saved boards, otherwise load sample data.
         if let savedBoards = loadBoards() {
             boards += savedBoards

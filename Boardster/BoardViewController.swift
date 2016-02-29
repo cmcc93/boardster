@@ -15,6 +15,8 @@ class BoardViewController: UIViewController, UITextFieldDelegate, UIImagePickerC
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
     @IBOutlet weak var saveButton: UIBarButtonItem!
+    @IBOutlet weak var lengthTextField: UITextField!
+    
     /*
     This value is either passed by `BoardTableViewController` in `prepareForSegue(_:sender:)`
     or constructed as part of adding a new board.

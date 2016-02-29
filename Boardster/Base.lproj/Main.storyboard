@@ -814,6 +814,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="lengthTextField" destination="iuM-tq-dz1" id="asF-XQ-Zo7"/>
                         <outlet property="nameTextField" destination="P70-B7-VSr" id="2Ij-5N-gSZ"/>
                         <outlet property="photoImageView" destination="5DO-QR-XcR" id="y4O-eE-Jte"/>
                         <outlet property="ratingControl" destination="4De-iW-lwn" id="SuX-cc-h8r"/>

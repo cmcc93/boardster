@@ -23,6 +23,7 @@ class BoardTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
+    @IBOutlet weak var lengthLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

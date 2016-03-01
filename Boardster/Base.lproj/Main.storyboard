@@ -676,6 +676,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
+                                    <outlet property="lengthLabel" destination="QpM-GX-lg5" id="xI4-ov-ngV"/>
                                     <outlet property="nameLabel" destination="vZU-Bj-mkD" id="KZa-WJ-bcI"/>
                                     <outlet property="photoImageView" destination="cbY-5h-fe0" id="7qV-OG-y3m"/>
                                     <outlet property="ratingControl" destination="Z3K-Dv-aVB" id="Ig8-2J-h3I"/>

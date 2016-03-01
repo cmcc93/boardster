@@ -32,13 +32,13 @@ class BoardTableViewController: UITableViewController {
         
     func loadSampleBoards() {
         let photo1 = UIImage(named: "board1")!
-        let board1 = Board(name: "Caprese Salad", photo: photo1, rating: 4)!
+        let board1 = Board(name: "Caprese Salad", photo: photo1, rating: 4, length: "stuff")!
         
         let photo2 = UIImage(named: "board2")!
-        let board2 = Board(name: "Chicken and Potatoes", photo: photo2, rating: 5)!
+        let board2 = Board(name: "Chicken and Potatoes", photo: photo2, rating: 5, length: "blah")!
         
         let photo3 = UIImage(named: "board3")!
-        let board3 = Board(name: "Pasta with Meatballs", photo: photo3, rating: 3)!
+        let board3 = Board(name: "Pasta with Meatballs", photo: photo3, rating: 3, length: "oihajskfdn")!
         
         boards += [board1, board2, board3]
     }

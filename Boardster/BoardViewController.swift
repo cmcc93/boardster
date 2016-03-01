@@ -28,6 +28,7 @@ class BoardViewController: UIViewController, UITextFieldDelegate, UIImagePickerC
         
         // Handle the text field’s user input through delegate callbacks.
         nameTextField.delegate = self
+        lengthTextField.delegate = self
         
         // Set up views if editing an existing Board.
         if let board = board {
@@ -35,6 +36,7 @@ class BoardViewController: UIViewController, UITextFieldDelegate, UIImagePickerC
             nameTextField.text   = board.name
             photoImageView.image = board.photo
             ratingControl.rating = board.rating
+            lengthTextField.text = board.length
         }
         
         // Enable the Save button only if the text field has a valid Board name.
@@ -102,9 +104,10 @@ class BoardViewController: UIViewController, UITextFieldDelegate, UIImagePickerC
             let name = nameTextField.text ?? ""
             let photo = photoImageView.image
             let rating = ratingControl.rating
+            let length = lengthTextField.text
             
             // Set the board to be passed to BoardListTableViewController after the unwind segue.
-            board = Board(name: name, photo: photo, rating: rating)
+            board = Board(name: name, photo: photo, rating: rating, length: length!)
         }
     }
     

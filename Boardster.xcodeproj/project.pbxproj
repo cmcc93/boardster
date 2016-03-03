@@ -130,11 +130,12 @@
 			isa = PBXGroup;
 			children = (
 				00988D401C6BD85900740EB5 /* BoardViewController.swift */,
+				00988D3A1C6AB08200740EB5 /* BoardTableViewCell.swift */,
+				00043D7A1C61B12E00181641 /* BoardTableViewController.swift */,
+				00988D3C1C6AB2DB00740EB5 /* Board.swift */,
 				00988D381C6AAC9B00740EB5 /* RatingControl.swift */,
 				0051706D1C5850E700B0DEEC /* AppDelegate.swift */,
-				00988D3C1C6AB2DB00740EB5 /* Board.swift */,
 				005170711C5850E700B0DEEC /* Main.storyboard */,
-				00988D3A1C6AB08200740EB5 /* BoardTableViewCell.swift */,
 				009CB17B1C61660B00D282D1 /* SnowboardLocationViewController.swift */,
 				005170771C5850E700B0DEEC /* Assets.xcassets */,
 				005170791C5850E700B0DEEC /* LaunchScreen.storyboard */,
@@ -148,7 +149,6 @@
 				001DA3E21C5F00EA002FB6F2 /* ModesNavigationController.swift */,
 				00FF503F1C5979FD00EA8766 /* ReservationsTableViewController.swift */,
 				00596CCF1C5994490054F9F0 /* HelpTableViewController.swift */,
-				00043D7A1C61B12E00181641 /* BoardTableViewController.swift */,
 				00988D361C65451700740EB5 /* LocationViewController.swift */,
 				00988D421C73EADF00740EB5 /* TrialViewController.swift */,
 				003AFCAF1C73F3890045A7AE /* SecondTrialViewController.swift */,

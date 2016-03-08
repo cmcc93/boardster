@@ -32,7 +32,7 @@ class Board: NSObject, NSCoding {
     
     // MARK: Initialization
     
-    init?(name: String, photo: UIImage?, rating: Int, length: String) {
+    init?(name: String, photo: UIImage?, rating: Int, length: String?) {
         // Initialize stored properties.
         self.name = name
         self.photo = photo
@@ -65,7 +65,7 @@ class Board: NSObject, NSCoding {
         let length = aDecoder.decodeObjectForKey(PropertyKey.lengthKey) as? String
         
         // Must call designated initializer.
-        self.init(name: name, photo: photo, rating: rating, length: length!)
+        self.init(name: name, photo: photo, rating: rating, length: length)
     }
     
 }

@@ -18,6 +18,7 @@
 		005170861C5850E700B0DEEC /* BoardsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005170851C5850E700B0DEEC /* BoardsterTests.swift */; };
 		005170911C5850E700B0DEEC /* BoardsterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005170901C5850E700B0DEEC /* BoardsterUITests.swift */; };
 		00596CD01C5994490054F9F0 /* HelpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00596CCF1C5994490054F9F0 /* HelpTableViewController.swift */; };
+		006160211C8FACFF0050C7DB /* BoardTableViewControllerNonAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006160201C8FACFF0050C7DB /* BoardTableViewControllerNonAdmin.swift */; };
 		00988D371C65451700740EB5 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00988D361C65451700740EB5 /* LocationViewController.swift */; };
 		00988D391C6AAC9B00740EB5 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00988D381C6AAC9B00740EB5 /* RatingControl.swift */; };
 		00988D3B1C6AB08200740EB5 /* BoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00988D3A1C6AB08200740EB5 /* BoardTableViewCell.swift */; };
@@ -66,6 +67,7 @@
 		005170901C5850E700B0DEEC /* BoardsterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardsterUITests.swift; sourceTree = "<group>"; };
 		005170921C5850E700B0DEEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00596CCF1C5994490054F9F0 /* HelpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpTableViewController.swift; sourceTree = "<group>"; };
+		006160201C8FACFF0050C7DB /* BoardTableViewControllerNonAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardTableViewControllerNonAdmin.swift; sourceTree = "<group>"; };
 		00988D361C65451700740EB5 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		00988D381C6AAC9B00740EB5 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		00988D3A1C6AB08200740EB5 /* BoardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardTableViewCell.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				00988D401C6BD85900740EB5 /* BoardViewController.swift */,
 				00988D3A1C6AB08200740EB5 /* BoardTableViewCell.swift */,
 				00043D7A1C61B12E00181641 /* BoardTableViewController.swift */,
+				006160201C8FACFF0050C7DB /* BoardTableViewControllerNonAdmin.swift */,
 				00988D3C1C6AB2DB00740EB5 /* Board.swift */,
 				00988D381C6AAC9B00740EB5 /* RatingControl.swift */,
 				0051706D1C5850E700B0DEEC /* AppDelegate.swift */,
@@ -307,6 +310,7 @@
 			files = (
 				001DA3E31C5F00EA002FB6F2 /* ModesNavigationController.swift in Sources */,
 				005170761C5850E700B0DEEC /* Boardster.xcdatamodeld in Sources */,
+				006160211C8FACFF0050C7DB /* BoardTableViewControllerNonAdmin.swift in Sources */,
 				00988D3D1C6AB2DB00740EB5 /* Board.swift in Sources */,
 				00FF503A1C59794A00EA8766 /* AccountViewController.swift in Sources */,
 				009CB17C1C61660B00D282D1 /* SnowboardLocationViewController.swift in Sources */,

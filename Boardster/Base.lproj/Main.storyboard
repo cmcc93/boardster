@@ -1293,12 +1293,12 @@
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">
-                                            <exclude reference="Grg-Sh-dvU"/>
-                                            <exclude reference="51H-rE-96M"/>
-                                            <exclude reference="dzM-wM-G8b"/>
-                                            <exclude reference="LIP-Bu-zWv"/>
-                                            <exclude reference="zkf-Wy-se5"/>
                                             <exclude reference="0jQ-ta-xue"/>
+                                            <exclude reference="51H-rE-96M"/>
+                                            <exclude reference="Grg-Sh-dvU"/>
+                                            <exclude reference="LIP-Bu-zWv"/>
+                                            <exclude reference="dzM-wM-G8b"/>
+                                            <exclude reference="zkf-Wy-se5"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
@@ -1308,8 +1308,8 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="jJL-Tb-dHa"/>
                                         <exclude reference="U2d-dI-eCL"/>
+                                        <exclude reference="jJL-Tb-dHa"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -1388,7 +1388,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="EwN-OB-Fjc">
+                            <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="EwN-OB-Fjc">
                                 <rect key="frame" x="20" y="80" width="560" height="805"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Make/brand (e.g. Rusty)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="irf-uj-zmH">
@@ -1496,14 +1496,14 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="Dub-Z9-j9g"/>
+                                <exclude reference="W9w-u4-mta"/>
+                                <exclude reference="yKD-3W-V8c"/>
                                 <exclude reference="G7L-hh-EAa"/>
                                 <exclude reference="aEF-VA-uYt"/>
-                                <exclude reference="Dub-Z9-j9g"/>
-                                <exclude reference="yKD-3W-V8c"/>
-                                <exclude reference="W9w-u4-mta"/>
                                 <exclude reference="V8I-83-asm"/>
-                                <exclude reference="Vrf-VN-m6Q"/>
                                 <exclude reference="Tgy-Tt-qK5"/>
+                                <exclude reference="Vrf-VN-m6Q"/>
                             </mask>
                         </variation>
                     </view>

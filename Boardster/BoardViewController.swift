@@ -17,6 +17,7 @@ class BoardViewController: UIViewController, UITextFieldDelegate, UIImagePickerC
     @IBOutlet weak var saveButton: UIBarButtonItem!
     @IBOutlet weak var lengthTextField: UITextField!
     
+    @IBOutlet weak var nameLabel: UILabel!
     /*
     This value is either passed by `BoardTableViewController` in `prepareForSegue(_:sender:)`
     or constructed as part of adding a new board.
@@ -37,6 +38,7 @@ class BoardViewController: UIViewController, UITextFieldDelegate, UIImagePickerC
             photoImageView.image = board.photo
             ratingControl.rating = board.rating
             lengthTextField.text = board.length
+            nameLabel.text = board.name
         }
         
         // Enable the Save button only if the text field has a valid Board name.

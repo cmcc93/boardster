@@ -27,13 +27,18 @@ class BoardViewController: UIViewController, UITextFieldDelegate, UIImagePickerC
         super.viewDidLoad()
         
         // Handle the text field’s user input through delegate callbacks.
-        nameTextField.delegate = self
+        if nameTextField != nil {
+            nameTextField.delegate = self
+        }
+        
         lengthTextField.delegate = self
         
         // Set up views if editing an existing Board.
         if let board = board {
             navigationItem.title = board.name
-            nameTextField.text   = board.name
+            if nameTextField != nil {
+                nameTextField.text = board.name
+            }
             photoImageView.image = board.photo
             ratingControl.rating = board.rating
             lengthTextField.text = board.length

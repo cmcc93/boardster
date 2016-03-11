@@ -900,7 +900,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCd-Jh-r2s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1233" y="2247"/>
+            <point key="canvasLocation" x="1247" y="2169"/>
         </scene>
         <!--Snow Mode-->
         <scene sceneID="XqG-uK-lQ3">
@@ -1163,7 +1163,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LAh-Xp-gmj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1690" y="3093"/>
+            <point key="canvasLocation" x="1642" y="3259"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="M0t-gp-QS8">
@@ -1181,7 +1181,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8cZ-fX-WmA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="781" y="3093"/>
+            <point key="canvasLocation" x="657" y="3193"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="odg-EO-gwK">
@@ -1543,7 +1543,7 @@
         <image name="wave-icon-40" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Knf-FF-twR"/>
+        <segue reference="8Sf-YR-VKI"/>
         <segue reference="TcN-lv-nyP"/>
         <segue reference="JWJ-Qc-NeI"/>
     </inferredMetricsTieBreakers>

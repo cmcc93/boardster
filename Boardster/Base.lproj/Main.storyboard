@@ -902,6 +902,19 @@
             </objects>
             <point key="canvasLocation" x="1247" y="2169"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wvI-3B-0hM">
+            <objects>
+                <navigationController id="Vph-Rt-BLS" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5dL-Al-ccc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M1b-Hr-vJH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1130" y="2854"/>
+        </scene>
         <!--Snow Mode-->
         <scene sceneID="XqG-uK-lQ3">
             <objects>
@@ -1163,7 +1176,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LAh-Xp-gmj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1642" y="3259"/>
+            <point key="canvasLocation" x="1696" y="3611"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="M0t-gp-QS8">
@@ -1181,7 +1194,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8cZ-fX-WmA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="657" y="3193"/>
+            <point key="canvasLocation" x="639" y="3563"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="odg-EO-gwK">

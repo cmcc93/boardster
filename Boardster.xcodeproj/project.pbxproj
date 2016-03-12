@@ -133,6 +133,7 @@
 		0051706C1C5850E700B0DEEC /* Boardster */ = {
 			isa = PBXGroup;
 			children = (
+				005170711C5850E700B0DEEC /* Main.storyboard */,
 				00FF50391C59794A00EA8766 /* AccountViewController.swift */,
 				00988D361C65451700740EB5 /* LocationViewController.swift */,
 				00988D401C6BD85900740EB5 /* BoardViewController.swift */,
@@ -143,7 +144,6 @@
 				00988D3C1C6AB2DB00740EB5 /* Board.swift */,
 				00988D381C6AAC9B00740EB5 /* RatingControl.swift */,
 				0051706D1C5850E700B0DEEC /* AppDelegate.swift */,
-				005170711C5850E700B0DEEC /* Main.storyboard */,
 				009CB17B1C61660B00D282D1 /* SnowboardLocationViewController.swift */,
 				005170771C5850E700B0DEEC /* Assets.xcassets */,
 				005170791C5850E700B0DEEC /* LaunchScreen.storyboard */,

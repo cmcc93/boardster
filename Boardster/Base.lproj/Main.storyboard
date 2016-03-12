@@ -953,6 +953,9 @@
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="7eZ-PO-kbD" id="k20-mU-rFc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fCi-1I-wc5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

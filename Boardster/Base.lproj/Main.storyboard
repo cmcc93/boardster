@@ -889,12 +889,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="OMt-v7-elN" kind="relationship" relationship="rootViewController" id="J5W-K7-3eX"/>
+                        <segue destination="7a3-GW-qnd" kind="relationship" relationship="rootViewController" id="MsR-V0-kSf"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M1b-Hr-vJH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1112" y="2128"/>
+            <point key="canvasLocation" x="1186" y="2030"/>
         </scene>
         <!--Snow Mode-->
         <scene sceneID="XqG-uK-lQ3">
@@ -946,11 +946,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snowboard-sunny-slope" translatesAutoresizingMaskIntoConstraints="NO" id="ZCP-eq-DRu">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="snowboard-sunny-slope" translatesAutoresizingMaskIntoConstraints="NO" id="ZCP-eq-DRu">
                                 <rect key="frame" x="-180" y="64" width="960" height="237"/>
                                 <rect key="contentStretch" x="0.0" y="0.050000000000000003" width="1" height="0.0"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beanie-mannequin" highlightedImage="BurgerIcon" translatesAutoresizingMaskIntoConstraints="NO" id="igj-nc-alZ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="beanie-mannequin" highlightedImage="BurgerIcon" translatesAutoresizingMaskIntoConstraints="NO" id="igj-nc-alZ">
                                 <rect key="frame" x="241" y="240" width="119" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="119" id="dEo-N6-oyJ"/>
@@ -959,7 +959,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="1"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CASEY MCCOURT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OY-Qe-pGo">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CASEY MCCOURT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OY-Qe-pGo">
                                 <rect key="frame" x="229" y="368" width="142" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1673,6 +1673,7 @@
     </scenes>
     <resources>
         <image name="BurgerIcon" width="57" height="57"/>
+        <image name="beanie-mannequin" width="57" height="57"/>
         <image name="defaultPhoto" width="256" height="256"/>
         <image name="glyphicons-196-info-sign" width="26" height="26"/>
         <image name="glyphicons-46-calendar" width="23" height="24"/>
@@ -1680,6 +1681,7 @@
         <image name="los-angeles" width="960" height="600"/>
         <image name="san-francisco" width="950" height="750"/>
         <image name="snow-icon-40" width="40" height="40"/>
+        <image name="snowboard-sunny-slope" width="57" height="57"/>
         <image name="snowboard-wall-iTunesArtwork" width="512" height="512"/>
         <image name="surfboards-iTunesArtwork" width="512" height="512"/>
         <image name="wave-icon-40" width="40" height="40"/>

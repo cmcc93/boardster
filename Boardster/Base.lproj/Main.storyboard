@@ -1549,7 +1549,7 @@
         <!--Snowboard Locations-->
         <scene sceneID="uGJ-ZD-iIR">
             <objects>
-                <viewController title="Snowboard Locations" hidesBottomBarWhenPushed="YES" id="lUB-QE-Pba" customClass="SnowboardLocationViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Snowboard Locations" hidesBottomBarWhenPushed="YES" id="lUB-QE-Pba" customClass="LocationViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vrg-Ck-fYc"/>
                         <viewControllerLayoutGuide type="bottom" id="eQV-6Y-7dj"/>
@@ -1616,6 +1616,9 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="menuButton" destination="AIT-uN-iTg" id="Gzs-dG-W6W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Fl-nL-MS3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

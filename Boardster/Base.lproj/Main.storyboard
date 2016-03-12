@@ -937,27 +937,70 @@
         <!--Account Information-->
         <scene sceneID="BKd-Cv-SI0">
             <objects>
-                <viewController title="Account Information" id="OMt-v7-elN" customClass="ProfileTableViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7a3-GW-qnd" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="0hs-3J-BQO"/>
-                        <viewControllerLayoutGuide type="bottom" id="Mdc-Ny-EKX"/>
+                        <viewControllerLayoutGuide type="top" id="F2B-K3-tuD"/>
+                        <viewControllerLayoutGuide type="bottom" id="vGd-Z3-Wtb"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="s1Q-y0-5du">
+                    <view key="view" contentMode="scaleToFill" id="WFa-Fj-qlm">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snowboard-sunny-slope" translatesAutoresizingMaskIntoConstraints="NO" id="ZCP-eq-DRu">
+                                <rect key="frame" x="-180" y="64" width="960" height="237"/>
+                                <rect key="contentStretch" x="0.0" y="0.050000000000000003" width="1" height="0.0"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beanie-mannequin" highlightedImage="BurgerIcon" translatesAutoresizingMaskIntoConstraints="NO" id="igj-nc-alZ">
+                                <rect key="frame" x="241" y="240" width="119" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="119" id="dEo-N6-oyJ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="1"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CASEY MCCOURT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OY-Qe-pGo">
+                                <rect key="frame" x="229" y="368" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Member since June 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jvd-o7-jV0">
+                                <rect key="frame" x="204" y="388" width="193" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="cKf-te-S2h"/>
+                                    <constraint firstAttribute="width" constant="193" id="djR-ga-kBh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="igj-nc-alZ" firstAttribute="centerY" secondItem="WFa-Fj-qlm" secondAttribute="centerY" id="2oV-U1-XUh"/>
+                            <constraint firstItem="ZCP-eq-DRu" firstAttribute="top" secondItem="F2B-K3-tuD" secondAttribute="bottom" id="42c-ds-vFS"/>
+                            <constraint firstItem="igj-nc-alZ" firstAttribute="top" secondItem="F2B-K3-tuD" secondAttribute="bottom" constant="176" id="IMG-AU-XY0"/>
+                            <constraint firstItem="igj-nc-alZ" firstAttribute="centerX" secondItem="0OY-Qe-pGo" secondAttribute="centerX" id="TzX-XT-XtX"/>
+                            <constraint firstItem="0OY-Qe-pGo" firstAttribute="top" secondItem="igj-nc-alZ" secondAttribute="bottom" constant="8" symbolic="YES" id="UlE-Zf-rTx"/>
+                            <constraint firstItem="vGd-Z3-Wtb" firstAttribute="top" secondItem="ZCP-eq-DRu" secondAttribute="bottom" constant="299" id="VVh-ea-elv"/>
+                            <constraint firstItem="vGd-Z3-Wtb" firstAttribute="top" secondItem="Jvd-o7-jV0" secondAttribute="bottom" constant="191" id="ZjM-Iv-Ehk"/>
+                            <constraint firstItem="Jvd-o7-jV0" firstAttribute="centerX" secondItem="0OY-Qe-pGo" secondAttribute="centerX" id="jz6-2c-x49"/>
+                            <constraint firstItem="Jvd-o7-jV0" firstAttribute="centerX" secondItem="WFa-Fj-qlm" secondAttribute="centerX" id="xcZ-wb-5rJ"/>
+                            <constraint firstItem="igj-nc-alZ" firstAttribute="centerX" secondItem="ZCP-eq-DRu" secondAttribute="centerX" id="zNI-4r-BGH"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Account Information" id="PTR-87-nx4">
-                        <barButtonItem key="leftBarButtonItem" image="BurgerIcon" id="7eZ-PO-kbD">
+                    <navigationItem key="navigationItem" title="Account Information" id="JBD-aE-YWi">
+                        <barButtonItem key="leftBarButtonItem" image="BurgerIcon" id="vVn-TW-Bgh">
                             <inset key="imageInsets" minX="-10" minY="10" maxX="0.0" maxY="3"/>
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="menuButton" destination="7eZ-PO-kbD" id="k20-mU-rFc"/>
+                        <outlet property="menuButton" destination="vVn-TW-Bgh" id="1HZ-cb-3yb"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fCi-1I-wc5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ri-il-gXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1871" y="2199"/>
         </scene>

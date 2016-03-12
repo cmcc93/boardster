@@ -133,6 +133,9 @@
 		0051706C1C5850E700B0DEEC /* Boardster */ = {
 			isa = PBXGroup;
 			children = (
+				005170711C5850E700B0DEEC /* Main.storyboard */,
+				00FF50391C59794A00EA8766 /* AccountViewController.swift */,
+				00988D361C65451700740EB5 /* LocationViewController.swift */,
 				00988D401C6BD85900740EB5 /* BoardViewController.swift */,
 				006160241C910EAA0050C7DB /* BoardViewControllerNonAdmin.swift */,
 				00988D3A1C6AB08200740EB5 /* BoardTableViewCell.swift */,
@@ -141,7 +144,6 @@
 				00988D3C1C6AB2DB00740EB5 /* Board.swift */,
 				00988D381C6AAC9B00740EB5 /* RatingControl.swift */,
 				0051706D1C5850E700B0DEEC /* AppDelegate.swift */,
-				005170711C5850E700B0DEEC /* Main.storyboard */,
 				009CB17B1C61660B00D282D1 /* SnowboardLocationViewController.swift */,
 				005170771C5850E700B0DEEC /* Assets.xcassets */,
 				005170791C5850E700B0DEEC /* LaunchScreen.storyboard */,
@@ -150,12 +152,10 @@
 				00FF50351C59769200EA8766 /* SWRevealViewController.h */,
 				00FF50361C59769200EA8766 /* SWRevealViewController.m */,
 				00FF50381C5976F800EA8766 /* Boardster-Bridging-Header.h */,
-				00FF50391C59794A00EA8766 /* AccountViewController.swift */,
 				00FF50411C5983A900EA8766 /* ModesTabViewController.swift */,
 				001DA3E21C5F00EA002FB6F2 /* ModesNavigationController.swift */,
 				00FF503F1C5979FD00EA8766 /* ReservationsTableViewController.swift */,
 				00596CCF1C5994490054F9F0 /* HelpTableViewController.swift */,
-				00988D361C65451700740EB5 /* LocationViewController.swift */,
 				00988D421C73EADF00740EB5 /* TrialViewController.swift */,
 				003AFCAF1C73F3890045A7AE /* SecondTrialViewController.swift */,
 			);

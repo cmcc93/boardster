@@ -112,7 +112,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="lYA-gC-pbL" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="UrB-vA-8q0"/>
+                                            <segue destination="Vph-Rt-BLS" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Dd5-cC-8ZZ"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="p33-oq-htV">
@@ -136,6 +136,9 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="CqF-gj-i9z" secondAttribute="trailing" id="vU6-gr-cXR"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="lYA-gC-pbL" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="S6n-61-FjX"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Qt7-vq-FXP">
                                         <rect key="frame" x="0.0" y="176" width="600" height="44"/>
@@ -225,33 +228,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ieS-F7-KCk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2106" y="1268"/>
-        </scene>
-        <!--Account Information-->
-        <scene sceneID="TCv-T4-s5P">
-            <objects>
-                <viewController id="7a3-GW-qnd" customClass="AccountViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="F2B-K3-tuD"/>
-                        <viewControllerLayoutGuide type="bottom" id="vGd-Z3-Wtb"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="WFa-Fj-qlm">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Account Information" id="JBD-aE-YWi">
-                        <barButtonItem key="leftBarButtonItem" image="BurgerIcon" id="vVn-TW-Bgh">
-                            <inset key="imageInsets" minX="-10" minY="10" maxX="0.0" maxY="3"/>
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="menuButton" destination="vVn-TW-Bgh" id="1HZ-cb-3yb"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ri-il-gXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2106" y="2247"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yqQ-30-f00">
@@ -454,7 +430,6 @@
                                 </state>
                                 <connections>
                                     <action selector="sanfranToTable:" destination="zpH-wd-rAp" eventType="touchUpInside" id="jFB-WE-Adl"/>
-                                    <segue destination="0ez-7S-Bdc" kind="show" identifier="locationsToTable" id="SH8-p9-ica"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -485,6 +460,9 @@
                     <navigationItem key="navigationItem" title="Locations" id="3ms-dI-PaA"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="0ez-7S-Bdc" kind="show" identifier="locationsToTable" id="6EX-aR-NKH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HG5-B6-jsa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -895,12 +873,28 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="7a3-GW-qnd" kind="relationship" relationship="rootViewController" id="7CD-Tc-aXS"/>
+                        <segue destination="lUB-QE-Pba" kind="relationship" relationship="rootViewController" id="FCk-uJ-56y"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCd-Jh-r2s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1247" y="2169"/>
+            <point key="canvasLocation" x="1379" y="2884"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wvI-3B-0hM">
+            <objects>
+                <navigationController id="Vph-Rt-BLS" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5dL-Al-ccc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="OMt-v7-elN" kind="relationship" relationship="rootViewController" id="J5W-K7-3eX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M1b-Hr-vJH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1112" y="2128"/>
         </scene>
         <!--Snow Mode-->
         <scene sceneID="XqG-uK-lQ3">
@@ -939,6 +933,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QwA-eF-M04" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2074" y="362"/>
+        </scene>
+        <!--Account Information-->
+        <scene sceneID="BKd-Cv-SI0">
+            <objects>
+                <viewController title="Account Information" id="OMt-v7-elN" customClass="AccountViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0hs-3J-BQO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mdc-Ny-EKX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s1Q-y0-5du">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Account Information" id="PTR-87-nx4">
+                        <barButtonItem key="leftBarButtonItem" image="BurgerIcon" id="7eZ-PO-kbD">
+                            <inset key="imageInsets" minX="-10" minY="10" maxX="0.0" maxY="3"/>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="7eZ-PO-kbD" id="k20-mU-rFc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fCi-1I-wc5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1871" y="2199"/>
         </scene>
         <!--Contact Us-->
         <scene sceneID="Vad-tm-wgp">
@@ -1163,7 +1184,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LAh-Xp-gmj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1642" y="3259"/>
+            <point key="canvasLocation" x="1696" y="3611"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="M0t-gp-QS8">
@@ -1181,7 +1202,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8cZ-fX-WmA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="657" y="3193"/>
+            <point key="canvasLocation" x="639" y="3563"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="odg-EO-gwK">
@@ -1527,6 +1548,84 @@
                 <tapGestureRecognizer id="hCR-26-bLI"/>
             </objects>
             <point key="canvasLocation" x="6455" y="1177"/>
+        </scene>
+        <!--Snowboard Locations-->
+        <scene sceneID="uGJ-ZD-iIR">
+            <objects>
+                <viewController title="Snowboard Locations" hidesBottomBarWhenPushed="YES" id="lUB-QE-Pba" customClass="LocationViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vrg-Ck-fYc"/>
+                        <viewControllerLayoutGuide type="bottom" id="eQV-6Y-7dj"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="LU3-Ke-aNo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGN-rK-Eyi">
+                                <rect key="frame" x="0.0" y="332" width="600" height="268"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Los Angeles" backgroundImage="los-angeles">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="losangToTable:" destination="lUB-QE-Pba" eventType="touchUpInside" id="Xgs-p8-xeq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLg-AT-GaB">
+                                <rect key="frame" x="0.0" y="64" width="600" height="268"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="268" id="liz-Yi-aXf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="San Francisco" backgroundImage="san-francisco">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sanfranToTable:" destination="lUB-QE-Pba" eventType="touchUpInside" id="o5L-7b-ULB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kGN-rK-Eyi" secondAttribute="trailing" id="4ZW-x3-fzh"/>
+                            <constraint firstItem="kGN-rK-Eyi" firstAttribute="leading" secondItem="XLg-AT-GaB" secondAttribute="leading" id="CEf-vA-AOo"/>
+                            <constraint firstItem="kGN-rK-Eyi" firstAttribute="bottom" secondItem="eQV-6Y-7dj" secondAttribute="top" id="DuE-aG-ilc"/>
+                            <constraint firstItem="XLg-AT-GaB" firstAttribute="height" secondItem="kGN-rK-Eyi" secondAttribute="height" id="Ug1-2h-G6s"/>
+                            <constraint firstItem="XLg-AT-GaB" firstAttribute="leading" secondItem="LU3-Ke-aNo" secondAttribute="leading" id="XVA-b8-AIa"/>
+                            <constraint firstItem="XLg-AT-GaB" firstAttribute="height" secondItem="kGN-rK-Eyi" secondAttribute="height" constant="3" id="prI-T8-r3x"/>
+                            <constraint firstItem="eQV-6Y-7dj" firstAttribute="top" secondItem="XLg-AT-GaB" secondAttribute="bottom" constant="242" id="qHX-ev-5bL"/>
+                            <constraint firstItem="XLg-AT-GaB" firstAttribute="trailing" secondItem="kGN-rK-Eyi" secondAttribute="trailing" id="rVi-r1-2ts"/>
+                            <constraint firstItem="XLg-AT-GaB" firstAttribute="top" secondItem="Vrg-Ck-fYc" secondAttribute="bottom" id="tAM-iX-yHR"/>
+                            <constraint firstItem="kGN-rK-Eyi" firstAttribute="centerX" secondItem="XLg-AT-GaB" secondAttribute="centerX" id="v8Z-Af-gzN"/>
+                            <constraint firstItem="kGN-rK-Eyi" firstAttribute="top" secondItem="XLg-AT-GaB" secondAttribute="bottom" id="z6h-Tj-LZZ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="prI-T8-r3x"/>
+                                <exclude reference="v8Z-Af-gzN"/>
+                                <exclude reference="qHX-ev-5bL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Locations" id="CKE-C9-Jhm">
+                        <barButtonItem key="leftBarButtonItem" image="BurgerIcon" id="AIT-uN-iTg">
+                            <inset key="imageInsets" minX="-10" minY="10" maxX="0.0" maxY="3"/>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="menuButton" destination="AIT-uN-iTg" id="Gzs-dG-W6W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Fl-nL-MS3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2150" y="2884"/>
         </scene>
     </scenes>
     <resources>

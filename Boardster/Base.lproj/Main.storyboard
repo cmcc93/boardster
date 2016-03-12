@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7a3-GW-qnd">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -889,12 +889,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="OMt-v7-elN" kind="relationship" relationship="rootViewController" id="J5W-K7-3eX"/>
+                        <segue destination="7a3-GW-qnd" kind="relationship" relationship="rootViewController" id="MsR-V0-kSf"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M1b-Hr-vJH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1112" y="2128"/>
+            <point key="canvasLocation" x="1186" y="2030"/>
         </scene>
         <!--Snow Mode-->
         <scene sceneID="XqG-uK-lQ3">
@@ -937,27 +937,80 @@
         <!--Account Information-->
         <scene sceneID="BKd-Cv-SI0">
             <objects>
-                <viewController title="Account Information" id="OMt-v7-elN" customClass="ProfileTableViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7a3-GW-qnd" customClass="AccountViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="0hs-3J-BQO"/>
-                        <viewControllerLayoutGuide type="bottom" id="Mdc-Ny-EKX"/>
+                        <viewControllerLayoutGuide type="top" id="F2B-K3-tuD"/>
+                        <viewControllerLayoutGuide type="bottom" id="vGd-Z3-Wtb"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="s1Q-y0-5du">
+                    <view key="view" contentMode="scaleToFill" id="WFa-Fj-qlm">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snowboard-sunny-slope" translatesAutoresizingMaskIntoConstraints="NO" id="ZCP-eq-DRu">
+                                <rect key="frame" x="0.0" y="64" width="600" height="237"/>
+                                <rect key="contentStretch" x="0.0" y="0.050000000000000003" width="1" height="0.0"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CASEY MCCOURT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OY-Qe-pGo">
+                                <rect key="frame" x="229" y="367" width="142" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="SsG-Lt-FIC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Member since June 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jvd-o7-jV0">
+                                <rect key="frame" x="204" y="388" width="193" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="193" id="29F-Vs-aWE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beanie-mannequin" highlightedImage="BurgerIcon" translatesAutoresizingMaskIntoConstraints="NO" id="igj-nc-alZ">
+                                <rect key="frame" x="241" y="240" width="119" height="119"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="igj-nc-alZ" secondAttribute="height" multiplier="1:1" id="cvp-s6-Xsb"/>
+                                    <constraint firstAttribute="width" constant="119" id="tN2-bQ-5eO"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="1"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="igj-nc-alZ" firstAttribute="top" secondItem="F2B-K3-tuD" secondAttribute="bottom" constant="176" id="5cV-pm-U7u"/>
+                            <constraint firstItem="Jvd-o7-jV0" firstAttribute="centerX" secondItem="0OY-Qe-pGo" secondAttribute="centerX" id="BBq-iT-a8Y"/>
+                            <constraint firstItem="ZCP-eq-DRu" firstAttribute="leading" secondItem="WFa-Fj-qlm" secondAttribute="leading" id="I8f-cm-mrZ"/>
+                            <constraint firstAttribute="trailing" secondItem="ZCP-eq-DRu" secondAttribute="trailing" id="OJu-h1-aYa"/>
+                            <constraint firstItem="igj-nc-alZ" firstAttribute="centerY" secondItem="WFa-Fj-qlm" secondAttribute="centerY" id="X9N-jf-j5Y"/>
+                            <constraint firstItem="ZCP-eq-DRu" firstAttribute="top" secondItem="F2B-K3-tuD" secondAttribute="bottom" id="Y6K-P5-39c"/>
+                            <constraint firstItem="0OY-Qe-pGo" firstAttribute="top" secondItem="igj-nc-alZ" secondAttribute="bottom" constant="8" symbolic="YES" id="Z66-wt-MeL"/>
+                            <constraint firstItem="0OY-Qe-pGo" firstAttribute="centerX" secondItem="igj-nc-alZ" secondAttribute="centerX" id="aCd-PZ-a0A"/>
+                            <constraint firstItem="ZCP-eq-DRu" firstAttribute="centerX" secondItem="igj-nc-alZ" secondAttribute="centerX" id="kSg-Mx-JuR"/>
+                            <constraint firstItem="vGd-Z3-Wtb" firstAttribute="top" secondItem="Jvd-o7-jV0" secondAttribute="bottom" constant="191" id="nv8-RU-JMC"/>
+                            <constraint firstItem="Jvd-o7-jV0" firstAttribute="top" secondItem="0OY-Qe-pGo" secondAttribute="bottom" id="qJw-72-26H"/>
+                            <constraint firstItem="0OY-Qe-pGo" firstAttribute="top" secondItem="ZCP-eq-DRu" secondAttribute="bottom" constant="66" id="ykP-Gu-skQ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5cV-pm-U7u"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Account Information" id="PTR-87-nx4">
-                        <barButtonItem key="leftBarButtonItem" image="BurgerIcon" id="7eZ-PO-kbD">
+                    <navigationItem key="navigationItem" title="Account Information" id="JBD-aE-YWi">
+                        <barButtonItem key="leftBarButtonItem" image="BurgerIcon" id="vVn-TW-Bgh">
                             <inset key="imageInsets" minX="-10" minY="10" maxX="0.0" maxY="3"/>
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="menuButton" destination="7eZ-PO-kbD" id="k20-mU-rFc"/>
+                        <outlet property="menuButton" destination="vVn-TW-Bgh" id="1HZ-cb-3yb"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fCi-1I-wc5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ri-il-gXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1871" y="2199"/>
         </scene>
@@ -1630,6 +1683,7 @@
     </scenes>
     <resources>
         <image name="BurgerIcon" width="57" height="57"/>
+        <image name="beanie-mannequin" width="600" height="600"/>
         <image name="defaultPhoto" width="256" height="256"/>
         <image name="glyphicons-196-info-sign" width="26" height="26"/>
         <image name="glyphicons-46-calendar" width="23" height="24"/>
@@ -1637,6 +1691,7 @@
         <image name="los-angeles" width="960" height="600"/>
         <image name="san-francisco" width="950" height="750"/>
         <image name="snow-icon-40" width="40" height="40"/>
+        <image name="snowboard-sunny-slope" width="960" height="600"/>
         <image name="snowboard-wall-iTunesArtwork" width="512" height="512"/>
         <image name="surfboards-iTunesArtwork" width="512" height="512"/>
         <image name="wave-icon-40" width="40" height="40"/>

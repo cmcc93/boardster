@@ -937,7 +937,7 @@
         <!--Account Information-->
         <scene sceneID="BKd-Cv-SI0">
             <objects>
-                <viewController title="Account Information" id="OMt-v7-elN" customClass="AccountViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Account Information" id="OMt-v7-elN" customClass="ProfileTableViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0hs-3J-BQO"/>
                         <viewControllerLayoutGuide type="bottom" id="Mdc-Ny-EKX"/>

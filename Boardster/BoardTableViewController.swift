@@ -18,7 +18,7 @@ class BoardTableViewController: UITableViewController {
         super.viewDidLoad()
             
         // Use the edit button item provided by the table view controller.
-        navigationItem.leftBarButtonItem = editButtonItem()
+//        navigationItem.leftBarButtonItem = editButtonItem()
         editButtonItem().tintColor = UIColor.blackColor()
         
         // Load any saved boards, otherwise load sample data.

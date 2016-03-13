@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2EAE3A63-7C41-4A22-AB8F-EA61C2FEEDB8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BD2844D0C145B332ADAABEB84D739FA276C2FF84</key>
+		<string>github.com:cmcc93/boardster.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Boardster.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BD2844D0C145B332ADAABEB84D739FA276C2FF84</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:cmcc93/boardster.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BD2844D0C145B332ADAABEB84D739FA276C2FF84</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BD2844D0C145B332ADAABEB84D739FA276C2FF84</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Boardster</string>
+		</dict>
+	</array>
+</dict>
+</plist>

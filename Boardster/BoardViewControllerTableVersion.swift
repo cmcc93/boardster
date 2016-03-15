@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BoardViewControllerTableVersion: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class BoardViewControllerTableVersion: UITableViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     // MARK: Properties
     

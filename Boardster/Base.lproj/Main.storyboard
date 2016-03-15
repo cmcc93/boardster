@@ -677,10 +677,10 @@
             </objects>
             <point key="canvasLocation" x="5378" y="-353"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Board View Controller Table Version-->
         <scene sceneID="NjP-cS-qjO">
             <objects>
-                <tableViewController id="Gpp-Pp-c0H" sceneMemberID="viewController">
+                <tableViewController id="Gpp-Pp-c0H" customClass="BoardViewControllerTableVersion" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="zBR-bd-fJe">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

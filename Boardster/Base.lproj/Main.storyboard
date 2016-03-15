@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O1S-ge-tBn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Qcg-Vt-gmb">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -460,9 +460,6 @@
                     <navigationItem key="navigationItem" title="Locations" id="3ms-dI-PaA"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <segue destination="y1R-Of-AR9" kind="show" identifier="locationsToTable" id="y7f-Mj-RcF"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HG5-B6-jsa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -656,7 +653,7 @@
                                     <outlet property="nameLabel" destination="vZU-Bj-mkD" id="KZa-WJ-bcI"/>
                                     <outlet property="photoImageView" destination="cbY-5h-fe0" id="7qV-OG-y3m"/>
                                     <outlet property="ratingControl" destination="Z3K-Dv-aVB" id="Ig8-2J-h3I"/>
-                                    <segue destination="wAm-YV-1Ki" kind="show" identifier="ShowDetail" id="eAO-99-j9s"/>
+                                    <segue destination="A0a-VW-w1o" kind="show" identifier="ShowDetail" id="QhE-mP-9Nl"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -830,12 +827,12 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="6853" y="-263"/>
+            <point key="canvasLocation" x="7665" y="-263"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Board View Controller Table Version Non Admin-->
         <scene sceneID="GlI-bt-1SK">
             <objects>
-                <tableViewController id="wAm-YV-1Ki" sceneMemberID="viewController">
+                <tableViewController id="wAm-YV-1Ki" customClass="BoardViewControllerTableVersionNonAdmin" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="P1u-9y-6aC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -850,11 +847,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Make/brand (e.g. Rusty)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="05p-3c-xhB">
-                                                    <rect key="frame" x="8" y="7" width="584" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jcg-xC-aGF">
+                                                    <rect key="frame" x="8" y="8" width="584" height="27"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -865,11 +863,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Model (e.g. Rooster)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RC0-Vn-j2U">
-                                                    <rect key="frame" x="8" y="7" width="584" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQ8-UK-lyY">
+                                                    <rect key="frame" x="8" y="8" width="584" height="27"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -925,7 +924,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d4L-Em-hBN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7475" y="-856"/>
+            <point key="canvasLocation" x="5985" y="1137"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="HVM-RJ-4Oh">
@@ -1356,7 +1355,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="78q-vD-gUe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6157" y="12"/>
+            <point key="canvasLocation" x="6969" y="12"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Op9-sp-paQ">
@@ -1472,7 +1471,7 @@
                                     <outlet property="nameLabel" destination="3sS-ve-z0T" id="1ev-tM-AKl"/>
                                     <outlet property="photoImageView" destination="kAG-c7-L3X" id="glJ-ue-xIg"/>
                                     <outlet property="ratingControl" destination="vAl-6Z-REP" id="Zs3-Tv-MNv"/>
-                                    <segue destination="L6x-HK-iV3" kind="show" identifier="ShowDetail" id="WTQ-AZ-V7C"/>
+                                    <segue destination="wAm-YV-1Ki" kind="show" identifier="ShowDetail" id="Tqb-HC-PNi"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1495,7 +1494,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VpC-cl-wJt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3924" y="273"/>
+            <point key="canvasLocation" x="5144" y="362"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hjU-4q-TlB">
@@ -1511,7 +1510,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z2R-Bg-AQ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7136" y="344"/>
+            <point key="canvasLocation" x="7714" y="636"/>
         </scene>
         <!--New Board-->
         <scene sceneID="QB7-Is-G4p">
@@ -1525,7 +1524,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="EwN-OB-Fjc">
+                            <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="EwN-OB-Fjc">
                                 <rect key="frame" x="20" y="80" width="560" height="796"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MvT-aU-9Kc">
@@ -1665,7 +1664,7 @@
                 <exit id="Pxf-Kf-lnr" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="hCR-26-bLI"/>
             </objects>
-            <point key="canvasLocation" x="6455" y="1177"/>
+            <point key="canvasLocation" x="5175" y="1137"/>
         </scene>
         <!--Snowboard Locations-->
         <scene sceneID="uGJ-ZD-iIR">
@@ -1745,6 +1744,24 @@
             </objects>
             <point key="canvasLocation" x="2150" y="2884"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="O3o-Bu-Ucz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qcg-Vt-gmb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ucs-8c-tyU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="y1R-Of-AR9" kind="relationship" relationship="rootViewController" id="shh-RG-Puh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="llF-CV-ZFv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4332" y="362"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BurgerIcon" width="57" height="57"/>
@@ -1764,7 +1781,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="Knf-FF-twR"/>
         <segue reference="TcN-lv-nyP"/>
-        <segue reference="JWJ-Qc-NeI"/>
+        <segue reference="QhE-mP-9Nl"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

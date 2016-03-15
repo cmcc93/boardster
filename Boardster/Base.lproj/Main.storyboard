@@ -653,6 +653,7 @@
                                     <outlet property="nameLabel" destination="vZU-Bj-mkD" id="KZa-WJ-bcI"/>
                                     <outlet property="photoImageView" destination="cbY-5h-fe0" id="7qV-OG-y3m"/>
                                     <outlet property="ratingControl" destination="Z3K-Dv-aVB" id="Ig8-2J-h3I"/>
+                                    <segue destination="Gpp-Pp-c0H" kind="show" identifier="ShowDetail" id="5vj-cR-aMk"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -687,7 +688,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="AmQ-xn-Tbh">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AmQ-xn-Tbh" id="lFd-hq-pYz">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>

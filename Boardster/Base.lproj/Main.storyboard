@@ -653,7 +653,6 @@
                                     <outlet property="nameLabel" destination="vZU-Bj-mkD" id="KZa-WJ-bcI"/>
                                     <outlet property="photoImageView" destination="cbY-5h-fe0" id="7qV-OG-y3m"/>
                                     <outlet property="ratingControl" destination="Z3K-Dv-aVB" id="Ig8-2J-h3I"/>
-                                    <segue destination="A0a-VW-w1o" kind="show" identifier="ShowDetail" id="QhE-mP-9Nl"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -677,6 +676,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="brC-vc-HUJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5378" y="-353"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="NjP-cS-qjO">
+            <objects>
+                <tableViewController id="Gpp-Pp-c0H" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="zBR-bd-fJe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="AmQ-xn-Tbh">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AmQ-xn-Tbh" id="lFd-hq-pYz">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Gpp-Pp-c0H" id="Mz5-Cv-nu3"/>
+                            <outlet property="delegate" destination="Gpp-Pp-c0H" id="So1-5s-jXQ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yis-IU-nkP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6137" y="-696"/>
         </scene>
         <!--New Board-->
         <scene sceneID="w1B-CC-nqy">
@@ -827,7 +854,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="7665" y="-263"/>
+            <point key="canvasLocation" x="7073" y="-97"/>
         </scene>
         <!--Board View Controller Table Version Non Admin-->
         <scene sceneID="GlI-bt-1SK">
@@ -1355,7 +1382,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="78q-vD-gUe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6969" y="12"/>
+            <point key="canvasLocation" x="6177" y="186"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Op9-sp-paQ">
@@ -1779,9 +1806,9 @@
         <image name="wave-icon-40" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="iQ6-KM-wZZ"/>
         <segue reference="Knf-FF-twR"/>
         <segue reference="TcN-lv-nyP"/>
-        <segue reference="QhE-mP-9Nl"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

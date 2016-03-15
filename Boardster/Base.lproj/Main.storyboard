@@ -693,6 +693,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="czh-EJ-CcS">
+                                <rect key="frame" x="20" y="64" width="560" height="88"/>
+                            </scrollView>
                             <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="UGT-BN-wtA">
                                 <rect key="frame" x="20" y="80" width="560" height="805"/>
                                 <subviews>
@@ -783,34 +786,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="P70-B7-VSr" secondAttribute="trailing" id="60L-EH-NpG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="P70-B7-VSr" secondAttribute="trailing" id="6XZ-oz-cSu"/>
-                            <constraint firstItem="yhQ-Gi-s60" firstAttribute="leading" secondItem="12I-0C-Dgb" secondAttribute="leadingMargin" id="AGR-fS-Vly"/>
                             <constraint firstItem="UGT-BN-wtA" firstAttribute="top" secondItem="RIF-ao-hiX" secondAttribute="bottom" constant="16" id="FVa-TK-OX5"/>
-                            <constraint firstItem="UGT-BN-wtA" firstAttribute="leading" secondItem="12I-0C-Dgb" secondAttribute="leadingMargin" id="GdJ-fk-i9w"/>
-                            <constraint firstItem="jZp-IE-e4w" firstAttribute="top" secondItem="UGT-BN-wtA" secondAttribute="bottom" constant="98" id="T8L-iw-DFA"/>
+                            <constraint firstItem="czh-EJ-CcS" firstAttribute="leading" secondItem="12I-0C-Dgb" secondAttribute="leadingMargin" id="KP6-2j-3a2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="UGT-BN-wtA" secondAttribute="trailing" id="U4V-jh-Dfm"/>
                             <constraint firstItem="PWk-XZ-zwl" firstAttribute="leading" secondItem="12I-0C-Dgb" secondAttribute="leadingMargin" id="ak0-de-1nO"/>
-                            <constraint firstItem="UGT-BN-wtA" firstAttribute="centerX" secondItem="12I-0C-Dgb" secondAttribute="centerX" id="fAn-7E-dmt"/>
-                            <constraint firstItem="UGT-BN-wtA" firstAttribute="top" secondItem="12I-0C-Dgb" secondAttribute="top" constant="20" symbolic="YES" id="lcL-NW-qCH"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="yhQ-Gi-s60" secondAttribute="trailing" id="qmu-lK-bJb"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="P70-B7-VSr" secondAttribute="leading" id="vET-ex-ybj"/>
                             <constraint firstAttribute="leadingMargin" secondItem="P70-B7-VSr" secondAttribute="leading" id="whW-ea-e54"/>
                             <constraint firstAttribute="leadingMargin" secondItem="UGT-BN-wtA" secondAttribute="leading" id="xKr-Df-EqC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="czh-EJ-CcS" secondAttribute="trailing" id="yMf-zW-T83"/>
+                            <constraint firstItem="czh-EJ-CcS" firstAttribute="top" secondItem="RIF-ao-hiX" secondAttribute="bottom" id="zLJ-a4-qSv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PWk-XZ-zwl" secondAttribute="trailing" id="zX7-gc-Xwc"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="60L-EH-NpG"/>
-                                <exclude reference="vET-ex-ybj"/>
-                                <exclude reference="GdJ-fk-i9w"/>
-                                <exclude reference="fAn-7E-dmt"/>
-                                <exclude reference="lcL-NW-qCH"/>
-                                <exclude reference="T8L-iw-DFA"/>
-                                <exclude reference="AGR-fS-Vly"/>
-                                <exclude reference="qmu-lK-bJb"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="New Board" id="ujp-Jg-Coo">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="BZQ-Ld-aY2">
@@ -826,6 +812,8 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
                     <connections>
                         <outlet property="lengthTextField" destination="iuM-tq-dz1" id="asF-XQ-Zo7"/>
                         <outlet property="nameTextField" destination="P70-B7-VSr" id="2Ij-5N-gSZ"/>

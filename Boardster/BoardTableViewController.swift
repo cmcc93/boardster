@@ -131,7 +131,7 @@ class BoardTableViewController: UITableViewController {
     
     
     @IBAction func unwindToBoardList(sender: UIStoryboardSegue) {
-        if let sourceViewController = sender.sourceViewController as? BoardViewController, board = sourceViewController.board {
+        if let sourceViewController = sender.sourceViewController as? BoardViewControllerTableVersion, board = sourceViewController.board {
             if let selectedIndexPath = tableView.indexPathForSelectedRow {
                 // Update an existing board.
                 boards[selectedIndexPath.row] = board

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O1S-ge-tBn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Qcg-Vt-gmb">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -1025,6 +1025,13 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ur3-ED-Gun" id="wzZ-me-vDT">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Length" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JHH-Za-X3G">
+                                                    <rect key="frame" x="8" y="7" width="584" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Df2-XD-x8i">
@@ -1033,6 +1040,12 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Df2-XD-x8i" id="zO5-Jh-P3O">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mAC-tc-y04" customClass="RatingControl" customModule="Boardster" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="8" width="584" height="27"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -1043,6 +1056,14 @@
                             <outlet property="delegate" destination="wAm-YV-1Ki" id="z27-VR-O5g"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="lengthTextField" destination="JHH-Za-X3G" id="6v3-cg-opM"/>
+                        <outlet property="nameLabel" destination="Jcg-xC-aGF" id="Abu-V1-JBN"/>
+                        <outlet property="photoImageView" destination="xDT-iC-93t" id="09o-IW-9J1"/>
+                        <outlet property="ratingControl" destination="mAC-tc-y04" id="she-pr-eP8"/>
+                        <outlet property="storedPhotoImageView" destination="xDT-iC-93t" id="Hjv-ot-RK2"/>
+                        <outlet property="storedRatingControl" destination="mAC-tc-y04" id="2Cy-IH-BNi"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d4L-Em-hBN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

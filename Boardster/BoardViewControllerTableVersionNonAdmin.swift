@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BoardViewControllerTableVersionNonAdmin: UITableViewController {
+class BoardViewControllerTableVersionNonAdmin: BoardViewControllerTableVersion {
 
     override func viewDidLoad() {
         super.viewDidLoad()

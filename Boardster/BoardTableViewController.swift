@@ -115,7 +115,7 @@ class BoardTableViewController: UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "ShowDetail" {
-            let boardDetailViewController = segue.destinationViewController as! BoardViewController
+            let boardDetailViewController = segue.destinationViewController as! BoardViewControllerTableVersion
             
             // Get the cell that generated this segue.
             if let selectedBoardCell = sender as? BoardTableViewCell {
@@ -131,7 +131,7 @@ class BoardTableViewController: UITableViewController {
     
     
     @IBAction func unwindToBoardList(sender: UIStoryboardSegue) {
-        if let sourceViewController = sender.sourceViewController as? BoardViewController, board = sourceViewController.board {
+        if let sourceViewController = sender.sourceViewController as? BoardViewControllerTableVersion, board = sourceViewController.board {
             if let selectedIndexPath = tableView.indexPathForSelectedRow {
                 // Update an existing board.
                 boards[selectedIndexPath.row] = board

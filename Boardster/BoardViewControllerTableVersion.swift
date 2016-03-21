@@ -13,6 +13,7 @@ class BoardViewControllerTableVersion: UITableViewController, UITextFieldDelegat
     // MARK: Properties
     
     @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var modelTextField: UITextField!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
     @IBOutlet weak var saveButton: UIBarButtonItem!

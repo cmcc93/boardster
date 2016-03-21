@@ -790,6 +790,7 @@
                     <size key="freeformSize" width="600" height="632"/>
                     <connections>
                         <outlet property="lengthTextField" destination="QL7-l4-5wh" id="Z71-21-Lz9"/>
+                        <outlet property="modelTextField" destination="WpD-5t-MMU" id="hZV-ba-xVI"/>
                         <outlet property="nameTextField" destination="aih-O1-otd" id="YI8-d8-XY1"/>
                         <outlet property="photoImageView" destination="Pl5-86-qs8" id="q20-Ha-zM6"/>
                         <outlet property="ratingControl" destination="lSF-t0-WsH" id="Rai-sM-P7l"/>

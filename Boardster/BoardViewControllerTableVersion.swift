@@ -32,6 +32,9 @@ class BoardViewControllerTableVersion: UITableViewController, UITextFieldDelegat
         if lengthTextField != nil {
             lengthTextField.delegate = self
         }
+        if modelTextField != nil {
+            modelTextField.delegate = self
+        }
         
         // Set up views if editing an existing Board.
         if let board = board {

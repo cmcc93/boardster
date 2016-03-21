@@ -1615,7 +1615,7 @@
                                     <outlet property="nameLabel" destination="3sS-ve-z0T" id="1ev-tM-AKl"/>
                                     <outlet property="photoImageView" destination="kAG-c7-L3X" id="glJ-ue-xIg"/>
                                     <outlet property="ratingControl" destination="vAl-6Z-REP" id="Zs3-Tv-MNv"/>
-                                    <segue destination="wAm-YV-1Ki" kind="show" identifier="ShowDetail" id="Tqb-HC-PNi"/>
+                                    <segue destination="wAm-YV-1Ki" kind="show" identifier="ShowDetailNonAdmin" id="Tqb-HC-PNi"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

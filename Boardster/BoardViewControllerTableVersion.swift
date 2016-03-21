@@ -47,6 +47,9 @@ class BoardViewControllerTableVersion: UITableViewController, UITextFieldDelegat
             if lengthTextField != nil {
                 lengthTextField.text = board.length
             }
+            if modelTextField != nil {
+                modelTextField.text = board.model
+            }
         }
         
         // Enable the Save button only if the text field has a valid Board name.

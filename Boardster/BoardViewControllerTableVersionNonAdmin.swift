@@ -12,6 +12,7 @@ class BoardViewControllerTableVersionNonAdmin: BoardViewControllerTableVersion {
     
     @IBOutlet weak var nameLabel: UILabel!
 //    @IBOutlet weak var lengthTextField: UITextField!
+    @IBOutlet weak var lengthLabel: UILabel!
     
     @IBOutlet weak var storedPhotoImageView: UIImageView!
     @IBOutlet weak var storedRatingControl: RatingControl!
@@ -23,7 +24,11 @@ class BoardViewControllerTableVersionNonAdmin: BoardViewControllerTableVersion {
             nameLabel.text = board.name
             storedPhotoImageView.image = board.photo
             storedRatingControl.rating = board.rating
-            lengthTextField.text = board.length
+            if board.length != nil {
+                lengthLabel.text = board.length
+            } else {
+                lengthLabel.text = "lengthplaceholder"
+            }
         }
         
     }

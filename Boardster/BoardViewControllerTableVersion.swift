@@ -28,7 +28,9 @@ class BoardViewControllerTableVersion: UITableViewController, UITextFieldDelegat
             nameTextField.delegate = self
         }
         
-        lengthTextField.delegate = self
+        if lengthTextField != nil {
+            lengthTextField.delegate = self
+        }
         
         // Set up views if editing an existing Board.
         if let board = board {
@@ -38,7 +40,9 @@ class BoardViewControllerTableVersion: UITableViewController, UITextFieldDelegat
             }
             photoImageView.image = board.photo
             ratingControl.rating = board.rating
-            lengthTextField.text = board.length
+            if lengthTextField != nil {
+                lengthTextField.text = board.length
+            }
         }
         
         // Enable the Save button only if the text field has a valid Board name.

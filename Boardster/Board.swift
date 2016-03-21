@@ -12,6 +12,7 @@ class Board: NSObject, NSCoding {
     // MARK: Properties
     
     var name: String
+    var model: String
     var photo: UIImage?
     var rating: Int
     var length: String?
@@ -25,6 +26,7 @@ class Board: NSObject, NSCoding {
     
     struct PropertyKey {
         static let nameKey = "name"
+        static let modelKey = "model"
         static let photoKey = "photo"
         static let ratingKey = "rating"
         static let lengthKey = "length"
@@ -32,17 +34,18 @@ class Board: NSObject, NSCoding {
     
     // MARK: Initialization
     
-    init?(name: String, photo: UIImage?, rating: Int, length: String?) {
+    init?(name: String, model: String, photo: UIImage?, rating: Int, length: String?) {
         // Initialize stored properties.
         self.name = name
+        self.model = model
         self.photo = photo
         self.rating = rating
         self.length = length
         
         super.init()
         
-        // Initialization should fail if there is no name or if the rating is negative.
-        if name.isEmpty || rating < 0 {
+        // Initialization should fail if there is no name, model, or if the rating is negative.
+        if name.isEmpty || model.isEmpty || rating < 0 {
             return nil
         }
     }
@@ -51,6 +54,7 @@ class Board: NSObject, NSCoding {
     
     func encodeWithCoder(aCoder: NSCoder) {
         aCoder.encodeObject(name, forKey: PropertyKey.nameKey)
+        aCoder.encodeObject(model, forKey: PropertyKey.modelKey)
         aCoder.encodeObject(photo, forKey: PropertyKey.photoKey)
         aCoder.encodeInteger(rating, forKey: PropertyKey.ratingKey)
         aCoder.encodeObject(length, forKey: PropertyKey.lengthKey)
@@ -58,6 +62,7 @@ class Board: NSObject, NSCoding {
     
     required convenience init?(coder aDecoder: NSCoder) {
         let name = aDecoder.decodeObjectForKey(PropertyKey.nameKey) as! String
+        let model = aDecoder.decodeObjectForKey(PropertyKey.modelKey) as! String
         
         // Because photo is an optional property of Board, use conditional cast.
         let photo = aDecoder.decodeObjectForKey(PropertyKey.photoKey) as? UIImage
@@ -65,7 +70,7 @@ class Board: NSObject, NSCoding {
         let length = aDecoder.decodeObjectForKey(PropertyKey.lengthKey) as? String
         
         // Must call designated initializer.
-        self.init(name: name, photo: photo, rating: rating, length: length)
+        self.init(name: name, model: model, photo: photo, rating: rating, length: length)
     }
     
 }

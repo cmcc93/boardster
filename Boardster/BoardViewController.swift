@@ -107,6 +107,7 @@ class BoardViewController: UIViewController, UITextFieldDelegate, UIImagePickerC
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if saveButton === sender {
             let name = nameTextField.text ?? ""
+//            let model = modelTextField.model ?? ""
             let photo = photoImageView.image
             let rating = ratingControl.rating
             let length = lengthTextField.text

@@ -108,12 +108,13 @@ class BoardViewController: UIViewController, UITextFieldDelegate, UIImagePickerC
         if saveButton === sender {
             let name = nameTextField.text ?? ""
 //            let model = modelTextField.model ?? ""
+            let model = nameTextField.text ?? ""
             let photo = photoImageView.image
             let rating = ratingControl.rating
             let length = lengthTextField.text
             
             // Set the board to be passed to BoardListTableViewController after the unwind segue.
-            board = Board(name: name, photo: photo, rating: rating, length: length!)
+            board = Board(name: name, model: model, photo: photo, rating: rating, length: length!)
         }
     }
     

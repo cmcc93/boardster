@@ -67,6 +67,7 @@ class Board: NSObject, NSCoding {
     required convenience init?(coder aDecoder: NSCoder) {
         let name = aDecoder.decodeObjectForKey(PropertyKey.nameKey) as! String
         let model = aDecoder.decodeObjectForKey(PropertyKey.modelKey) as! String
+        let totalName = aDecoder.decodeObjectForKey(PropertyKey.totalNameKey) as! String
         
         // Because photo is an optional property of Board, use conditional cast.
         let photo = aDecoder.decodeObjectForKey(PropertyKey.photoKey) as? UIImage
@@ -74,7 +75,7 @@ class Board: NSObject, NSCoding {
         let length = aDecoder.decodeObjectForKey(PropertyKey.lengthKey) as? String
         
         // Must call designated initializer.
-        self.init(name: name, model: model, photo: photo, rating: rating, length: length)
+        self.init(name: name, model: model, totalName: totalName, photo: photo, rating: rating, length: length)
     }
     
 }

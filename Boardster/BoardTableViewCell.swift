@@ -20,8 +20,6 @@ import UIKit
 class BoardTableViewCell: UITableViewCell {
     // MARK: Properties
     
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var modelLabel: UILabel!
     @IBOutlet weak var totalNameLabel: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!

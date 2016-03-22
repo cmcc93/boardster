@@ -682,10 +682,9 @@
                                 </variation>
                                 <connections>
                                     <outlet property="lengthLabel" destination="QpM-GX-lg5" id="xI4-ov-ngV"/>
-                                    <outlet property="modelLabel" destination="Wgu-uF-q7n" id="aAk-i3-3vr"/>
-                                    <outlet property="nameLabel" destination="vZU-Bj-mkD" id="KZa-WJ-bcI"/>
                                     <outlet property="photoImageView" destination="cbY-5h-fe0" id="7qV-OG-y3m"/>
                                     <outlet property="ratingControl" destination="Z3K-Dv-aVB" id="Ig8-2J-h3I"/>
+                                    <outlet property="totalNameLabel" destination="vZU-Bj-mkD" id="br2-W0-vwm"/>
                                     <segue destination="Gpp-Pp-c0H" kind="show" identifier="ShowDetail" id="e1i-eH-aeP"/>
                                 </connections>
                             </tableViewCell>

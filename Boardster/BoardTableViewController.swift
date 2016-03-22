@@ -66,8 +66,8 @@ class BoardTableViewController: UITableViewController {
         // Fetches the appropriate board for the data source layout.
         let board = boards[indexPath.row]
         
-        cell.nameLabel.text = board.name
-        cell.modelLabel.text = board.model
+//        cell.nameLabel.text = board.name
+//        cell.modelLabel.text = board.model
         cell.totalNameLabel.text = board.totalName
         cell.photoImageView.image = board.photo
         cell.ratingControl.rating = board.rating

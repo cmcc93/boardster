@@ -117,7 +117,7 @@ class BoardViewControllerTableVersion: UITableViewController, UITextFieldDelegat
         if saveButton === sender {
             let name = nameTextField.text ?? ""
             let model = modelTextField.text ?? ""
-            let model = modelTextField.text ?? ""
+            let totalName = "nameTextField.text + modelTextField.text" ?? ""
             let photo = photoImageView.image
             let rating = ratingControl.rating
             let length = lengthTextField.text

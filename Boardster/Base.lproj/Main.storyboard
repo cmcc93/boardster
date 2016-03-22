@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Qcg-Vt-gmb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O1S-ge-tBn">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -557,7 +557,7 @@
             </objects>
             <point key="canvasLocation" x="2931" y="-477"/>
         </scene>
-        <!--Your Boards-->
+        <!--Boards (Admin)-->
         <scene sceneID="AT9-4d-zdo">
             <objects>
                 <tableViewController id="cFx-GA-3pn" customClass="BoardTableViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
@@ -585,7 +585,7 @@
                                                 </mask>
                                             </variation>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZU-Bj-mkD">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZU-Bj-mkD">
                                             <rect key="frame" x="144" y="8" width="448" height="28"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="28" id="eww-2V-IPL"/>
@@ -598,7 +598,7 @@
                                             <rect key="frame" x="144" y="80" width="448" height="28"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpM-GX-lg5">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Length Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpM-GX-lg5">
                                             <rect key="frame" x="144" y="44" width="448" height="28"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -664,9 +664,9 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Your Boards" id="y4f-lR-kxX">
+                    <navigationItem key="navigationItem" title="Boards (Admin)" id="y4f-lR-kxX">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="1hD-RX-oL6">
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="sxQ-3L-Zo7" kind="presentation" identifier="AddItem" id="0sB-Hg-Wsd"/>
                             </connections>
@@ -783,13 +783,14 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="37l-hs-Vua">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="nHx-q1-uNP">
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="632"/>
                     <connections>
                         <outlet property="lengthTextField" destination="QL7-l4-5wh" id="Z71-21-Lz9"/>
+                        <outlet property="modelTextField" destination="WpD-5t-MMU" id="hZV-ba-xVI"/>
                         <outlet property="nameTextField" destination="aih-O1-otd" id="YI8-d8-XY1"/>
                         <outlet property="photoImageView" destination="Pl5-86-qs8" id="q20-Ha-zM6"/>
                         <outlet property="ratingControl" destination="lSF-t0-WsH" id="Rai-sM-P7l"/>
@@ -925,7 +926,7 @@
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="3qm-g4-YnB">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="5A3-pj-9pX" kind="unwind" unwindAction="unwindToBoardList:" id="TJw-1y-48x"/>
                             </connections>
@@ -1483,10 +1484,10 @@
             </objects>
             <point key="canvasLocation" x="639" y="3563"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Modes Navigation Controller-->
         <scene sceneID="odg-EO-gwK">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sxQ-3L-Zo7" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sxQ-3L-Zo7" customClass="ModesNavigationController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Soc-o2-naQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1494,17 +1495,17 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="A0a-VW-w1o" kind="relationship" relationship="rootViewController" id="iQ6-KM-wZZ"/>
+                        <segue destination="Gpp-Pp-c0H" kind="relationship" relationship="rootViewController" id="pkm-12-fIt"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="78q-vD-gUe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6177" y="186"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Modes Navigation Controller-->
         <scene sceneID="Op9-sp-paQ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O1S-ge-tBn" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O1S-ge-tBn" customClass="ModesNavigationController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pMH-HY-iyz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1628,7 +1629,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Boards" id="sZr-nx-1ZW">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="FEf-Vf-fvD">
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="Muk-is-bxy" kind="presentation" identifier="AddItem" id="86M-ua-pfQ"/>
                             </connections>
@@ -1640,10 +1641,10 @@
             </objects>
             <point key="canvasLocation" x="5144" y="362"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Modes Navigation Controller-->
         <scene sceneID="hjU-4q-TlB">
             <objects>
-                <navigationController id="Muk-is-bxy" sceneMemberID="viewController">
+                <navigationController id="Muk-is-bxy" customClass="ModesNavigationController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gpI-yh-Ggz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1654,7 +1655,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z2R-Bg-AQ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7714" y="636"/>
+            <point key="canvasLocation" x="7008" y="544"/>
         </scene>
         <!--New Board-->
         <scene sceneID="QB7-Is-G4p">
@@ -1888,10 +1889,10 @@
             </objects>
             <point key="canvasLocation" x="2150" y="2884"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Modes Navigation Controller-->
         <scene sceneID="O3o-Bu-Ucz">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qcg-Vt-gmb" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qcg-Vt-gmb" customClass="ModesNavigationController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ucs-8c-tyU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1923,9 +1924,9 @@
         <image name="wave-icon-40" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iQ6-KM-wZZ"/>
         <segue reference="Knf-FF-twR"/>
         <segue reference="TcN-lv-nyP"/>
+        <segue reference="pkm-12-fIt"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

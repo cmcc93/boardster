@@ -13,6 +13,7 @@ class BoardViewControllerTableVersion: UITableViewController, UITextFieldDelegat
     // MARK: Properties
     
     @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var modelTextField: UITextField!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
     @IBOutlet weak var saveButton: UIBarButtonItem!
@@ -31,6 +32,9 @@ class BoardViewControllerTableVersion: UITableViewController, UITextFieldDelegat
         if lengthTextField != nil {
             lengthTextField.delegate = self
         }
+        if modelTextField != nil {
+            modelTextField.delegate = self
+        }
         
         // Set up views if editing an existing Board.
         if let board = board {
@@ -42,6 +46,9 @@ class BoardViewControllerTableVersion: UITableViewController, UITextFieldDelegat
             ratingControl.rating = board.rating
             if lengthTextField != nil {
                 lengthTextField.text = board.length
+            }
+            if modelTextField != nil {
+                modelTextField.text = board.model
             }
         }
         
@@ -109,12 +116,13 @@ class BoardViewControllerTableVersion: UITableViewController, UITextFieldDelegat
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if saveButton === sender {
             let name = nameTextField.text ?? ""
+            let model = modelTextField.text ?? ""
             let photo = photoImageView.image
             let rating = ratingControl.rating
             let length = lengthTextField.text
             
             // Set the board to be passed to BoardListTableViewController after the unwind segue.
-            board = Board(name: name, photo: photo, rating: rating, length: length!)
+            board = Board(name: name, model: model, photo: photo, rating: rating, length: length!)
         }
     }
     

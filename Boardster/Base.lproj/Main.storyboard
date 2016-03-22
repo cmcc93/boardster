@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Qcg-Vt-gmb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O1S-ge-tBn">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -557,7 +557,7 @@
             </objects>
             <point key="canvasLocation" x="2931" y="-477"/>
         </scene>
-        <!--Your Boards-->
+        <!--Boards (Admin)-->
         <scene sceneID="AT9-4d-zdo">
             <objects>
                 <tableViewController id="cFx-GA-3pn" customClass="BoardTableViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
@@ -664,9 +664,9 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Your Boards" id="y4f-lR-kxX">
+                    <navigationItem key="navigationItem" title="Boards (Admin)" id="y4f-lR-kxX">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="1hD-RX-oL6">
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="sxQ-3L-Zo7" kind="presentation" identifier="AddItem" id="0sB-Hg-Wsd"/>
                             </connections>
@@ -783,7 +783,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="37l-hs-Vua">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="nHx-q1-uNP">
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -926,7 +926,7 @@
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="3qm-g4-YnB">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="5A3-pj-9pX" kind="unwind" unwindAction="unwindToBoardList:" id="TJw-1y-48x"/>
                             </connections>
@@ -1484,10 +1484,10 @@
             </objects>
             <point key="canvasLocation" x="639" y="3563"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Modes Navigation Controller-->
         <scene sceneID="odg-EO-gwK">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sxQ-3L-Zo7" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sxQ-3L-Zo7" customClass="ModesNavigationController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Soc-o2-naQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1502,10 +1502,10 @@
             </objects>
             <point key="canvasLocation" x="6177" y="186"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Modes Navigation Controller-->
         <scene sceneID="Op9-sp-paQ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O1S-ge-tBn" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O1S-ge-tBn" customClass="ModesNavigationController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pMH-HY-iyz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1629,7 +1629,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Boards" id="sZr-nx-1ZW">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="FEf-Vf-fvD">
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="Muk-is-bxy" kind="presentation" identifier="AddItem" id="86M-ua-pfQ"/>
                             </connections>
@@ -1641,10 +1641,10 @@
             </objects>
             <point key="canvasLocation" x="5144" y="362"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Modes Navigation Controller-->
         <scene sceneID="hjU-4q-TlB">
             <objects>
-                <navigationController id="Muk-is-bxy" sceneMemberID="viewController">
+                <navigationController id="Muk-is-bxy" customClass="ModesNavigationController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gpI-yh-Ggz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1655,7 +1655,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z2R-Bg-AQ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7714" y="636"/>
+            <point key="canvasLocation" x="7008" y="544"/>
         </scene>
         <!--New Board-->
         <scene sceneID="QB7-Is-G4p">

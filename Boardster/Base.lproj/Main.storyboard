@@ -1659,7 +1659,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z2R-Bg-AQ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7008" y="544"/>
+            <point key="canvasLocation" x="7696" y="888"/>
         </scene>
         <!--New Board-->
         <scene sceneID="QB7-Is-G4p">

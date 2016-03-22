@@ -1889,10 +1889,10 @@
             </objects>
             <point key="canvasLocation" x="2150" y="2884"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Modes Navigation Controller-->
         <scene sceneID="O3o-Bu-Ucz">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qcg-Vt-gmb" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qcg-Vt-gmb" customClass="ModesNavigationController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ucs-8c-tyU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

@@ -784,6 +784,9 @@
                     <navigationItem key="navigationItem" id="37l-hs-Vua">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="nHx-q1-uNP">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="MGD-uQ-Xb9" kind="unwind" unwindAction="unwindToBoardList:" id="u8T-Z2-jYG"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -798,6 +801,7 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yis-IU-nkP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="MGD-uQ-Xb9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="6408" y="-556"/>
         </scene>
@@ -1926,7 +1930,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="Knf-FF-twR"/>
         <segue reference="TcN-lv-nyP"/>
-        <segue reference="pkm-12-fIt"/>
+        <segue reference="e1i-eH-aeP"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

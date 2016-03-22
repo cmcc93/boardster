@@ -67,6 +67,7 @@ class BoardTableViewController: UITableViewController {
         let board = boards[indexPath.row]
         
         cell.nameLabel.text = board.name
+        cell.modelLabel.text = board.model
         cell.photoImageView.image = board.photo
         cell.ratingControl.rating = board.rating
         cell.lengthLabel.text = board.length

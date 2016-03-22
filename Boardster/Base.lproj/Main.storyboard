@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -586,7 +585,7 @@
                                                 </mask>
                                             </variation>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZU-Bj-mkD">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="totalName Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZU-Bj-mkD">
                                             <rect key="frame" x="144" y="8" width="448" height="28"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="28" id="8IZ-XU-lZb"/>
@@ -595,11 +594,11 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3K-Dv-aVB" customClass="RatingControl" customModule="Boardster" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z3K-Dv-aVB" customClass="RatingControl" customModule="Boardster" customModuleProvider="target">
                                             <rect key="frame" x="144" y="101" width="448" height="28"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Length Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpM-GX-lg5">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Length Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpM-GX-lg5">
                                             <rect key="frame" x="144" y="69" width="220" height="28"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="28" id="1Hb-os-zCh"/>
@@ -614,17 +613,11 @@
                                                 </mask>
                                             </variation>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgu-uF-q7n">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Length Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgu-uF-q7n">
                                             <rect key="frame" x="144" y="39" width="448" height="28"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="28" id="Mod-0j-t9Q"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSk-bf-svW">
-                                            <rect key="frame" x="372" y="69" width="220" height="28"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -636,21 +629,15 @@
                                         <constraint firstAttribute="bottom" secondItem="cbY-5h-fe0" secondAttribute="bottom" id="3eT-c4-qSz"/>
                                         <constraint firstItem="vZU-Bj-mkD" firstAttribute="top" secondItem="WpV-dA-gwQ" secondAttribute="topMargin" id="7kZ-P5-OXW"/>
                                         <constraint firstItem="Z3K-Dv-aVB" firstAttribute="top" secondItem="QpM-GX-lg5" secondAttribute="bottom" constant="4" id="7po-i0-Mxc"/>
-                                        <constraint firstItem="BSk-bf-svW" firstAttribute="baseline" secondItem="QpM-GX-lg5" secondAttribute="baseline" id="9jn-6I-XYJ"/>
-                                        <constraint firstItem="BSk-bf-svW" firstAttribute="trailing" secondItem="Wgu-uF-q7n" secondAttribute="trailing" id="AB0-EU-f5a"/>
-                                        <constraint firstItem="QpM-GX-lg5" firstAttribute="width" secondItem="BSk-bf-svW" secondAttribute="width" id="B0z-AL-ucN"/>
                                         <constraint firstItem="Wgu-uF-q7n" firstAttribute="trailing" secondItem="WpV-dA-gwQ" secondAttribute="trailingMargin" id="HIX-EG-hzx"/>
                                         <constraint firstItem="Z3K-Dv-aVB" firstAttribute="trailing" secondItem="vZU-Bj-mkD" secondAttribute="trailing" id="IfT-cD-hT5"/>
-                                        <constraint firstItem="Z3K-Dv-aVB" firstAttribute="trailing" secondItem="BSk-bf-svW" secondAttribute="trailing" id="IsE-qb-1zt"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="Z3K-Dv-aVB" secondAttribute="trailing" id="Mey-YU-BW7"/>
                                         <constraint firstItem="cbY-5h-fe0" firstAttribute="leading" secondItem="WpV-dA-gwQ" secondAttribute="leading" id="NI1-EU-F8t"/>
                                         <constraint firstItem="Z3K-Dv-aVB" firstAttribute="trailing" secondItem="WpV-dA-gwQ" secondAttribute="trailingMargin" id="NOa-nf-ZFU"/>
                                         <constraint firstItem="vZU-Bj-mkD" firstAttribute="trailing" secondItem="Wgu-uF-q7n" secondAttribute="trailing" id="SPP-wC-2Ji"/>
                                         <constraint firstItem="vZU-Bj-mkD" firstAttribute="leading" secondItem="cbY-5h-fe0" secondAttribute="trailing" constant="8" symbolic="YES" id="SQw-UB-BTY"/>
-                                        <constraint firstItem="QpM-GX-lg5" firstAttribute="firstBaseline" secondItem="BSk-bf-svW" secondAttribute="firstBaseline" id="UYZ-wM-nkn"/>
                                         <constraint firstItem="Z3K-Dv-aVB" firstAttribute="top" secondItem="vZU-Bj-mkD" secondAttribute="bottom" constant="8" symbolic="YES" id="YBW-9W-ACA"/>
                                         <constraint firstItem="Wgu-uF-q7n" firstAttribute="leading" secondItem="QpM-GX-lg5" secondAttribute="leading" id="Zh2-PG-MnG"/>
-                                        <constraint firstItem="BSk-bf-svW" firstAttribute="leading" secondItem="QpM-GX-lg5" secondAttribute="trailing" constant="8" symbolic="YES" id="azR-j5-obY"/>
                                         <constraint firstItem="cbY-5h-fe0" firstAttribute="top" secondItem="WpV-dA-gwQ" secondAttribute="top" id="bmp-E9-Dye"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="Z3K-Dv-aVB" secondAttribute="trailing" id="eXw-R9-bNM"/>
                                         <constraint firstItem="Wgu-uF-q7n" firstAttribute="top" secondItem="vZU-Bj-mkD" secondAttribute="bottom" constant="3" id="n6K-zw-rFk"/>
@@ -685,7 +672,6 @@
                                     <outlet property="nameLabel" destination="vZU-Bj-mkD" id="KZa-WJ-bcI"/>
                                     <outlet property="photoImageView" destination="cbY-5h-fe0" id="7qV-OG-y3m"/>
                                     <outlet property="ratingControl" destination="Z3K-Dv-aVB" id="Ig8-2J-h3I"/>
-                                    <outlet property="totalNameLabel" destination="BSk-bf-svW" id="tLk-cv-dn5"/>
                                     <segue destination="Gpp-Pp-c0H" kind="show" identifier="ShowDetail" id="e1i-eH-aeP"/>
                                 </connections>
                             </tableViewCell>

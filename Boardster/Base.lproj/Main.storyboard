@@ -62,7 +62,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Lcg-s1-BIg" kind="custom" trigger="accessoryAction" customClass="SWRevealViewControllerSeguePushController" id="lm5-dK-LDK"/>
+                                            <segue destination="Lcg-s1-BIg" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="ssI-0h-oMS"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ko9-rM-JxT">
@@ -218,7 +218,7 @@
                     <navigationItem key="navigationItem" title="Rentals" id="Tn0-z6-oh3">
                         <barButtonItem key="leftBarButtonItem" image="BurgerIcon" id="hSF-Ye-CgH">
                             <inset key="imageInsets" minX="-10" minY="10" maxX="0.0" maxY="3"/>
-                            <color key="tintColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -229,10 +229,10 @@
             </objects>
             <point key="canvasLocation" x="2106" y="1268"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Modes Navigation Controller-->
         <scene sceneID="yqQ-30-f00">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T32-Xc-p7J" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T32-Xc-p7J" customClass="ModesNavigationController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2FA-f0-crF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -245,7 +245,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nwl-P0-xfK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1305" y="1268"/>
+            <point key="canvasLocation" x="1395" y="1268"/>
         </scene>
         <!--Boardster-->
         <scene sceneID="Pd2-LQ-tDE">
@@ -913,10 +913,10 @@
             </objects>
             <point key="canvasLocation" x="5966" y="1175"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Modes Navigation Controller-->
         <scene sceneID="QuY-43-0BS">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lYA-gC-pbL" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lYA-gC-pbL" customClass="ModesNavigationController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KtA-HN-g0v">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -931,10 +931,10 @@
             </objects>
             <point key="canvasLocation" x="1379" y="2884"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Modes Navigation Controller-->
         <scene sceneID="wvI-3B-0hM">
             <objects>
-                <navigationController id="Vph-Rt-BLS" sceneMemberID="viewController">
+                <navigationController id="Vph-Rt-BLS" customClass="ModesNavigationController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5dL-Al-ccc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -947,11 +947,11 @@
             </objects>
             <point key="canvasLocation" x="1186" y="2030"/>
         </scene>
-        <!--Wave Mode-->
+        <!--Modes Navigation Controller-->
         <scene sceneID="VKY-WF-szX">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lcg-s1-BIg" customClass="ModesNavigationController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Wave Mode" image="wave-icon-40" selectedImage="wave-icon-40" id="TW6-rf-7ti"/>
+                    <tabBarItem key="tabBarItem" title="" image="wave-icon-40" selectedImage="wave-icon-40" id="TW6-rf-7ti"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="f7f-MZ-nEg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1035,7 +1035,7 @@
                     <navigationItem key="navigationItem" title="Account Information" id="JBD-aE-YWi">
                         <barButtonItem key="leftBarButtonItem" image="BurgerIcon" id="vVn-TW-Bgh">
                             <inset key="imageInsets" minX="-10" minY="10" maxX="0.0" maxY="3"/>
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -1044,7 +1044,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ri-il-gXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1871" y="2199"/>
+            <point key="canvasLocation" x="1969" y="2030"/>
         </scene>
         <!--Contact Us-->
         <scene sceneID="Vad-tm-wgp">
@@ -1269,7 +1269,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LAh-Xp-gmj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1696" y="3611"/>
+            <point key="canvasLocation" x="604" y="3185"/>
         </scene>
         <!--Modes Navigation Controller-->
         <scene sceneID="M0t-gp-QS8">
@@ -1287,7 +1287,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8cZ-fX-WmA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="639" y="3563"/>
+            <point key="canvasLocation" x="261" y="2399"/>
         </scene>
         <!--Modes Navigation Controller-->
         <scene sceneID="Op9-sp-paQ">
@@ -1506,7 +1506,7 @@
                     <navigationItem key="navigationItem" title="Locations" id="CKE-C9-Jhm">
                         <barButtonItem key="leftBarButtonItem" image="BurgerIcon" id="AIT-uN-iTg">
                             <inset key="imageInsets" minX="-10" minY="10" maxX="0.0" maxY="3"/>
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -1703,7 +1703,7 @@
         <image name="wave-icon-40" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lm5-dK-LDK"/>
+        <segue reference="ssI-0h-oMS"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

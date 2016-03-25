@@ -586,7 +586,7 @@
                                             </variation>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="totalName Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZU-Bj-mkD">
-                                            <rect key="frame" x="144" y="8" width="448" height="29"/>
+                                            <rect key="frame" x="144" y="8" width="448" height="28"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="28" id="8IZ-XU-lZb"/>
                                                 <constraint firstAttribute="height" constant="24" id="cKH-zO-AXR"/>
@@ -604,11 +604,14 @@
                                             </variation>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3K-Dv-aVB" customClass="RatingControl" customModule="Boardster" customModuleProvider="target">
-                                            <rect key="frame" x="144" y="120" width="389" height="8"/>
+                                            <rect key="frame" x="144" y="116" width="90" height="12"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="90" id="YrO-EZ-i0y"/>
+                                            </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Length Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpM-GX-lg5">
-                                            <rect key="frame" x="144" y="45" width="448" height="30"/>
+                                            <rect key="frame" x="144" y="44" width="448" height="28"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="28" id="1Hb-os-zCh"/>
                                                 <constraint firstAttribute="width" constant="211" id="4iw-Km-07w"/>
@@ -628,11 +631,11 @@
                                             </variation>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VX-U9-NUT">
-                                            <rect key="frame" x="541" y="120" width="51" height="8"/>
+                                            <rect key="frame" x="242" y="116" width="51" height="12"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="16" id="EjP-Gv-NUM"/>
                                                 <constraint firstAttribute="width" constant="220" id="KuD-EU-GEC"/>
-                                                <constraint firstAttribute="height" constant="8" id="iIa-Ps-O4d"/>
+                                                <constraint firstAttribute="height" constant="12" id="iIa-Ps-O4d"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -645,7 +648,7 @@
                                             </variation>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decent condition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0y-dH-FSj">
-                                            <rect key="frame" x="144" y="83" width="448" height="29"/>
+                                            <rect key="frame" x="144" y="80" width="448" height="28"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="211" id="SqH-k3-lhb"/>
                                                 <constraint firstAttribute="height" constant="28" id="b1m-sh-jnF"/>
@@ -668,12 +671,13 @@
                                         <constraint firstItem="QpM-GX-lg5" firstAttribute="leading" secondItem="vZU-Bj-mkD" secondAttribute="leading" id="4G1-w2-jb7"/>
                                         <constraint firstItem="d0y-dH-FSj" firstAttribute="top" secondItem="QpM-GX-lg5" secondAttribute="bottom" constant="8" symbolic="YES" id="7Bz-Ne-qmu"/>
                                         <constraint firstItem="QpM-GX-lg5" firstAttribute="height" secondItem="Z3K-Dv-aVB" secondAttribute="height" id="9Aa-Xv-uPJ"/>
-                                        <constraint firstItem="7VX-U9-NUT" firstAttribute="leading" secondItem="Z3K-Dv-aVB" secondAttribute="trailing" constant="8" symbolic="YES" id="9lb-Mc-euR"/>
+                                        <constraint firstItem="7VX-U9-NUT" firstAttribute="leading" secondItem="Z3K-Dv-aVB" secondAttribute="trailing" constant="189" id="9lb-Mc-euR"/>
                                         <constraint firstItem="cbY-5h-fe0" firstAttribute="top" secondItem="WpV-dA-gwQ" secondAttribute="top" id="Avs-1a-ZvD"/>
                                         <constraint firstItem="d0y-dH-FSj" firstAttribute="leading" secondItem="QpM-GX-lg5" secondAttribute="leading" id="Btz-gJ-lHJ"/>
                                         <constraint firstItem="QpM-GX-lg5" firstAttribute="trailing" secondItem="Z3K-Dv-aVB" secondAttribute="trailing" constant="250" id="CSW-3E-jHD"/>
                                         <constraint firstItem="QpM-GX-lg5" firstAttribute="height" secondItem="vZU-Bj-mkD" secondAttribute="height" id="Dxw-VX-hdR"/>
                                         <constraint firstItem="Z3K-Dv-aVB" firstAttribute="bottom" secondItem="WpV-dA-gwQ" secondAttribute="bottomMargin" id="Fb0-vk-EZa"/>
+                                        <constraint firstItem="7VX-U9-NUT" firstAttribute="leading" secondItem="Z3K-Dv-aVB" secondAttribute="trailing" constant="8" symbolic="YES" id="Frt-0P-6im"/>
                                         <constraint firstItem="Z3K-Dv-aVB" firstAttribute="trailing" secondItem="WpV-dA-gwQ" secondAttribute="trailingMargin" constant="-250" id="Gm8-4a-Hj0"/>
                                         <constraint firstItem="vZU-Bj-mkD" firstAttribute="leading" secondItem="cbY-5h-fe0" secondAttribute="trailing" constant="8" symbolic="YES" id="H2U-eS-WLF"/>
                                         <constraint firstItem="QpM-GX-lg5" firstAttribute="trailing" secondItem="WpV-dA-gwQ" secondAttribute="trailingMargin" id="HdG-u5-Bhk"/>
@@ -701,6 +705,7 @@
                                         <mask key="constraints">
                                             <exclude reference="9Aa-Xv-uPJ"/>
                                             <exclude reference="CSW-3E-jHD"/>
+                                            <exclude reference="1mi-kw-881"/>
                                             <exclude reference="Gm8-4a-Hj0"/>
                                             <exclude reference="IfT-cD-hT5"/>
                                             <exclude reference="LyQ-NP-sMF"/>
@@ -709,6 +714,7 @@
                                             <exclude reference="YBW-9W-ACA"/>
                                             <exclude reference="eXw-R9-bNM"/>
                                             <exclude reference="voO-ZM-LkJ"/>
+                                            <exclude reference="9lb-Mc-euR"/>
                                             <exclude reference="oUZ-m5-7wt"/>
                                         </mask>
                                     </variation>

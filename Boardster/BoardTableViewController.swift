@@ -32,13 +32,13 @@ class BoardTableViewController: UITableViewController {
         
     func loadSampleBoards() {
         let photo1 = UIImage(named: "board1")!
-        let board1 = Board(name: "Rusty", model: "Rooster", photo: photo1, rating: 4, length: "76")!
+        let board1 = Board(name: "Rusty", model: "Rooster", totalName: "Rusty Rooster", photo: photo1, rating: 4, length: "76")!
         
         let photo2 = UIImage(named: "board2")!
-        let board2 = Board(name: "Al Merrick", model: "Hoglet", photo: photo2, rating: 5, length: "42")!
+        let board2 = Board(name: "Al Merrick", model: "Hoglet", totalName: "Al Merrick Hoglet", photo: photo2, rating: 5, length: "42")!
         
         let photo3 = UIImage(named: "board3")!
-        let board3 = Board(name: "Panda", model: "Doinker", photo: photo3, rating: 3, length: "93")!
+        let board3 = Board(name: "Panda", model: "Doinker", totalName: "Panda Doinker", photo: photo3, rating: 3, length: "93")!
         
         boards += [board1, board2, board3]
     }
@@ -66,8 +66,9 @@ class BoardTableViewController: UITableViewController {
         // Fetches the appropriate board for the data source layout.
         let board = boards[indexPath.row]
         
-        cell.nameLabel.text = board.name
-        cell.modelLabel.text = board.model
+//        cell.nameLabel.text = board.name
+//        cell.modelLabel.text = board.model
+        cell.totalNameLabel.text = board.totalName
         cell.photoImageView.image = board.photo
         cell.ratingControl.rating = board.rating
         cell.lengthLabel.text = board.length

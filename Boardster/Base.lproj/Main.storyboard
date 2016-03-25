@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O1S-ge-tBn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -22,12 +22,12 @@
                     </view>
                     <connections>
                         <segue destination="1Ef-gO-Aib" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="IkB-E1-xOI"/>
-                        <segue destination="NZj-Od-jxB" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="Knf-FF-twR"/>
+                        <segue destination="Lcg-s1-BIg" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="eiE-it-R46"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="359" y="423"/>
+            <point key="canvasLocation" x="903" y="437"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="d6P-hZ-kHp">
@@ -61,9 +61,6 @@
                                                 <constraint firstItem="LVa-du-iRO" firstAttribute="top" secondItem="acm-7p-G99" secondAttribute="topMargin" id="k3v-W4-VsZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="NZj-Od-jxB" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="8Sf-YR-VKI"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ko9-rM-JxT">
                                         <rect key="frame" x="0.0" y="44" width="600" height="44"/>
@@ -464,98 +461,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HG5-B6-jsa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3824" y="-484"/>
-        </scene>
-        <!--Boardster-->
-        <scene sceneID="X5o-0L-aSQ">
-            <objects>
-                <viewController id="kmr-RL-pWB" customClass="ModesTabViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="KSa-5L-gIM"/>
-                        <viewControllerLayoutGuide type="bottom" id="43f-Op-hpj"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tPA-kk-yU1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snowboard-wall-iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="nRA-m1-wYP">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZB-Qv-6tr">
-                                <rect key="frame" x="0.0" y="487" width="600" height="64"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10571120689999999" colorSpace="calibratedRGB"/>
-                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
-                                <connections>
-                                    <action selector="snowHomeToTable:" destination="kmr-RL-pWB" eventType="touchUpInside" id="hc8-O6-NA8"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESERVE A SNOWBOARD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t81-c2-fiF">
-                                <rect key="frame" x="20" y="495" width="245" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jY2-1N-LTo">
-                                <rect key="frame" x="562" y="487" width="18" height="64"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check availability" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLp-4U-MID">
-                                <rect key="frame" x="20" y="519" width="157" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="VZB-Qv-6tr" secondAttribute="trailing" constant="-20" id="5Y8-Ya-iFK"/>
-                            <constraint firstItem="t81-c2-fiF" firstAttribute="height" secondItem="QLp-4U-MID" secondAttribute="height" id="8Kz-sx-nt4"/>
-                            <constraint firstItem="VZB-Qv-6tr" firstAttribute="leading" secondItem="tPA-kk-yU1" secondAttribute="leadingMargin" constant="-20" id="Af9-IE-rHo"/>
-                            <constraint firstItem="QLp-4U-MID" firstAttribute="leading" secondItem="VZB-Qv-6tr" secondAttribute="leading" id="Mhc-JA-Lqa"/>
-                            <constraint firstItem="t81-c2-fiF" firstAttribute="top" secondItem="VZB-Qv-6tr" secondAttribute="top" constant="8" id="NDV-SZ-Ss7"/>
-                            <constraint firstItem="nRA-m1-wYP" firstAttribute="bottom" secondItem="43f-Op-hpj" secondAttribute="top" id="PUS-F3-lFw"/>
-                            <constraint firstItem="43f-Op-hpj" firstAttribute="top" secondItem="VZB-Qv-6tr" secondAttribute="bottom" id="QUV-6e-eOv"/>
-                            <constraint firstAttribute="trailing" secondItem="nRA-m1-wYP" secondAttribute="trailing" id="WLc-ia-2BI"/>
-                            <constraint firstItem="VZB-Qv-6tr" firstAttribute="centerX" secondItem="jY2-1N-LTo" secondAttribute="centerX" id="WmV-Lh-i6h"/>
-                            <constraint firstItem="jY2-1N-LTo" firstAttribute="bottom" secondItem="43f-Op-hpj" secondAttribute="top" id="X9X-Dl-fj9"/>
-                            <constraint firstItem="t81-c2-fiF" firstAttribute="top" secondItem="VZB-Qv-6tr" secondAttribute="top" id="XMR-7P-ABr"/>
-                            <constraint firstItem="jY2-1N-LTo" firstAttribute="bottom" secondItem="VZB-Qv-6tr" secondAttribute="bottom" id="gNf-E8-etE"/>
-                            <constraint firstItem="jY2-1N-LTo" firstAttribute="trailing" secondItem="VZB-Qv-6tr" secondAttribute="trailing" constant="-20" id="hY2-zL-oYZ"/>
-                            <constraint firstItem="QLp-4U-MID" firstAttribute="height" secondItem="t81-c2-fiF" secondAttribute="height" id="iah-kG-gCc"/>
-                            <constraint firstItem="nRA-m1-wYP" firstAttribute="leading" secondItem="tPA-kk-yU1" secondAttribute="leading" id="lPF-4y-UaX"/>
-                            <constraint firstItem="VZB-Qv-6tr" firstAttribute="top" secondItem="jY2-1N-LTo" secondAttribute="top" id="qev-CS-AUT"/>
-                            <constraint firstItem="t81-c2-fiF" firstAttribute="leading" secondItem="VZB-Qv-6tr" secondAttribute="leading" constant="20" id="sW3-88-pkL"/>
-                            <constraint firstItem="QLp-4U-MID" firstAttribute="top" secondItem="t81-c2-fiF" secondAttribute="bottom" id="sZf-Yr-x5R"/>
-                            <constraint firstItem="QLp-4U-MID" firstAttribute="leading" secondItem="VZB-Qv-6tr" secondAttribute="leading" constant="20" id="swz-cw-7tA"/>
-                            <constraint firstItem="nRA-m1-wYP" firstAttribute="top" secondItem="KSa-5L-gIM" secondAttribute="bottom" constant="-64" id="tzx-6R-J30"/>
-                            <constraint firstItem="jY2-1N-LTo" firstAttribute="top" secondItem="KSa-5L-gIM" secondAttribute="bottom" constant="423" id="uEH-vF-4CD"/>
-                            <constraint firstItem="QLp-4U-MID" firstAttribute="bottom" secondItem="VZB-Qv-6tr" secondAttribute="bottom" constant="-8" id="yha-9G-WeH"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="WmV-Lh-i6h"/>
-                                <exclude reference="XMR-7P-ABr"/>
-                                <exclude reference="Mhc-JA-Lqa"/>
-                                <exclude reference="uEH-vF-4CD"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <navigationItem key="navigationItem" title="Boardster" id="mro-go-19q">
-                        <barButtonItem key="backBarButtonItem" title=" " id="UkQ-3s-5nW"/>
-                        <barButtonItem key="leftBarButtonItem" image="BurgerIcon" id="2B1-8x-WgK">
-                            <inset key="imageInsets" minX="-10" minY="10" maxX="0.0" maxY="3"/>
-                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="menuButton" destination="2B1-8x-WgK" id="lZK-ys-0Bp"/>
-                        <segue destination="zpH-wd-rAp" kind="show" identifier="snowboardsHomeToBoardsTable" id="eg5-uM-mdp"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Yuj-WB-UvY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2931" y="-477"/>
         </scene>
         <!--Boards (Admin)-->
         <scene sceneID="AT9-4d-zdo">
@@ -1005,24 +910,6 @@
             </objects>
             <point key="canvasLocation" x="5966" y="1175"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="HVM-RJ-4Oh">
-            <objects>
-                <tabBarController id="NZj-Od-jxB" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="f4l-n0-B3x">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="9nx-VY-4Lw" kind="relationship" relationship="viewControllers" id="40u-xY-QuG"/>
-                        <segue destination="Lcg-s1-BIg" kind="relationship" relationship="viewControllers" id="OlP-H0-yFg"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dW8-8u-5Vq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1247" y="-75"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="QuY-43-0BS">
             <objects>
@@ -1056,25 +943,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M1b-Hr-vJH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1186" y="2030"/>
-        </scene>
-        <!--Snow Mode-->
-        <scene sceneID="XqG-uK-lQ3">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9nx-VY-4Lw" customClass="ModesNavigationController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Snow Mode" image="snow-icon-40" selectedImage="snow-icon-40" id="fzI-Hj-Qd0"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EfF-SX-qHU">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="kmr-RL-pWB" kind="relationship" relationship="rootViewController" id="r7D-f1-gks"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o5g-hv-jaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2074" y="-473"/>
         </scene>
         <!--Wave Mode-->
         <scene sceneID="VKY-WF-szX">
@@ -1827,15 +1695,9 @@
         <image name="glyphicons-505-alert" width="28" height="23"/>
         <image name="los-angeles" width="960" height="600"/>
         <image name="san-francisco" width="950" height="750"/>
-        <image name="snow-icon-40" width="40" height="40"/>
         <image name="snowboard-sunny-slope" width="960" height="600"/>
-        <image name="snowboard-wall-iTunesArtwork" width="512" height="512"/>
         <image name="surfboards-iTunesArtwork" width="512" height="512"/>
         <image name="wave-icon-40" width="40" height="40"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Knf-FF-twR"/>
-        <segue reference="eg5-uM-mdp"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

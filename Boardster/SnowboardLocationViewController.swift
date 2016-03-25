@@ -26,13 +26,13 @@ class SnowboardLocationViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        var destination = segue.destinationViewController as? UITableViewController
-        
-        if let navCon = destination as? ModesNavigationController {
-            destination = navCon.topViewController
-        }
-    }
-
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        
+//        var destination = segue.destinationViewController as? UITableViewController
+//        
+//        if let navCon = destination as? ModesNavigationController {
+//            destination = navCon.topViewController
+//        }
+//    }
+    
 }

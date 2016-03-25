@@ -396,15 +396,14 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Locations" id="3ms-dI-PaA"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="y1R-Of-AR9" kind="show" id="RnS-Ht-xei"/>
+                        <segue destination="FSg-yg-2FM" kind="show" identifier="locationsToTable" action="showDetailViewController:sender:" id="KBr-10-Rr5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HG5-B6-jsa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3824" y="-484"/>
+            <point key="canvasLocation" x="4452" y="-492"/>
         </scene>
         <!--Boards (Admin)-->
         <scene sceneID="AT9-4d-zdo">
@@ -595,6 +594,7 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Boards (Admin)" id="y4f-lR-kxX">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="t1S-tu-xmR"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="1hD-RX-oL6">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -606,7 +606,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="brC-vc-HUJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5710" y="-339"/>
+            <point key="canvasLocation" x="6536" y="-629"/>
         </scene>
         <!--Board View Controller Table Version-->
         <scene sceneID="NjP-cS-qjO">
@@ -733,7 +733,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yis-IU-nkP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="MGD-uQ-Xb9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="6414" y="-1162"/>
+            <point key="canvasLocation" x="7226" y="-1162"/>
         </scene>
         <!--Board View Controller Table Version Non Admin-->
         <scene sceneID="GlI-bt-1SK">
@@ -1230,24 +1230,6 @@
             </objects>
             <point key="canvasLocation" x="261" y="2399"/>
         </scene>
-        <!--Modes Navigation Controller-->
-        <scene sceneID="Op9-sp-paQ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O1S-ge-tBn" customClass="ModesNavigationController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pMH-HY-iyz">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="cFx-GA-3pn" kind="relationship" relationship="rootViewController" id="5ov-JL-m5G"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lG8-Ng-f2P" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4610" y="-460"/>
-        </scene>
         <!--Boards-->
         <scene sceneID="M3O-cD-6ca">
             <objects>
@@ -1358,29 +1340,13 @@
                     <navigationItem key="navigationItem" title="Boards" id="sZr-nx-1ZW">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="FEf-Vf-fvD">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <segue destination="Muk-is-bxy" kind="presentation" identifier="AddItem" id="86M-ua-pfQ"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VpC-cl-wJt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4100" y="306"/>
-        </scene>
-        <!--Modes Navigation Controller-->
-        <scene sceneID="hjU-4q-TlB">
-            <objects>
-                <navigationController id="Muk-is-bxy" customClass="ModesNavigationController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gpI-yh-Ggz">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="z2R-Bg-AQ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="7696" y="888"/>
+            <point key="canvasLocation" x="4912" y="306"/>
         </scene>
         <!--Snowboard Locations-->
         <scene sceneID="uGJ-ZD-iIR">
@@ -1591,7 +1557,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9o4-Lu-nWx" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Xbc-3J-FZN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="7874" y="-570"/>
+            <point key="canvasLocation" x="8686" y="-570"/>
         </scene>
         <!--Modes Navigation Controller-->
         <scene sceneID="Pyj-QZ-CBz">
@@ -1609,7 +1575,43 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ccs-LW-bpq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7074" y="-461"/>
+            <point key="canvasLocation" x="7886" y="-461"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XxJ-o1-ofe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hlt-og-Ytu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xAr-vf-HZg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="y1R-Of-AR9" kind="relationship" relationship="rootViewController" id="1os-1u-ggv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="egX-QB-8rV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4100" y="306"/>
+        </scene>
+        <!--Modes Navigation Controller-->
+        <scene sceneID="U9S-fq-Zfu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FSg-yg-2FM" customClass="ModesNavigationController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JnB-2J-ATe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cFx-GA-3pn" kind="relationship" relationship="rootViewController" id="onb-nw-6Cg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OMu-gT-dZe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5460" y="-653"/>
         </scene>
     </scenes>
     <resources>
@@ -1626,7 +1628,7 @@
         <image name="wave-icon-40" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ssI-0h-oMS"/>
+        <segue reference="eiE-it-R46"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

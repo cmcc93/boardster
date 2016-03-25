@@ -12,9 +12,9 @@ class ModesTabViewController: UIViewController {
 
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
-    @IBAction func snowHomeToTable(sender: UIButton) {
-        performSegueWithIdentifier("snowboardsHomeToBoardsTable", sender: nil)
-    }
+//    @IBAction func snowHomeToTable(sender: UIButton) {
+//        performSegueWithIdentifier("snowboardsHomeToBoardsTable", sender: nil)
+//    }
     
     @IBAction func surfHomeToTable(sender: UIButton) {
         performSegueWithIdentifier("surfboardsHomeToBoardsTable", sender: nil)
@@ -33,9 +33,4 @@ class ModesTabViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }

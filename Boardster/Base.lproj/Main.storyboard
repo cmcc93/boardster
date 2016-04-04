@@ -1636,10 +1636,10 @@
             </objects>
             <point key="canvasLocation" x="4100" y="306"/>
         </scene>
-        <!--Boards (Admin)-->
+        <!--Your Listed Boards-->
         <scene sceneID="oxX-1v-LdP">
             <objects>
-                <tableViewController id="7bd-AS-jwV" customClass="BoardTableViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="7bd-AS-jwV" customClass="BoardTableViewControllerOwner" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="137" sectionHeaderHeight="28" sectionFooterHeight="28" id="wgw-Xa-UiH">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1823,7 +1823,7 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Boards (Admin)" id="48X-No-tFt">
+                    <navigationItem key="navigationItem" title="Your Listed Boards" id="48X-No-tFt">
                         <barButtonItem key="backBarButtonItem" title="Back" id="kbq-ff-FX2"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="87s-ii-fYZ">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

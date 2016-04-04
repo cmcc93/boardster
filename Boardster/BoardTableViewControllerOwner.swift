@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BoardTableViewControllerOwner: UITableViewController {
+class BoardTableViewControllerOwner: BoardTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

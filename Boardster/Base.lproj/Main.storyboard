@@ -1676,9 +1676,9 @@
                                             <nil key="highlightedColor"/>
                                             <variation key="default">
                                                 <mask key="constraints">
-                                                    <exclude reference="jmH-AH-wCf"/>
-                                                    <exclude reference="SGC-Ak-0ze"/>
                                                     <exclude reference="Ao1-tn-gip"/>
+                                                    <exclude reference="SGC-Ak-0ze"/>
+                                                    <exclude reference="jmH-AH-wCf"/>
                                                 </mask>
                                             </variation>
                                         </label>
@@ -1721,8 +1721,8 @@
                                             <nil key="highlightedColor"/>
                                             <variation key="default">
                                                 <mask key="constraints">
-                                                    <exclude reference="sge-TP-W1v"/>
                                                     <exclude reference="hYy-nc-KG5"/>
+                                                    <exclude reference="sge-TP-W1v"/>
                                                 </mask>
                                             </variation>
                                         </label>
@@ -1782,17 +1782,17 @@
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">
-                                            <exclude reference="j0j-Zl-12I"/>
                                             <exclude reference="b8k-i1-f6g"/>
+                                            <exclude reference="j0j-Zl-12I"/>
                                             <exclude reference="l2g-1S-728"/>
-                                            <exclude reference="jTO-S0-fAP"/>
-                                            <exclude reference="tnl-Hb-CZP"/>
-                                            <exclude reference="kbM-h1-3M8"/>
                                             <exclude reference="23I-qs-IVJ"/>
-                                            <exclude reference="LA7-Fe-aVa"/>
                                             <exclude reference="Aad-A3-Vlj"/>
-                                            <exclude reference="Xbq-HH-bZ2"/>
+                                            <exclude reference="LA7-Fe-aVa"/>
                                             <exclude reference="SxW-gT-PbZ"/>
+                                            <exclude reference="Xbq-HH-bZ2"/>
+                                            <exclude reference="jTO-S0-fAP"/>
+                                            <exclude reference="kbM-h1-3M8"/>
+                                            <exclude reference="tnl-Hb-CZP"/>
                                             <exclude reference="AYm-g1-apx"/>
                                             <exclude reference="CXZ-6S-3Y0"/>
                                         </mask>
@@ -1804,8 +1804,8 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="gzM-gD-xGZ"/>
                                         <exclude reference="EXl-k0-Kv1"/>
+                                        <exclude reference="gzM-gD-xGZ"/>
                                     </mask>
                                 </variation>
                                 <connections>

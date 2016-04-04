@@ -14,7 +14,11 @@ class SnowboardLocationViewController: UIViewController {
         performSegueWithIdentifier("locationsToTable", sender: nil)
     }
     
-    @IBAction func losangToTable(sender: UIButton) {
+//    @IBAction func losangToTable(sender: UIButton) {
+//        performSegueWithIdentifier("locationsToTable", sender: nil)
+//    }
+    
+    @IBAction func losangToTable(sender: AnyObject) {
         performSegueWithIdentifier("locationsToTable", sender: nil)
     }
     

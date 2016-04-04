@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -352,7 +352,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="losangToTable:" destination="zpH-wd-rAp" eventType="touchUpInside" id="9Ui-nV-h3A"/>
+                                    <action selector="losangToTable:" destination="zpH-wd-rAp" eventType="touchUpInside" id="1Wo-J2-hT4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvP-Gq-kba">
@@ -398,7 +398,7 @@
                     <navigationItem key="navigationItem" title="Locations" id="3ms-dI-PaA"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="FSg-yg-2FM" kind="show" identifier="locationsToTable" action="showDetailViewController:sender:" id="KBr-10-Rr5"/>
+                        <segue destination="cFx-GA-3pn" kind="show" identifier="locationsToTable" id="I5B-Z8-xWh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HG5-B6-jsa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -606,7 +606,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="brC-vc-HUJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6536" y="-629"/>
+            <point key="canvasLocation" x="5212" y="-453"/>
         </scene>
         <!--Board View Controller Table Version-->
         <scene sceneID="NjP-cS-qjO">
@@ -1595,24 +1595,6 @@
             </objects>
             <point key="canvasLocation" x="4100" y="306"/>
         </scene>
-        <!--Modes Navigation Controller-->
-        <scene sceneID="U9S-fq-Zfu">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FSg-yg-2FM" customClass="ModesNavigationController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JnB-2J-ATe">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="cFx-GA-3pn" kind="relationship" relationship="rootViewController" id="onb-nw-6Cg"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OMu-gT-dZe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5460" y="-653"/>
-        </scene>
     </scenes>
     <resources>
         <image name="BurgerIcon" width="57" height="57"/>
@@ -1621,8 +1603,8 @@
         <image name="glyphicons-196-info-sign" width="26" height="26"/>
         <image name="glyphicons-46-calendar" width="23" height="24"/>
         <image name="glyphicons-505-alert" width="28" height="23"/>
-        <image name="los-angeles" width="960" height="600"/>
-        <image name="san-francisco" width="950" height="750"/>
+        <image name="los-angeles" width="300" height="159"/>
+        <image name="san-francisco" width="327" height="218"/>
         <image name="snowboard-sunny-slope" width="960" height="600"/>
         <image name="surfboards-iTunesArtwork" width="512" height="512"/>
         <image name="wave-icon-40" width="40" height="40"/>

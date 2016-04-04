@@ -165,6 +165,28 @@
                                             <segue destination="yby-5q-Twb" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Mwb-Jc-SbK"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Dku-we-bfb">
+                                        <rect key="frame" x="0.0" y="220" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dku-we-bfb" id="Ikr-bj-bdB">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Switch to Lending Mode" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZW-0j-4Sq">
+                                                    <rect key="frame" x="8" y="8" width="584" height="27"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="YZW-0j-4Sq" firstAttribute="top" secondItem="Ikr-bj-bdB" secondAttribute="topMargin" id="Oee-OC-dDc"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="YZW-0j-4Sq" secondAttribute="trailing" id="Sgv-4Z-TEU"/>
+                                                <constraint firstItem="YZW-0j-4Sq" firstAttribute="leading" secondItem="Ikr-bj-bdB" secondAttribute="leadingMargin" id="V1u-FT-rlW"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="YZW-0j-4Sq" secondAttribute="bottom" id="Xys-BL-g1y"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>

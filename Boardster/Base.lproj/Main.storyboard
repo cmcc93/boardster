@@ -1253,10 +1253,10 @@
             </objects>
             <point key="canvasLocation" x="-1050" y="1894"/>
         </scene>
-        <!--Board Table View Controller-->
+        <!--Table View Controller-->
         <scene sceneID="1dB-kv-ra6">
             <objects>
-                <tableViewController id="1A9-r3-21a" customClass="BoardTableViewController" customModule="Boardster" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="1A9-r3-21a" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="0NJ-uA-aVA">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
